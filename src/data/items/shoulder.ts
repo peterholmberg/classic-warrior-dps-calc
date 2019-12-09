@@ -1,6 +1,6 @@
 import { Item, ItemSlot } from '../../types';
 
-export const shoulders: Item[] = () => {
+export const shoulders = () => {
   return [
     {
       Name: 'Abyssal Plate Epaulets',

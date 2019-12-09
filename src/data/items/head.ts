@@ -1,6 +1,6 @@
 import { Item, ItemSlot, WeaponType } from '../../types';
 
-export const heads: Item[] = () => {
+export const heads = () => {
   return [
     {
       Name: 'Circlet of Restless Dreams',

@@ -24,6 +24,17 @@ export class HomeContainer extends PureComponent {
           </div>
         </div>
         <div className="content-section">
+          <h2>Phase</h2>
+          <div>
+            <select>
+              <option value="1">Phase 1</option>
+              <option value="2">Phase 2</option>
+              <option value="2.5">Phase 2.5</option>
+              <option value="3">Phase 3</option>
+            </select>
+          </div>
+        </div>
+        <div className="content-section">
           <h2>Your gear</h2>
           <table>
             <thead>

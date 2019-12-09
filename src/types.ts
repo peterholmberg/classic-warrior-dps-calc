@@ -37,13 +37,13 @@ interface Resistance {
 
 interface WeaponSkill {
   value: number;
-  WeaponType: WeaponType;
+  WeaponType: WeaponType[];
 }
 
 export interface Item {
   Name: string;
   ItemSlot: ItemSlot;
-  Armor: number;
+  Armor?: number;
   Strength?: number;
   Agility?: number;
   Stamina?: number;
