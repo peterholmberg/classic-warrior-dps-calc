@@ -1,3 +1,5 @@
+type Phase = 1 | 1.5 | 2 | 2.5 | 3 | 4 | 5 | 6;
+
 export enum ItemSlot {
   Head = 'head',
   Neck = 'neck',
@@ -12,14 +14,17 @@ export enum ItemSlot {
   Ring = 'ring',
   Trinket = 'trinket',
   MainHand = 'mainhand',
-  OneHand = 'offhand',
+  OneHand = 'onehand',
+  OffHand = 'offhand',
   TwoHand = 'twohand',
+  Ranged = 'ranged',
 }
 
 export enum WeaponType {
   Axe = 'axe',
   Bows = 'bows',
   Daggers = 'daggers',
+  Fist = 'fist',
   Crossbow = 'crossbow',
   Mace = 'mace',
   Guns = 'guns',
@@ -27,34 +32,53 @@ export enum WeaponType {
   PoleArm = 'polearm',
 }
 
+export enum ArmorType {
+  Cloth = 'cloth',
+  Leather = 'leather',
+  Mail = 'mail',
+  Plate = 'plate',
+}
+
 interface Resistance {
-  Arcane: number;
-  Fire: number;
-  Frost: number;
-  Nature: number;
-  Shadow: number;
+  arcane?: number;
+  fire?: number;
+  frost?: number;
+  nature?: number;
+  shadow?: number;
 }
 
 interface WeaponSkill {
   value: number;
-  WeaponType: WeaponType[];
+  weaponType: WeaponType[];
 }
 
 export interface Item {
-  Name: string;
-  ItemSlot: ItemSlot;
-  Armor?: number;
-  Strength?: number;
-  Agility?: number;
-  Stamina?: number;
-  Intellect?: number;
-  Spirit?: number;
-  Resistance?: Resistance;
-  Crit?: number;
-  Hit?: number;
-  Defense?: number;
-  Dodge?: number;
-  Parry?: number;
-  AttackPower?: number;
-  WeaponSkill?: WeaponSkill;
+  name: string;
+  itemSlot: ItemSlot;
+  armorType?: ArmorType;
+  wowHeadId?: number;
+  armor?: number;
+  strength?: number;
+  agility?: number;
+  stamina?: number;
+  intellect?: number;
+  spirit?: number;
+  resistance?: Resistance;
+  crit?: number;
+  hit?: number;
+  defense?: number;
+  dodge?: number;
+  parry?: number;
+  attackPower?: number;
+  weaponSkill?: WeaponSkill;
+  proc?: number;
+  phase?: Phase;
+}
+
+export interface Weapon extends Item {
+  weaponType: WeaponType;
+  dps: number;
+  maxHit: number;
+  minHit: number;
+  speed: number;
 }
