@@ -1,4 +1,4 @@
-import { Item, ItemSlot } from '../../types';
+import { Item, ItemSlot } from '../../types/types';
 
 export const shoulders = () => {
   return [

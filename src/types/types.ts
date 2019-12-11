@@ -29,7 +29,10 @@ export enum WeaponType {
   Mace = 'mace',
   Guns = 'guns',
   Sword = 'sword',
-  PoleArm = 'polearm',
+  Polearm = 'polearm',
+  TwoHandAxe = 'twohandaxe',
+  TwoHandMace = 'twohandmace',
+  TwoHandSword = 'twohandsword',
 }
 
 export enum ArmorType {

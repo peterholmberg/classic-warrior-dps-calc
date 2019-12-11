@@ -1,4 +1,4 @@
-import { ItemSlot } from '../../types';
+import { ItemSlot } from '../../types/types';
 
 export const rings = () => {
   return [

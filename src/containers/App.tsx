@@ -1,6 +1,8 @@
 import React, { PureComponent } from 'react';
+import '../styles/app.scss';
+import { Select } from '../components/Select';
 
-export class HomeContainer extends PureComponent {
+export default class HomeContainer extends PureComponent {
   render() {
     return (
       <div className="page-content">
@@ -8,11 +10,12 @@ export class HomeContainer extends PureComponent {
         <div className="content-section">
           <h2>Race</h2>
           <div className="race">
+            <Select options={} value={} onChange={} />
             <select>
               <option value="human">Human</option>
               <option value="dwarf">Dwarf</option>
               <option value="gnome">Gnome</option>
-              <option value="nightelf">Night Elf1</option>
+              <option value="nightelf">Night Elf</option>
               <option value="orc">Orc</option>
               <option value="troll">Troll</option>
               <option value="tauren">Tauren</option>
@@ -43,14 +46,14 @@ export class HomeContainer extends PureComponent {
                 <th>Name</th>
                 <th>Enchant</th>
                 <th>Weapon type</th>
-                <th>Crit</th>
-                <th>Hit</th>
+                <th>crit</th>
+                <th>hit</th>
                 <th>Str</th>
                 <th>Stam</th>
                 <th>Agi</th>
                 <th>Ap</th>
-                <th>Dodge</th>
-                <th>Parry</th>
+                <th>dodge</th>
+                <th>parry</th>
                 <th>Def</th>
                 <th>AC</th>
               </tr>
