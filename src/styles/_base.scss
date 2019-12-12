@@ -4,10 +4,18 @@ body {
     Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   letter-spacing: 0.02em;
   line-height: 1;
+  height: 100vh;
 }
+
+.backdrop {
+  background: linear-gradient(black, lightgray);
+}
+
 .page-content {
-  max-width: 996px;
+  max-width: 900px;
   margin: 0 auto;
+  padding: 1%;
+  background-color: white;
 }
 
 .content-section {
@@ -18,6 +26,7 @@ body {
 
 .race {
   display: flex;
+  align-items: baseline;
 }
 
 .race-perks {

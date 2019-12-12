@@ -1,4 +1,4 @@
-import { ItemSlot } from '../../types/types';
+import { ItemSlot } from '../../types/items';
 
 export const wrists = () => {
   return [

@@ -1,4 +1,4 @@
-import { ItemSlot, Weapon, WeaponType } from '../../types/types';
+import { ItemSlot, Weapon, WeaponType } from '../../types/items';
 
 export const twoHandAxes = (): Weapon[] => {
   return [

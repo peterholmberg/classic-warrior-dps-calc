@@ -1,4 +1,4 @@
-type Phase = 1 | 1.5 | 2 | 2.5 | 3 | 4 | 5 | 6;
+import {Phase} from "./game";
 
 export enum ItemSlot {
   Head = 'head',

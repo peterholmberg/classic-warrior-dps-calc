@@ -1,19 +1,18 @@
-import React, { FC } from 'react';
-import { Item } from '../types/types';
+import React, { FC, SyntheticEvent } from 'react';
 
 interface Props {
-  options: Item[];
-  value: Item;
-  onChange: () => void;
+  options: { label: string; value: string | number }[];
+  value: string | number;
+  onChange: (event: SyntheticEvent<HTMLSelectElement>) => void;
 }
 
-export const Select: FC<Props> = ({ onChange, options, value }) => {
+export const Select: FC<Props> = ({ onChange, options, value }: Props) => {
   return (
-    <select>
-      {options.map((option: Item, index: number) => {
+    <select onChange={onChange} value={value}>
+      {options.map((option, index: number) => {
         return (
-          <option key={index} onChange={onChange} value={value}>
-            {option.name}
+          <option key={`${option.value}-${index}`} value={option.value}>
+            {option.label}
           </option>
         );
       })}
