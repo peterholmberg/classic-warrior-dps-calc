@@ -1,13 +1,13 @@
-import { Item, ItemSlot } from '../../types/items';
+import { Item, ItemSlot } from '../../../types/items';
 
-export const necks = () => {
+export const necks = (): Item[] => {
   return [
     {
       name: 'Amulet of the Darkmoon',
       itemSlot: ItemSlot.Neck,
-      Strength: 10,
+      strength: 10,
       stamina: 10,
-      Agility: 19,
+      agility: 19,
     },
     {
       name: 'Barbed Choker',
@@ -27,7 +27,7 @@ export const necks = () => {
       name: 'Blazefury Medallion',
       itemSlot: ItemSlot.Neck,
       stamina: 13,
-      Agility: 14,
+      agility: 14,
     },
     {
       name: 'Choker of the Shifting Sands',
@@ -47,7 +47,7 @@ export const necks = () => {
       itemSlot: ItemSlot.Neck,
       crit: 1,
       hit: 1,
-      Strength: 8,
+      strength: 8,
     },
     {
       name: 'Imperial Jewel',
@@ -67,19 +67,19 @@ export const necks = () => {
       crit: 1,
       hit: 1,
       stamina: 9,
-      Agility: 12,
+      agility: 12,
     },
     {
       name: 'Pendant of Celerity',
       itemSlot: ItemSlot.Neck,
       hit: 1,
-      Agility: 15,
+      agility: 15,
     },
     {
       name: "Prestor's Talisman of Connivery",
       itemSlot: ItemSlot.Neck,
       hit: 1,
-      Agility: 30,
+      agility: 30,
     },
     {
       name: "Sadist's Collar",

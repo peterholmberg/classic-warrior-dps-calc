@@ -1,4 +1,4 @@
-import { Item } from './types';
+import { Item } from './items';
 
 export enum Race {
   Human = 'human',
@@ -22,7 +22,7 @@ export enum Class {
   Rogue = 'rogue',
 }
 
-export interface Character {
+export interface CharacterState  {
   race: Race;
   class: Class;
   head?: Item;

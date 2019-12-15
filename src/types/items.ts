@@ -1,4 +1,4 @@
-import {Phase} from "./game";
+import { Phase } from './game';
 
 export enum ItemSlot {
   Head = 'head',
@@ -84,4 +84,36 @@ export interface Weapon extends Item {
   maxHit: number;
   minHit: number;
   speed: number;
+}
+
+export interface SelectItem {
+  label: string;
+  value: string | number;
+}
+
+export interface ItemsState {
+  heads: SelectItem[];
+  necks: SelectItem[];
+  shoulders: SelectItem[];
+  backs: SelectItem[];
+  chests: SelectItem[];
+  wrists: SelectItem[];
+  hands: SelectItem[];
+  waists: SelectItem[];
+  legs: SelectItem[];
+  feet: SelectItem[];
+  rings: SelectItem[];
+  trinkets: SelectItem[];
+  axes: SelectItem[];
+  bows: SelectItem[];
+  crossbows: SelectItem[];
+  daggers: SelectItem[];
+  fists: SelectItem[];
+  guns: SelectItem[];
+  maces: SelectItem[];
+  polearms: SelectItem[];
+  swords: SelectItem[];
+  twoHandAxes: SelectItem[];
+  twoHandMaces: SelectItem[];
+  twoHandSwords: SelectItem[];
 }

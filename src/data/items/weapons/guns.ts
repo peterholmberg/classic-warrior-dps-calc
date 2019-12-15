@@ -1,4 +1,4 @@
-import { ItemSlot, Weapon, WeaponType } from '../../types/items';
+import { ItemSlot, Weapon, WeaponType } from '../../../types/items';
 
 export const guns = (): Weapon[] => {
   return [

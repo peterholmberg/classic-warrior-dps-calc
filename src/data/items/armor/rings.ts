@@ -1,4 +1,4 @@
-import { ItemSlot } from '../../types/items';
+import { ItemSlot } from '../../../types/items';
 
 export const rings = () => {
   return [
@@ -6,39 +6,39 @@ export const rings = () => {
       name: "Archimtiros' Ring of Reckoning",
       itemSlot: ItemSlot.Ring,
       stamina: 28,
-      Agility: 14,
+      agility: 14,
     },
     {
       name: 'Band of Accuria',
       itemSlot: ItemSlot.Ring,
       hit: 2,
       stamina: 10,
-      Agility: 16,
+      agility: 16,
     },
     {
       name: 'Band of Earthen Might',
       itemSlot: ItemSlot.Ring,
       crit: 1,
       hit: 1,
-      Strength: 6,
+      strength: 6,
     },
     {
       name: 'Band of Jin',
       itemSlot: ItemSlot.Ring,
       hit: 1,
       stamina: 8,
-      Agility: 14,
+      agility: 14,
     },
     {
       name: 'Band of Reanimation',
       itemSlot: ItemSlot.Ring,
       stamina: 22,
-      Agility: 23,
+      agility: 23,
     },
     {
       name: 'Band of the Ogre King',
       itemSlot: ItemSlot.Ring,
-      Strength: 14,
+      strength: 14,
       stamina: 13,
     },
     {
@@ -63,9 +63,9 @@ export const rings = () => {
     {
       name: 'Circle of Applied Force',
       itemSlot: ItemSlot.Ring,
-      Strength: 12,
+      strength: 12,
       stamina: 9,
-      Agility: 22,
+      agility: 22,
     },
     {
       name: "Don Julio's Band",
@@ -79,7 +79,7 @@ export const rings = () => {
       name: "Magni's Will",
       itemSlot: ItemSlot.Ring,
       crit: 1,
-      Strength: 6,
+      strength: 6,
       stamina: 7,
     },
     {
@@ -112,15 +112,15 @@ export const rings = () => {
     {
       name: "Protector's Band",
       itemSlot: ItemSlot.Ring,
-      Strength: 12,
+      strength: 12,
       stamina: 8,
-      Agility: 11,
+      agility: 11,
     },
     {
       name: 'Quick Strike Ring',
       itemSlot: ItemSlot.Ring,
       crit: 1,
-      Strength: 5,
+      strength: 5,
       stamina: 8,
       attackPower: 30,
     },
@@ -128,7 +128,7 @@ export const rings = () => {
       name: "Ring of Emperor Vek'lor",
       itemSlot: ItemSlot.Ring,
       stamina: 18,
-      Agility: 12,
+      agility: 12,
       defense: 9,
       armor: 100,
     },
@@ -143,7 +143,7 @@ export const rings = () => {
       name: 'Ring of the Godslayer',
       itemSlot: ItemSlot.Ring,
       stamina: 17,
-      Agility: 27,
+      agility: 27,
     },
     {
       name: 'Ring of the Qiraji Fury',
@@ -176,7 +176,7 @@ export const rings = () => {
       name: 'Signet of Unyielding Strength',
       itemSlot: ItemSlot.Ring,
       crit: 1,
-      Strength: 11,
+      strength: 11,
       stamina: 14,
     },
     {
@@ -184,13 +184,13 @@ export const rings = () => {
       itemSlot: ItemSlot.Ring,
       hit: 1,
       stamina: 13,
-      Agility: 24,
+      agility: 24,
     },
     {
       name: 'Tarnished Elven Ring',
       itemSlot: ItemSlot.Ring,
       hit: 1,
-      Agility: 15,
+      agility: 15,
     },
   ];
 };

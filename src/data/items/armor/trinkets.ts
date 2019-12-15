@@ -1,5 +1,5 @@
 // TODD: calculate proc dps
-import { Item, ItemSlot } from '../../types/items';
+import { Item, ItemSlot } from '../../../types/items';
 
 export const trinkets = (): Item[] => {
   return [

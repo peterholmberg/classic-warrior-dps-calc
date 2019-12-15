@@ -2,7 +2,7 @@ import React, { FC, SyntheticEvent } from 'react';
 
 interface Props {
   options: { label: string; value: string | number }[];
-  value: string | number;
+  value?: string | number;
   onChange: (event: SyntheticEvent<HTMLSelectElement>) => void;
 }
 

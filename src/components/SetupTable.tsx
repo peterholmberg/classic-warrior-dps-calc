@@ -1,9 +1,25 @@
-import React, { PureComponent } from 'react';
+import React, { PureComponent, SyntheticEvent } from 'react';
+import { connect } from 'react-redux';
+import { Select } from './Select';
+import { StoreState } from '../types/store';
+import { Item, ItemsState } from '../types/items';
 
-interface Props {}
+interface Props extends ItemsState {
+  head?: Item;
+}
 
-export class StatsTable extends PureComponent<Props> {
+export class SetupTable extends PureComponent<Props> {
+  handleItemChange = (event: SyntheticEvent<HTMLSelectElement>) => {
+    console.log('changed to', event.currentTarget.value);
+  };
+
   render() {
+    const { heads, head } = this.props;
+    console.log('heads', heads);
+    console.log('head', head);
+
+    console.log(this.props);
+
     return (
       <>
         <h2>Your gear</h2>
@@ -14,21 +30,28 @@ export class StatsTable extends PureComponent<Props> {
               <th>Name</th>
               <th>Enchant</th>
               <th>Weapon type</th>
-              <th>crit</th>
-              <th>hit</th>
-              <th>Str</th>
-              <th>Stam</th>
-              <th>Agi</th>
-              <th>Ap</th>
-              <th>dodge</th>
-              <th>parry</th>
-              <th>Def</th>
-              <th>AC</th>
+              <th>Crit</th>
+              <th>Hit</th>
+              <th>Strength</th>
+              <th>Stamina</th>
+              <th>Agility</th>
+              <th>Attack Power</th>
+              <th>Dodge</th>
+              <th>Parry</th>
+              <th>Defense</th>
+              <th>Armor</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>Head</td>
+              <td>
+                <Select
+                  options={heads}
+                  value={head && head.name}
+                  onChange={this.handleItemChange}
+                />
+              </td>
             </tr>
             <tr>
               <td>Neck</td>
@@ -81,3 +104,13 @@ export class StatsTable extends PureComponent<Props> {
     );
   }
 }
+
+const mapStateToProps = (state: StoreState) => {
+  console.log('map state to props');
+  return {
+    ...state.character,
+    ...state.items,
+  };
+};
+
+export default connect(mapStateToProps)(SetupTable);
