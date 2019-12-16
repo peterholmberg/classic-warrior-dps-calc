@@ -8,6 +8,8 @@ export const backs = (): Item[] => {
       strength: 6,
       agility: 14,
       armor: 38,
+      phase: 1,
+      wowheadId: 11626,
     },
     {
       name: 'Cape of the Black Baron',
@@ -15,6 +17,9 @@ export const backs = (): Item[] => {
       agility: 15,
       attackPower: 20,
       armor: 45,
+      phase: 1,
+      wowheadId: 13340,
+      
     },
     {
       name: 'Cloak of Concentrated Hatred',
@@ -24,6 +29,8 @@ export const backs = (): Item[] => {
       stamina: 15,
       agility: 16,
       armor: 56,
+      phase: 5,
+      wowheadId: 21701,
     },
     {
       name: 'Cloak of Draconic Might',
@@ -32,6 +39,8 @@ export const backs = (): Item[] => {
       stamina: 4,
       agility: 16,
       armor: 54,
+      phase: 3,
+      wowheadID: 19436,
     },
     {
       name: 'Cloak of Firemaw',
@@ -39,6 +48,8 @@ export const backs = (): Item[] => {
       stamina: 12,
       attackPower: 50,
       armor: 57,
+      phase: 3,
+      wowheadId: 19398,
     },
     {
       name: 'Cloak of the Fallen God',
@@ -47,6 +58,8 @@ export const backs = (): Item[] => {
       stamina: 15,
       agility: 26,
       armor: 66,
+      phase: 5,
+      wowheadId: 21710,
     },
     {
       name: 'Cloak of the Golden Hive',
@@ -56,6 +69,8 @@ export const backs = (): Item[] => {
       agility: 10,
       defense: 6,
       armor: 59,
+      phase: 5,
+      wowheadId: 21621,
     },
     {
       name: 'Cloak of the Honor Guard',
@@ -64,6 +79,8 @@ export const backs = (): Item[] => {
       agility: 5,
       attackPower: 34,
       armor: 50,
+      phase: 4,
+      wowheadId: 20073,
     },
     {
       name: 'Cloak of the Scourge',
@@ -72,6 +89,8 @@ export const backs = (): Item[] => {
       stamina: 23,
       attackPower: 30,
       armor: 63,
+      phase: 6,
+      wowheadId: 23030
     },
     {
       name: 'Cloak of the Shrouded Mists',
@@ -79,6 +98,8 @@ export const backs = (): Item[] => {
       stamina: 12,
       agility: 22,
       armor: 57,
+      phase: 1,
+      wowheadId: 17102
     },
     {
       name: "Dragon's Blood Cape",
@@ -86,6 +107,8 @@ export const backs = (): Item[] => {
       strength: 9,
       stamina: 22,
       armor: 116,
+      phase: 1,
+      wowheadId: 17107,
     },
     {
       name: 'Drape of Unyielding strength',
@@ -95,6 +118,8 @@ export const backs = (): Item[] => {
       stamina: 9,
       agility: 9,
       armor: 52,
+      phase: 5,
+      wowheadId: 21394
     },
     {
       name: 'Earthweave Cloak',
@@ -102,6 +127,8 @@ export const backs = (): Item[] => {
       hit: 1,
       agility: 15,
       armor: 44,
+      phase: 5,
+      wowheadId: 21187
     },
     {
       name: "Eskhandar's Pelt",
@@ -109,12 +136,16 @@ export const backs = (): Item[] => {
       crit: 1,
       stamina: 20,
       armor: 51,
+      phase: 1.5,
+      wowheadId: 18204,
     },
     {
       name: 'Onyxia Scale Cloak',
       itemSlot: ItemSlot.Back,
       stamina: 7,
       armor: 43,
+      phase: 1,
+      wowheadId: 15138,
     },
     {
       name: 'Phantasmal Cloak',
@@ -122,6 +153,8 @@ export const backs = (): Item[] => {
       strength: 12,
       stamina: 11,
       armor: 114,
+      phase: 1,
+      wowheadId: 18689,
     },
     {
       name: 'Puissant Cape',
@@ -130,6 +163,8 @@ export const backs = (): Item[] => {
       stamina: 12,
       attackPower: 40,
       armor: 54,
+      phase: 1.5,
+      wowheadId: 18541,
     },
     {
       name: 'Sandstorm Cloak',
@@ -139,6 +174,8 @@ export const backs = (): Item[] => {
       dodge: 1,
       defense: 6,
       armor: 135,
+      phase: 5,
+      wowheadId: 21456
     },
     {
       name: 'Shroud of Dominion',
@@ -147,6 +184,8 @@ export const backs = (): Item[] => {
       stamina: 11,
       attackPower: 50,
       armor: 68,
+      phase: 6,
+      wowheadId: 23045,
     },
     {
       name: 'Stoneskin Gargoyle Cape',
@@ -155,6 +194,8 @@ export const backs = (): Item[] => {
       stamina: 14,
       agility: 8,
       armor: 43,
+      phase: 1,
+      wowheadId: 13397
     },
     {
       name: "Stormpike Soldier's Cloak",
@@ -162,6 +203,9 @@ export const backs = (): Item[] => {
       stamina: 11,
       attackPower: 24,
       armor: 43,
+      phase: 2.5,
+      wowheadId: 19084
+      
     },
     {
       name: 'Zulian Tigerhide Cloak',
@@ -170,6 +214,8 @@ export const backs = (): Item[] => {
       stamina: 10,
       agility: 13,
       armor: 48,
+      phase: 4,
+      wowheadId: 19907
     },
     {
       name: 'Windshear Cape',
@@ -178,6 +224,8 @@ export const backs = (): Item[] => {
       stamina: 14,
       agility: 15,
       armor: 50,
+      phase: 5,
+      wowheadId: 20691
     },
   ];
 };
