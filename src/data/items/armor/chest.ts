@@ -1,4 +1,4 @@
-import { Item, ItemSlot } from '../../../types/items';
+import { Item, ItemQuality, ItemSlot } from '../../../types/items';
 
 export const chests = (): Item[] => {
   return [
@@ -8,6 +8,7 @@ export const chests = (): Item[] => {
       stamina: 8,
       attackPower: 50,
       armor: 344,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Bloodsoul Breastplate',
