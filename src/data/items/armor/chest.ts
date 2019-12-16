@@ -9,6 +9,8 @@ export const chests = (): Item[] => {
       attackPower: 50,
       armor: 344,
       itemQuality: ItemQuality.Rare,
+      phase: 1,
+      wowHeadId: 15050,
     },
     {
       name: 'Bloodsoul Breastplate',
@@ -17,7 +19,10 @@ export const chests = (): Item[] => {
       stamina: 13,
       agility: 9,
       armor: 381,
+
       itemQuality: ItemQuality.Rare,
+      phase: 1,
+      wowHeadId: 19690,
     },
     {
       name: 'Breastplate of Annihilation',
