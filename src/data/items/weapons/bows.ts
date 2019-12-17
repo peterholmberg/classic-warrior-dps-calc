@@ -1,4 +1,9 @@
-import { ItemSlot, Weapon, WeaponType } from '../../../types/items';
+import {
+  ItemQuality,
+  ItemSlot,
+  Weapon,
+  WeaponType,
+} from '../../../types/items';
 
 export const bows = (): Weapon[] => {
   return [
@@ -13,6 +18,7 @@ export const bows = (): Weapon[] => {
       itemSlot: ItemSlot.Ranged,
       phase: 1,
       wowHeadId: 18680,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Bow of Taut Sinew',
@@ -28,6 +34,7 @@ export const bows = (): Weapon[] => {
       weaponType: WeaponType.Bows,
       phase: 5,
       wowHeadId: 21478,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Gorewood Bow',
@@ -42,6 +49,7 @@ export const bows = (): Weapon[] => {
       weaponType: WeaponType.Bows,
       phase: 1,
       wowHeadId: 16996,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Heartstriker',
@@ -55,6 +63,7 @@ export const bows = (): Weapon[] => {
       weaponType: WeaponType.Bows,
       phase: 3,
       wowHeadId: 19350,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Hoodoo Hunting Bow',
@@ -68,6 +77,7 @@ export const bows = (): Weapon[] => {
       weaponType: WeaponType.Bows,
       phase: 4,
       wowHeadId: 19993,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: "Huhuran's Stinger",
@@ -80,6 +90,7 @@ export const bows = (): Weapon[] => {
       weaponType: WeaponType.Bows,
       phase: 5,
       wowHeadId: 21616,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: "Malgen's Long Bow",
@@ -93,6 +104,7 @@ export const bows = (): Weapon[] => {
       weaponType: WeaponType.Bows,
       phase: 2.5,
       wowHeadId: 22318,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: "Mandokir's Sting",
@@ -106,6 +118,7 @@ export const bows = (): Weapon[] => {
       weaponType: WeaponType.Bows,
       phase: 4,
       wowHeadId: 20038,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Soulstring',
@@ -120,6 +133,7 @@ export const bows = (): Weapon[] => {
       weaponType: WeaponType.Bows,
       phase: 6,
       wowHeadId: 22811,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: "Outrunner's Bow",
@@ -133,6 +147,7 @@ export const bows = (): Weapon[] => {
       weaponType: WeaponType.Bows,
       phase: 2.5,
       wowHeadId: 19562,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Riphook',
@@ -145,6 +160,7 @@ export const bows = (): Weapon[] => {
       weaponType: WeaponType.Bows,
       phase: 1,
       wowHeadId: 12653,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: "Satyr's Bow",
@@ -158,6 +174,7 @@ export const bows = (): Weapon[] => {
       weaponType: WeaponType.Bows,
       phase: 2,
       wowHeadId: 18323,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: "Striker's Mark",
@@ -171,6 +188,7 @@ export const bows = (): Weapon[] => {
       weaponType: WeaponType.Bows,
       phase: 1,
       wowHeadId: 17069,
+      itemQuality: ItemQuality.Epic,
     },
   ];
 };

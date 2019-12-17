@@ -1,4 +1,4 @@
-import { Item, ItemSlot, WeaponType } from '../../../types/items';
+import { Item, ItemQuality, ItemSlot, WeaponType } from '../../../types/items';
 
 export const heads = (): Item[] => {
   return [
@@ -12,6 +12,7 @@ export const heads = (): Item[] => {
         value: 6,
         weaponType: [WeaponType.Daggers],
       },
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: "Conqueror's Crown",
@@ -21,6 +22,7 @@ export const heads = (): Item[] => {
       agility: 18,
       defense: 6,
       armor: 739,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Crown of Destruction',
@@ -29,6 +31,7 @@ export const heads = (): Item[] => {
       stamina: 23,
       attackPower: 44,
       armor: 392,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Dreadnaught Helm',
@@ -38,6 +41,7 @@ export const heads = (): Item[] => {
       dodge: 1,
       defense: 14,
       armor: 800,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: "Expert Goldminer's Helmet",
@@ -49,6 +53,7 @@ export const heads = (): Item[] => {
         value: 7,
         weaponType: [WeaponType.Axe],
       },
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Eye of Rend',
@@ -57,6 +62,7 @@ export const heads = (): Item[] => {
       strength: 13,
       stamina: 7,
       armor: 143,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Fury Visor',
@@ -65,6 +71,7 @@ export const heads = (): Item[] => {
       hit: 1,
       strength: 18,
       armor: 445,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Helm of Domination',
@@ -75,6 +82,7 @@ export const heads = (): Item[] => {
       parry: 1,
       defense: 7,
       armor: 661,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Helm of Endless Rage',
@@ -83,6 +91,7 @@ export const heads = (): Item[] => {
       stamina: 29,
       agility: 26,
       armor: 679,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Helm of Heroism',
@@ -91,6 +100,7 @@ export const heads = (): Item[] => {
       strength: 18,
       stamina: 32,
       armor: 556,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Helm of Might',
@@ -100,6 +110,7 @@ export const heads = (): Item[] => {
       dodge: 1,
       defense: 7,
       armor: 608,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Helm of the Executioner',
@@ -108,6 +119,7 @@ export const heads = (): Item[] => {
       strength: 14,
       stamina: 20,
       armor: 534,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Helm of Valor',
@@ -116,6 +128,7 @@ export const heads = (): Item[] => {
       stamina: 23,
       agility: 9,
       armor: 526,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Helm of Wrath',
@@ -124,6 +137,7 @@ export const heads = (): Item[] => {
       stamina: 40,
       defense: 11,
       armor: 696,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Lionheart Helm',
@@ -132,6 +146,7 @@ export const heads = (): Item[] => {
       hit: 2,
       strength: 18,
       armor: 565,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Mask of the Unforgiven',
@@ -140,6 +155,7 @@ export const heads = (): Item[] => {
       hit: 2,
       stamina: 12,
       armor: 123,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'R10 Plate Helm',
@@ -149,6 +165,7 @@ export const heads = (): Item[] => {
       strength: 21,
       stamina: 24,
       armor: 598,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'R13 Plate Helm',
@@ -157,14 +174,16 @@ export const heads = (): Item[] => {
       strength: 28,
       stamina: 34,
       armor: 719,
+      itemQuality: ItemQuality.Epic,
     },
     {
-      name: "Raginng Berserker's Helm",
+      name: "Raging Berserker's Helm",
       itemSlot: ItemSlot.Head,
       crit: 1,
       strength: 13,
       stamina: 8,
       armor: 213,
+      itemQuality: ItemQuality.Rare,
     },
   ];
 };

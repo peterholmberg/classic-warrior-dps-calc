@@ -1,4 +1,9 @@
-import { ItemSlot, Weapon, WeaponType } from '../../../types/items';
+import {
+  ItemQuality,
+  ItemSlot,
+  Weapon,
+  WeaponType,
+} from '../../../types/items';
 
 export const guns = (): Weapon[] => {
   return [
@@ -14,6 +19,7 @@ export const guns = (): Weapon[] => {
       itemSlot: ItemSlot.Ranged,
       phase: 1,
       wowHeadId: 17072,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Burstshot Harquebus',
@@ -27,6 +33,7 @@ export const guns = (): Weapon[] => {
       itemSlot: ItemSlot.Ranged,
       phase: 1,
       wowHeadId: 13248,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Crystal Slugthrower',
@@ -40,6 +47,7 @@ export const guns = (): Weapon[] => {
       itemSlot: ItemSlot.Ranged,
       phase: 5,
       wowHeadId: 20722,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Dragonbreath Hand Cannon',
@@ -53,6 +61,7 @@ export const guns = (): Weapon[] => {
       itemSlot: ItemSlot.Ranged,
       phase: 3,
       wowHeadId: 19368,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Gurubashi Dwarf Destroyer',
@@ -65,6 +74,7 @@ export const guns = (): Weapon[] => {
       itemSlot: ItemSlot.Ranged,
       phase: 4,
       wowHeadId: 19853,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Guttbuster',
@@ -78,6 +88,7 @@ export const guns = (): Weapon[] => {
       itemSlot: ItemSlot.Ranged,
       phase: 1,
       wowHeadId: 13139,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Larvae of the Great Worm',
@@ -91,6 +102,7 @@ export const guns = (): Weapon[] => {
       itemSlot: ItemSlot.Ranged,
       phase: 5,
       wowHeadId: 23557,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Silithid Husked Launcher',
@@ -104,6 +116,7 @@ export const guns = (): Weapon[] => {
       itemSlot: ItemSlot.Ranged,
       phase: 5,
       wowHeadId: 21800,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Toxin Injector',
@@ -117,6 +130,7 @@ export const guns = (): Weapon[] => {
       itemSlot: ItemSlot.Ranged,
       phase: 6,
       wowHeadId: 22810,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: "Willey's Portable Howitzer",
@@ -130,6 +144,7 @@ export const guns = (): Weapon[] => {
       itemSlot: ItemSlot.Ranged,
       phase: 1,
       wowHeadId: 13380,
+      itemQuality: ItemQuality.Rare,
     },
   ];
 };

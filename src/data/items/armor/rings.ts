@@ -1,12 +1,13 @@
-import { ItemSlot } from '../../../types/items';
+import { Item, ItemQuality, ItemSlot } from '../../../types/items';
 
-export const rings = () => {
+export const rings = (): Item[] => {
   return [
     {
       name: "Archimtiros' Ring of Reckoning",
       itemSlot: ItemSlot.Ring,
       stamina: 28,
       agility: 14,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Band of Accuria',
@@ -14,6 +15,7 @@ export const rings = () => {
       hit: 2,
       stamina: 10,
       agility: 16,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Band of Earthen Might',
@@ -21,6 +23,7 @@ export const rings = () => {
       crit: 1,
       hit: 1,
       strength: 6,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Band of Jin',
@@ -28,23 +31,26 @@ export const rings = () => {
       hit: 1,
       stamina: 8,
       agility: 14,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Band of Reanimation',
       itemSlot: ItemSlot.Ring,
-      stamina: 22,
-      agility: 23,
+      agility: 34,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Band of the Ogre King',
       itemSlot: ItemSlot.Ring,
       strength: 14,
       stamina: 13,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Band of the Penitent',
       itemSlot: ItemSlot.Ring,
       crit: 1,
+      itemQuality: ItemQuality.Uncommon,
     },
     {
       name: 'Band of Unnatural Forces',
@@ -52,6 +58,7 @@ export const rings = () => {
       crit: 1,
       hit: 1,
       attackPower: 52,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Blackstone Ring',
@@ -59,6 +66,7 @@ export const rings = () => {
       hit: 1,
       stamina: 6,
       attackPower: 20,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Circle of Applied Force',
@@ -66,6 +74,7 @@ export const rings = () => {
       strength: 12,
       stamina: 9,
       agility: 22,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: "Don Julio's Band",
@@ -74,6 +83,7 @@ export const rings = () => {
       hit: 1,
       stamina: 11,
       attackPower: 16,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: "Magni's Will",
@@ -81,6 +91,7 @@ export const rings = () => {
       crit: 1,
       strength: 6,
       stamina: 7,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: "Master Dragonslayer's Ring",
@@ -88,12 +99,14 @@ export const rings = () => {
       hit: 1,
       stamina: 14,
       attackPower: 48,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Might of Cenarius',
       itemSlot: ItemSlot.Ring,
       hit: 1,
       stamina: 8,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Naglering',
@@ -101,6 +114,7 @@ export const rings = () => {
       stamina: 10,
       defense: 5,
       armor: 50,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Painweaver Band',
@@ -108,6 +122,7 @@ export const rings = () => {
       crit: 1,
       stamina: 7,
       attackPower: 16,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: "Protector's Band",
@@ -115,6 +130,7 @@ export const rings = () => {
       strength: 12,
       stamina: 8,
       agility: 11,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Quick Strike Ring',
@@ -123,6 +139,7 @@ export const rings = () => {
       strength: 5,
       stamina: 8,
       attackPower: 30,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: "Ring of Emperor Vek'lor",
@@ -131,6 +148,7 @@ export const rings = () => {
       agility: 12,
       defense: 9,
       armor: 100,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Ring of Fury',
@@ -138,12 +156,14 @@ export const rings = () => {
       hit: 1,
       stamina: 9,
       attackPower: 30,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Ring of the Godslayer',
       itemSlot: ItemSlot.Ring,
       stamina: 17,
       agility: 27,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Ring of the Qiraji Fury',
@@ -151,6 +171,7 @@ export const rings = () => {
       crit: 1,
       stamina: 12,
       attackPower: 40,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Seal of Jin',
@@ -158,12 +179,14 @@ export const rings = () => {
       crit: 1,
       stamina: 8,
       attackPower: 20,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Seal of the Gurubashi Berserker',
       itemSlot: ItemSlot.Ring,
       stamina: 13,
       attackPower: 40,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Signet of the Fallen Defender',
@@ -171,6 +194,7 @@ export const rings = () => {
       hit: 1,
       stamina: 24,
       armor: 140,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Signet of Unyielding Strength',
@@ -178,6 +202,7 @@ export const rings = () => {
       crit: 1,
       strength: 11,
       stamina: 14,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Signet Ring of the Bronze Dragonflight',
@@ -185,12 +210,14 @@ export const rings = () => {
       hit: 1,
       stamina: 13,
       agility: 24,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Tarnished Elven Ring',
       itemSlot: ItemSlot.Ring,
       hit: 1,
       agility: 15,
+      itemQuality: ItemQuality.Rare,
     },
   ];
 };

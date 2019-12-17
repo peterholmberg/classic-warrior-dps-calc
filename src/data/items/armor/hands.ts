@@ -1,4 +1,4 @@
-import { Item, ItemSlot, WeaponType } from '../../../types/items';
+import { Item, ItemQuality, ItemSlot, WeaponType } from '../../../types/items';
 
 export const hands = (): Item[] => {
   return [
@@ -13,6 +13,7 @@ export const hands = (): Item[] => {
         value: 5,
         weaponType: [WeaponType.Daggers],
       },
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Devilsaur Gauntlets',
@@ -21,6 +22,7 @@ export const hands = (): Item[] => {
       stamina: 9,
       attackPower: 28,
       armor: 103,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: "Edgemaster's Handguards",
@@ -30,6 +32,7 @@ export const hands = (): Item[] => {
         value: 7,
         weaponType: [WeaponType.Axe, WeaponType.Daggers, WeaponType.Sword],
       },
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Flameguard Gauntlets',
@@ -38,6 +41,7 @@ export const hands = (): Item[] => {
       stamina: 13,
       attackPower: 54,
       armor: 488,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Gargoyle Slashers',
@@ -47,6 +51,7 @@ export const hands = (): Item[] => {
       stamina: 12,
       agility: 5,
       armor: 107,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Gauntlets of Annihilation',
@@ -56,6 +61,7 @@ export const hands = (): Item[] => {
       strength: 35,
       stamina: 15,
       armor: 615,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Gauntlets of Heroism',
@@ -64,6 +70,7 @@ export const hands = (): Item[] => {
       strength: 18,
       stamina: 12,
       armor: 393,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Gauntlets of Might',
@@ -73,6 +80,7 @@ export const hands = (): Item[] => {
       stamina: 17,
       defense: 5,
       armor: 468,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Gauntlets of Steadfast Determination',
@@ -82,6 +90,7 @@ export const hands = (): Item[] => {
       agility: 18,
       defense: 9,
       armor: 535,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Gauntlets of the Immovable',
@@ -91,6 +100,7 @@ export const hands = (): Item[] => {
       parry: 1,
       defense: 5,
       armor: 482,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Gauntlets of Valor',
@@ -99,6 +109,7 @@ export const hands = (): Item[] => {
       stamina: 10,
       agility: 3,
       armor: 386,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Gauntlets of Wrath',
@@ -108,6 +119,7 @@ export const hands = (): Item[] => {
       parry: 1,
       defense: 7,
       armor: 535,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Gloves of Enforcement',
@@ -117,6 +129,7 @@ export const hands = (): Item[] => {
       stamina: 6,
       agility: 20,
       armor: 140,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'R12 Gauntlets',
@@ -125,6 +138,7 @@ export const hands = (): Item[] => {
       strength: 20,
       stamina: 23,
       armor: 532,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'R7 Gauntlets',
@@ -132,6 +146,7 @@ export const hands = (): Item[] => {
       strength: 17,
       stamina: 17,
       armor: 429,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Reiver Claws',
@@ -140,6 +155,7 @@ export const hands = (): Item[] => {
       strength: 9,
       stamina: 15,
       armor: 398,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Sacrificial Gauntlets',
@@ -148,6 +164,7 @@ export const hands = (): Item[] => {
       hit: 1,
       strength: 19,
       armor: 441,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Stronghold Gauntlets',
@@ -156,6 +173,7 @@ export const hands = (): Item[] => {
       stamina: 12,
       parry: 1,
       armor: 441,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: "Voone's Vice Grips",
@@ -164,6 +182,7 @@ export const hands = (): Item[] => {
       stamina: 6,
       agility: 9,
       armor: 221,
+      itemQuality: ItemQuality.Rare,
     },
   ];
 };

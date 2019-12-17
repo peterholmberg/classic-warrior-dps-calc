@@ -1,4 +1,9 @@
-import { ItemSlot, Weapon, WeaponType } from '../../../types/items';
+import {
+  ItemQuality,
+  ItemSlot,
+  Weapon,
+  WeaponType,
+} from '../../../types/items';
 
 export const swords = (): Weapon[] => {
   return [
@@ -15,6 +20,7 @@ export const swords = (): Weapon[] => {
       itemSlot: ItemSlot.OneHand,
       phase: 5,
       wowHeadId: 21650,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Blackguard',
@@ -28,6 +34,7 @@ export const swords = (): Weapon[] => {
       itemSlot: ItemSlot.OneHand,
       phase: 1,
       wowHeadId: 19168,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: "Bloodlord's Defender",
@@ -42,6 +49,7 @@ export const swords = (): Weapon[] => {
       itemSlot: ItemSlot.MainHand,
       phase: 4,
       wowHeadId: 19867,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Brutality Blade',
@@ -56,6 +64,7 @@ export const swords = (): Weapon[] => {
       itemSlot: ItemSlot.OneHand,
       phase: 1,
       wowHeadId: 18832,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: "Cho'Rush's Blade",
@@ -68,6 +77,7 @@ export const swords = (): Weapon[] => {
       itemSlot: ItemSlot.OneHand,
       phase: 2,
       wowHeadId: 18484,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Chromatically Tempered Sword',
@@ -82,6 +92,7 @@ export const swords = (): Weapon[] => {
       itemSlot: ItemSlot.OneHand,
       phase: 3,
       wowHeadId: 19352,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Cold Forged Blade',
@@ -95,6 +106,7 @@ export const swords = (): Weapon[] => {
       itemSlot: ItemSlot.OneHand,
       phase: 2.5,
       wowHeadId: 19110,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: "Dal'Rend's Sacred Charge",
@@ -108,6 +120,7 @@ export const swords = (): Weapon[] => {
       itemSlot: ItemSlot.MainHand,
       phase: 1,
       wowHeadId: 12940,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: "Dal'Rend's Tribal Guardian",
@@ -121,6 +134,7 @@ export const swords = (): Weapon[] => {
       itemSlot: ItemSlot.OffHand,
       phase: 1,
       wowHeadId: 12939,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Dark Iron Reaver',
@@ -133,6 +147,7 @@ export const swords = (): Weapon[] => {
       itemSlot: ItemSlot.MainHand,
       phase: 1,
       wowHeadId: 17015,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Fiery Retributer',
@@ -147,6 +162,7 @@ export const swords = (): Weapon[] => {
       itemSlot: ItemSlot.OneHand,
       phase: 4,
       wowHeadId: 19968,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Gressil, Dawn of Ruin',
@@ -160,6 +176,7 @@ export const swords = (): Weapon[] => {
       itemSlot: ItemSlot.OneHand,
       phase: 6,
       wowHeadId: 23054,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Iblis, Blade of the Fallen Seraph',
@@ -174,6 +191,7 @@ export const swords = (): Weapon[] => {
       itemSlot: ItemSlot.OneHand,
       phase: 6,
       wowHeadId: 23014,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Krol Blade',
@@ -188,6 +206,7 @@ export const swords = (): Weapon[] => {
       itemSlot: ItemSlot.MainHand,
       phase: 1,
       wowHeadId: 2244,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: "Lord General's Sword",
@@ -199,6 +218,7 @@ export const swords = (): Weapon[] => {
       itemSlot: ItemSlot.MainHand,
       phase: 1,
       wowHeadId: 11817,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Maladath',
@@ -215,6 +235,7 @@ export const swords = (): Weapon[] => {
       itemSlot: ItemSlot.OneHand,
       phase: 3,
       wowHeadId: 19351,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: "Mirah's song",
@@ -228,6 +249,7 @@ export const swords = (): Weapon[] => {
       itemSlot: ItemSlot.OneHand,
       phase: 1,
       wowHeadId: 15806,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Nightmare Blade',
@@ -242,6 +264,7 @@ export const swords = (): Weapon[] => {
       itemSlot: ItemSlot.OneHand,
       phase: 4,
       wowHeadId: 20577,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: "Quel'Serrar",
@@ -254,6 +277,7 @@ export const swords = (): Weapon[] => {
       itemSlot: ItemSlot.MainHand,
       phase: 2,
       wowHeadId: 18348,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'R14 Longsword',
@@ -268,6 +292,7 @@ export const swords = (): Weapon[] => {
       itemSlot: ItemSlot.OneHand,
       phase: 2.5,
       wowHeadId: 16345,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'R14 Swift Blade',
@@ -282,6 +307,7 @@ export const swords = (): Weapon[] => {
       itemSlot: ItemSlot.OneHand,
       phase: 2.5,
       wowHeadId: 23467,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: "Ravencrest's Legacy",
@@ -296,6 +322,7 @@ export const swords = (): Weapon[] => {
       itemSlot: ItemSlot.OneHand,
       phase: 5,
       wowHeadId: 21520,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Ravenholdt Slicer',
@@ -309,6 +336,7 @@ export const swords = (): Weapon[] => {
       itemSlot: ItemSlot.OneHand,
       phase: 5,
       wowHeadId: 22378,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Skullforge Reaver',
@@ -320,6 +348,7 @@ export const swords = (): Weapon[] => {
       itemSlot: ItemSlot.OneHand,
       phase: 1,
       wowHeadId: 13361,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Sword of Zeal',
@@ -331,6 +360,7 @@ export const swords = (): Weapon[] => {
       itemSlot: ItemSlot.MainHand,
       phase: 1,
       wowHeadId: 6622,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Zulian Slicer',
@@ -343,6 +373,7 @@ export const swords = (): Weapon[] => {
       itemSlot: ItemSlot.OneHand,
       phase: 4,
       wowHeadId: 19901,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: "Teebu's Blazing Longsword",
@@ -354,6 +385,7 @@ export const swords = (): Weapon[] => {
       itemSlot: ItemSlot.MainHand,
       phase: 1,
       wowHeadId: 1728,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'The Hungering Cold',
@@ -371,6 +403,7 @@ export const swords = (): Weapon[] => {
       itemSlot: ItemSlot.OneHand,
       phase: 6,
       wowHeadId: 23577,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Thrash Blade',
@@ -382,6 +415,7 @@ export const swords = (): Weapon[] => {
       itemSlot: ItemSlot.OneHand,
       phase: 1,
       wowHeadId: 17705,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Thunderfury',
@@ -395,6 +429,7 @@ export const swords = (): Weapon[] => {
       itemSlot: ItemSlot.OneHand,
       phase: 3,
       wowHeadId: 19019,
+      itemQuality: ItemQuality.Legendary,
     },
     {
       name: 'Warblade of the Hakkari',
@@ -408,6 +443,7 @@ export const swords = (): Weapon[] => {
       itemSlot: ItemSlot.MainHand,
       phase: 4,
       wowHeadId: 19865,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Warblade of the Hakkari',
@@ -420,6 +456,7 @@ export const swords = (): Weapon[] => {
       itemSlot: ItemSlot.OffHand,
       phase: 4,
       wowHeadId: 19866,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: "Widow's Remorse",
@@ -434,6 +471,7 @@ export const swords = (): Weapon[] => {
       itemSlot: ItemSlot.OneHand,
       phase: 6,
       wowHeadId: 22806,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: "Vis'kag the Bloodletter",
@@ -445,6 +483,7 @@ export const swords = (): Weapon[] => {
       itemSlot: ItemSlot.OneHand,
       phase: 1,
       wowHeadId: 17075,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Protectors sword',
@@ -458,6 +497,7 @@ export const swords = (): Weapon[] => {
       dps: 41.48,
       phase: 2.5,
       wowHeadId: 19554,
+      itemQuality: ItemQuality.Rare,
     },
   ];
 };

@@ -1,4 +1,4 @@
-import { Item, ItemSlot } from '../../../types/items';
+import { Item, ItemQuality, ItemSlot } from '../../../types/items';
 
 export const shoulders = (): Item[] => {
   return [
@@ -10,6 +10,7 @@ export const shoulders = (): Item[] => {
       stamina: 13,
       agility: 13,
       armor: 530,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Arathi Plate Spaulders',
@@ -18,6 +19,7 @@ export const shoulders = (): Item[] => {
       stamina: 20,
       agility: 17,
       armor: 553,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Black Dragonscale Shoulders',
@@ -25,6 +27,7 @@ export const shoulders = (): Item[] => {
       stamina: 9,
       attackPower: 40,
       armor: 266,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Bloodsoaked Pauldrons',
@@ -34,6 +37,7 @@ export const shoulders = (): Item[] => {
       agility: 11,
       defense: 3,
       armor: 552,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: "Conqueror's Spaulders",
@@ -44,6 +48,7 @@ export const shoulders = (): Item[] => {
       agility: 16,
       defense: 4,
       armor: 659,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Drake Talon Pauldrons',
@@ -53,6 +58,7 @@ export const shoulders = (): Item[] => {
       agility: 20,
       dodge: 1,
       armor: 634,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Dreadnaught Pauldrons',
@@ -62,6 +68,7 @@ export const shoulders = (): Item[] => {
       stamina: 29,
       defense: 9,
       armor: 722,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Pauldrons of Might',
@@ -70,6 +77,7 @@ export const shoulders = (): Item[] => {
       stamina: 22,
       defense: 5,
       armor: 562,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Pauldrons of the Unrelenting',
@@ -79,6 +87,7 @@ export const shoulders = (): Item[] => {
       dodge: 1,
       defense: 9,
       armor: 650,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Pauldrons of Wrath',
@@ -87,6 +96,7 @@ export const shoulders = (): Item[] => {
       stamina: 27,
       defense: 7,
       armor: 642,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Polished Obsidian Pauldrons',
@@ -95,6 +105,7 @@ export const shoulders = (): Item[] => {
       stamina: 17,
       defense: 7,
       armor: 530,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'R10 Plate Shoulders',
@@ -103,6 +114,7 @@ export const shoulders = (): Item[] => {
       strength: 17,
       stamina: 18,
       armor: 552,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'R13 Plate Shoulders',
@@ -112,6 +124,7 @@ export const shoulders = (): Item[] => {
       stamina: 23,
       agility: 16,
       armor: 626,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Razorsteel Shoulders',
@@ -121,6 +134,7 @@ export const shoulders = (): Item[] => {
       stamina: 9,
       agility: 10,
       armor: 410,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Spaulders of Heroism',
@@ -129,6 +143,7 @@ export const shoulders = (): Item[] => {
       stamina: 18,
       agility: 12,
       armor: 507,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Spaulders of Valor',
@@ -137,6 +152,7 @@ export const shoulders = (): Item[] => {
       stamina: 17,
       agility: 9,
       armor: 470,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Truestrike Shoulders',
@@ -144,12 +160,14 @@ export const shoulders = (): Item[] => {
       hit: 2,
       attackPower: 24,
       armor: 129,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Wyrmhide Spaulders',
       itemSlot: ItemSlot.Shoulder,
       hit: 2,
       armor: 113,
+      itemQuality: ItemQuality.Uncommon,
     },
   ];
 };

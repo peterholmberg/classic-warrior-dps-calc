@@ -1,4 +1,9 @@
-import { ItemSlot, Weapon, WeaponType } from '../../../types/items';
+import {
+  ItemQuality,
+  ItemSlot,
+  Weapon,
+  WeaponType,
+} from '../../../types/items';
 
 export const crossbows = (): Weapon[] => {
   return [
@@ -14,6 +19,7 @@ export const crossbows = (): Weapon[] => {
       itemSlot: ItemSlot.Ranged,
       phase: 1,
       wowHeadId: 12651,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Bloodseeker',
@@ -27,6 +33,7 @@ export const crossbows = (): Weapon[] => {
       itemSlot: ItemSlot.Ranged,
       phase: 2.5,
       wowHeadId: 19107,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Carapace Spine Crossbow',
@@ -40,6 +47,7 @@ export const crossbows = (): Weapon[] => {
       itemSlot: ItemSlot.Ranged,
       phase: 1,
       wowHeadId: 18738,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Crossbow of Imminent Doom',
@@ -55,6 +63,7 @@ export const crossbows = (): Weapon[] => {
       itemSlot: ItemSlot.Ranged,
       phase: 4,
       wowHeadId: 21459,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: "Fahrad's Reloading Repeater",
@@ -68,6 +77,7 @@ export const crossbows = (): Weapon[] => {
       itemSlot: ItemSlot.Ranged,
       phase: 5,
       wowHeadId: 22347,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Heartseeking Crossbow',
@@ -81,6 +91,7 @@ export const crossbows = (): Weapon[] => {
       itemSlot: ItemSlot.Ranged,
       phase: 1,
       wowHeadId: 13040,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Nerubian Slavemaker',
@@ -94,6 +105,7 @@ export const crossbows = (): Weapon[] => {
       itemSlot: ItemSlot.Ranged,
       phase: 6,
       wowHeadId: 22812,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Polished Ironwood Crossbow',
@@ -107,6 +119,7 @@ export const crossbows = (): Weapon[] => {
       itemSlot: ItemSlot.Ranged,
       phase: 4,
       wowHeadId: 20599,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Skull Splitting Crossbow',
@@ -120,6 +133,7 @@ export const crossbows = (): Weapon[] => {
       itemSlot: ItemSlot.Ranged,
       phase: 1,
       wowHeadId: 13039,
+      itemQuality: ItemQuality.Rare,
     },
   ];
 };

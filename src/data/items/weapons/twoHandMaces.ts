@@ -1,4 +1,9 @@
-import { ItemSlot, Weapon, WeaponType } from '../../../types/items';
+import {
+  ItemQuality,
+  ItemSlot,
+  Weapon,
+  WeaponType,
+} from '../../../types/items';
 
 export const twoHandMaces = (): Weapon[] => {
   return [
@@ -14,6 +19,7 @@ export const twoHandMaces = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 2,
       wowHeadId: 18420,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Crystal Spiked Maul',
@@ -27,6 +33,7 @@ export const twoHandMaces = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 1,
       wowHeadId: 20696,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Doomulus Prime',
@@ -41,6 +48,7 @@ export const twoHandMaces = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 5,
       wowHeadId: 22348,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Draconic Maul',
@@ -55,6 +63,7 @@ export const twoHandMaces = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 3,
       wowHeadId: 19358,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Earthshaker',
@@ -67,6 +76,7 @@ export const twoHandMaces = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 1,
       wowHeadId: 17073,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Fist of Omokk',
@@ -80,6 +90,7 @@ export const twoHandMaces = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 1,
       wowHeadId: 13167,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Hammer of the Titans',
@@ -92,6 +103,7 @@ export const twoHandMaces = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 1,
       wowHeadId: 12796,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'R14 Pulveriser',
@@ -106,6 +118,7 @@ export const twoHandMaces = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 2,
       wowHeadId: 18868,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: "Jeklik's Crusher",
@@ -117,6 +130,7 @@ export const twoHandMaces = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 4,
       wowHeadId: 19918,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Might of Menethil',
@@ -131,6 +145,7 @@ export const twoHandMaces = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 6,
       wowHeadId: 22798,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Seeping Willow',
@@ -142,6 +157,7 @@ export const twoHandMaces = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 1,
       wowHeadId: 12969,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Sulfuras, Hand of Ragnaros',
@@ -158,6 +174,7 @@ export const twoHandMaces = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 1,
       wowHeadId: 17182,
+      itemQuality: ItemQuality.Legendary,
     },
     {
       name: 'Sulfuron Hammer',
@@ -169,6 +186,7 @@ export const twoHandMaces = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 1,
       wowHeadId: 17193,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'The Unstoppable Force',
@@ -183,6 +201,7 @@ export const twoHandMaces = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 2.5,
       wowHeadId: 19323,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Manual Crowd Pummeler',
@@ -196,6 +215,7 @@ export const twoHandMaces = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 1,
       wowHeadId: 9449,
+      itemQuality: ItemQuality.Rare,
     },
   ];
 };

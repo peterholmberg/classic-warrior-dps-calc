@@ -1,5 +1,12 @@
 import { Phase } from './game';
 
+export enum ItemQuality {
+  Legendary = 'legendary',
+  Epic = 'epic',
+  Rare = 'rare',
+  Uncommon = 'uncommon',
+}
+
 export enum ItemSlot {
   Head = 'head',
   Neck = 'neck',
@@ -58,7 +65,7 @@ interface WeaponSkill {
 export interface Item {
   name: string;
   itemSlot: ItemSlot;
-  armorType?: ArmorType;
+  armorType?: ItemQuality;
   wowHeadId?: number;
   armor?: number;
   strength?: number;
@@ -76,6 +83,7 @@ export interface Item {
   weaponSkill?: WeaponSkill;
   proc?: number;
   phase?: Phase;
+  itemQuality: ItemQuality;
 }
 
 export interface Weapon extends Item {

@@ -1,6 +1,6 @@
-import { ItemSlot } from '../../../types/items';
+import { Item, ItemQuality, ItemSlot } from '../../../types/items';
 
-export const wrists = () => {
+export const wrists = (): Item[] => {
   return [
     {
       name: 'Abyssal Plate Vambraces',
@@ -9,6 +9,7 @@ export const wrists = () => {
       stamina: 11,
       agility: 12,
       armor: 309,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Battleborn Armbraces',
@@ -16,6 +17,7 @@ export const wrists = () => {
       crit: 1,
       hit: 1,
       armor: 287,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Berserker Bracers',
@@ -24,6 +26,7 @@ export const wrists = () => {
       stamina: 11,
       agility: 8,
       armor: 323,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Blackmist Armguards',
@@ -32,6 +35,7 @@ export const wrists = () => {
       strength: 5,
       stamina: 13,
       armor: 77,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Bracelets of Wrath',
@@ -39,6 +43,7 @@ export const wrists = () => {
       strength: 13,
       stamina: 27,
       armor: 375,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Bracers of Brutality',
@@ -47,6 +52,7 @@ export const wrists = () => {
       stamina: 9,
       agility: 12,
       armor: 356,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Bracers of Heroism',
@@ -56,6 +62,7 @@ export const wrists = () => {
       agility: 5,
       defense: 3,
       armor: 296,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Bracers of Might',
@@ -63,6 +70,7 @@ export const wrists = () => {
       strength: 11,
       stamina: 23,
       armor: 328,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Bracers of Valor',
@@ -71,6 +79,7 @@ export const wrists = () => {
       stamina: 14,
       agility: 3,
       armor: 261,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Deepfury Bracers',
@@ -79,6 +88,7 @@ export const wrists = () => {
       stamina: 4,
       agility: 15,
       armor: 69,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Deeprock Bracers',
@@ -87,6 +97,7 @@ export const wrists = () => {
       stamina: 8,
       agility: 10,
       armor: 309,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Gordok Bracers of Power',
@@ -94,6 +105,7 @@ export const wrists = () => {
       strength: 17,
       stamina: 7,
       armor: 287,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Hive Defiler Wristguards',
@@ -101,6 +113,7 @@ export const wrists = () => {
       strength: 23,
       agility: 18,
       armor: 384,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Qiraji Execution Bracers',
@@ -110,6 +123,7 @@ export const wrists = () => {
       stamina: 14,
       agility: 16,
       armor: 103,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Scaled Bracers of the Gorger',
@@ -118,6 +132,7 @@ export const wrists = () => {
       stamina: 8,
       agility: 15,
       armor: 87,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Slashclaw Bracers',
@@ -126,6 +141,7 @@ export const wrists = () => {
       stamina: 7,
       agility: 7,
       armor: 155,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: "Zandalar Vindicator's Armguards",
@@ -134,6 +150,7 @@ export const wrists = () => {
       stamina: 13,
       agility: 13,
       armor: 304,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Vambraces of the Sadist',
@@ -142,6 +159,7 @@ export const wrists = () => {
       strength: 6,
       stamina: 7,
       armor: 270,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Wristguards of Stability',
@@ -149,6 +167,7 @@ export const wrists = () => {
       strength: 24,
       stamina: 8,
       armor: 86,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Wristguards of True Flight',
@@ -157,6 +176,7 @@ export const wrists = () => {
       stamina: 11,
       agility: 19,
       armor: 198,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Wristguards of Vengeance',
@@ -165,6 +185,7 @@ export const wrists = () => {
       strength: 24,
       stamina: 10,
       armor: 407,
+      itemQuality: ItemQuality.Epic,
     },
   ];
 };

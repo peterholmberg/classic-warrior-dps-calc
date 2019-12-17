@@ -1,4 +1,9 @@
-import { ItemSlot, Weapon, WeaponType } from '../../../types/items';
+import {
+  ItemQuality,
+  ItemSlot,
+  Weapon,
+  WeaponType,
+} from '../../../types/items';
 
 export const maces = (): Weapon[] => {
   return [
@@ -18,6 +23,7 @@ export const maces = (): Weapon[] => {
       itemSlot: ItemSlot.OneHand,
       phase: 5,
       wowHeadId: 21837,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Blessed Qiraji War Hammer',
@@ -33,6 +39,7 @@ export const maces = (): Weapon[] => {
       itemSlot: ItemSlot.OneHand,
       phase: 5,
       wowHeadId: 21268,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Ebon Hand',
@@ -45,6 +52,7 @@ export const maces = (): Weapon[] => {
       itemSlot: ItemSlot.OneHand,
       phase: 1,
       wowHeadId: 19170,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Empyrean Demolisher',
@@ -56,6 +64,7 @@ export const maces = (): Weapon[] => {
       itemSlot: ItemSlot.MainHand,
       phase: 2,
       wowHeadId: 17112,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Ironfoe',
@@ -67,6 +76,7 @@ export const maces = (): Weapon[] => {
       itemSlot: ItemSlot.MainHand,
       phase: 1,
       wowHeadId: 11684,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Hammer of Bestial Fury',
@@ -81,6 +91,7 @@ export const maces = (): Weapon[] => {
       itemSlot: ItemSlot.MainHand,
       phase: 4,
       wowHeadId: 20580,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'R14 Hammer',
@@ -95,6 +106,7 @@ export const maces = (): Weapon[] => {
       itemSlot: ItemSlot.OneHand,
       phase: 2,
       wowHeadId: 18866,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Mass of McGowan',
@@ -108,6 +120,7 @@ export const maces = (): Weapon[] => {
       itemSlot: ItemSlot.MainHand,
       phase: 1,
       wowHeadId: 13006,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Misplaced Servo Arm',
@@ -119,6 +132,7 @@ export const maces = (): Weapon[] => {
       itemSlot: ItemSlot.OneHand,
       phase: 6,
       wowHeadId: 23221,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Persuader',
@@ -132,6 +146,7 @@ export const maces = (): Weapon[] => {
       itemSlot: ItemSlot.MainHand,
       phase: 1,
       wowHeadId: 22384,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Sand Polished Hammer',
@@ -146,6 +161,7 @@ export const maces = (): Weapon[] => {
       itemSlot: ItemSlot.OneHand,
       phase: 5,
       wowHeadId: 21715,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Sceptre of Smiting',
@@ -161,6 +177,7 @@ export const maces = (): Weapon[] => {
       itemSlot: ItemSlot.OneHand,
       phase: 4,
       wowHeadId: 19908,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Spineshatter',
@@ -175,6 +192,7 @@ export const maces = (): Weapon[] => {
       itemSlot: ItemSlot.MainHand,
       phase: 3,
       wowHeadId: 19335,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Stormstrike Hammer',
@@ -187,6 +205,7 @@ export const maces = (): Weapon[] => {
       itemSlot: ItemSlot.OneHand,
       phase: 2.5,
       wowHeadId: 19104,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'The Castigator',
@@ -202,6 +221,7 @@ export const maces = (): Weapon[] => {
       itemSlot: ItemSlot.OneHand,
       phase: 6,
       wowHeadId: 22808,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Timeworn Mace',
@@ -216,6 +236,7 @@ export const maces = (): Weapon[] => {
       itemSlot: ItemSlot.OneHand,
       phase: 2,
       wowHeadId: 18376,
+      itemQuality: ItemQuality.Rare,
     },
   ];
 };

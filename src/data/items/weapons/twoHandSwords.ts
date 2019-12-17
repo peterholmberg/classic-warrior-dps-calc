@@ -1,4 +1,9 @@
-import { ItemSlot, Weapon, WeaponType } from '../../../types/items';
+import {
+  ItemQuality,
+  ItemSlot,
+  Weapon,
+  WeaponType,
+} from '../../../types/items';
 
 export const twoHandSwords = (): Weapon[] => {
   return [
@@ -14,6 +19,7 @@ export const twoHandSwords = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 3,
       wowHeadId: 19364,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Barbarous Blade',
@@ -27,6 +33,7 @@ export const twoHandSwords = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 2,
       wowHeadId: 18520,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Blackblade of Shahram',
@@ -38,6 +45,7 @@ export const twoHandSwords = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 1,
       wowHeadId: 12592,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Blade of Hanna',
@@ -52,6 +60,7 @@ export const twoHandSwords = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 1,
       wowHeadId: 2801,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: "Bonereaver's Edge",
@@ -65,6 +74,7 @@ export const twoHandSwords = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 1,
       wowHeadId: 17076,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Claymore of Unholy Might',
@@ -78,6 +88,7 @@ export const twoHandSwords = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 6,
       wowHeadId: 22813,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Corrupted Ashbringer',
@@ -92,6 +103,7 @@ export const twoHandSwords = (): Weapon[] => {
       dps: 90,
       phase: 6,
       wowHeadId: 22691,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Darkstone Claymore',
@@ -105,6 +117,7 @@ export const twoHandSwords = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 5,
       wowHeadId: 20669,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Destiny',
@@ -116,6 +129,7 @@ export const twoHandSwords = (): Weapon[] => {
       dps: 53.85,
       phase: 1,
       wowHeadId: 647,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'R14 Greatsword',
@@ -130,6 +144,7 @@ export const twoHandSwords = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 2.5,
       wowHeadId: 18877,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: "Kalimdor's Revenge",
@@ -143,6 +158,7 @@ export const twoHandSwords = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 5,
       wowHeadId: 21679,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Manslayer of the Qiraji',
@@ -157,6 +173,7 @@ export const twoHandSwords = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 5,
       wowHeadId: 21492,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Obsidian Edged Blade',
@@ -173,6 +190,7 @@ export const twoHandSwords = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 1,
       wowHeadId: 18822,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Relentless Scythe',
@@ -188,6 +206,7 @@ export const twoHandSwords = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 1,
       wowHeadId: 13163,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Runeblade of Baron Rivendare',
@@ -199,6 +218,7 @@ export const twoHandSwords = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 1,
       wowHeadId: 13505,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'The Untamed Blade',
@@ -212,6 +232,7 @@ export const twoHandSwords = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 3,
       wowHeadId: 19334,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Typhoon',
@@ -227,6 +248,7 @@ export const twoHandSwords = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 1,
       wowHeadId: 18542,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Warblade of Caer Darrow',
@@ -238,6 +260,7 @@ export const twoHandSwords = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 1,
       wowHeadId: 13982,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: "Zin'rokh, Destroyer of Worlds",
@@ -251,6 +274,7 @@ export const twoHandSwords = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 4,
       wowHeadId: 19854,
+      itemQuality: ItemQuality.Epic,
     },
   ];
 };

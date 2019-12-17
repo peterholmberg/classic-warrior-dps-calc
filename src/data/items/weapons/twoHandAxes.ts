@@ -1,4 +1,9 @@
-import { ItemSlot, Weapon, WeaponType } from '../../../types/items';
+import {
+  ItemQuality,
+  ItemSlot,
+  Weapon,
+  WeaponType,
+} from '../../../types/items';
 
 export const twoHandAxes = (): Weapon[] => {
   return [
@@ -14,6 +19,7 @@ export const twoHandAxes = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 1,
       wowHeadId: 12784,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Brain Hacker',
@@ -25,6 +31,7 @@ export const twoHandAxes = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 1,
       wowHeadId: 1263,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Dark Edge of Insanity',
@@ -39,6 +46,7 @@ export const twoHandAxes = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 5,
       wowHeadId: 21134,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Draconic Avenger',
@@ -53,6 +61,7 @@ export const twoHandAxes = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 3,
       wowHeadId: 19354,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Drake Talon Cleaver',
@@ -66,6 +75,7 @@ export const twoHandAxes = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 3,
       wowHeadId: 19353,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Dreadforge Retaliator',
@@ -80,6 +90,7 @@ export const twoHandAxes = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 1,
       wowHeadId: 11931,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Gravestone War Axe',
@@ -91,6 +102,7 @@ export const twoHandAxes = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 1,
       wowHeadId: 13983,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: "Gri'lek's Carver",
@@ -102,6 +114,7 @@ export const twoHandAxes = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 4,
       wowHeadId: 19962,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'R14 Battle Axe',
@@ -116,6 +129,7 @@ export const twoHandAxes = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 2,
       wowHeadId: 18831,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Malicious Axe',
@@ -129,6 +143,7 @@ export const twoHandAxes = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 1,
       wowHeadId: 18759,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Neretzek, The Blood Drinker',
@@ -142,6 +157,7 @@ export const twoHandAxes = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 5,
       wowHeadId: 21856,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Nightfall',
@@ -153,6 +169,7 @@ export const twoHandAxes = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 1,
       wowHeadId: 19169,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Severance',
@@ -167,6 +184,7 @@ export const twoHandAxes = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 6,
       wowHeadId: 22815,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Spinal Reaper',
@@ -179,6 +197,7 @@ export const twoHandAxes = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 1,
       wowHeadId: 17104,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'The Blackrock Slicer',
@@ -190,6 +209,7 @@ export const twoHandAxes = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 1,
       wowHeadId: 13285,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: "Treant's Bane",
@@ -204,6 +224,7 @@ export const twoHandAxes = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 2,
       wowHeadId: 18538,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Zulian Stone Axe',
@@ -217,6 +238,7 @@ export const twoHandAxes = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 4,
       wowHeadId: 19900,
+      itemQuality: ItemQuality.Rare,
     },
   ];
 };

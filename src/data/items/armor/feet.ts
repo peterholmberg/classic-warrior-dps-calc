@@ -1,4 +1,4 @@
-import { Item, ItemSlot } from '../../../types/items';
+import { Item, ItemQuality, ItemSlot } from '../../../types/items';
 
 export const feet = (): Item[] => {
   return [
@@ -9,6 +9,7 @@ export const feet = (): Item[] => {
       stamina: 12,
       agility: 12,
       armor: 452,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: "Battlechaser's Greaves",
@@ -17,6 +18,7 @@ export const feet = (): Item[] => {
       stamina: 8,
       agility: 13,
       armor: 397,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Black Dragonscale Boots',
@@ -24,6 +26,7 @@ export const feet = (): Item[] => {
       stamina: 10,
       attackPower: 28,
       armor: 270,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Blooddrenched Footpads',
@@ -32,6 +35,7 @@ export const feet = (): Item[] => {
       stamina: 10,
       agility: 21,
       armor: 129,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Bloodmail Boots',
@@ -41,6 +45,7 @@ export const feet = (): Item[] => {
       stamina: 10,
       agility: 9,
       armor: 247,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Boots of Heroism',
@@ -49,6 +54,7 @@ export const feet = (): Item[] => {
       strength: 20,
       stamina: 20,
       armor: 470,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Boots of the Fallen Hero',
@@ -58,6 +64,7 @@ export const feet = (): Item[] => {
       stamina: 22,
       agility: 14,
       armor: 581,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Boots of the Shadow Flame',
@@ -66,6 +73,7 @@ export const feet = (): Item[] => {
       stamina: 22,
       attackPower: 44,
       armor: 286,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Boots of the Vanguard',
@@ -74,6 +82,7 @@ export const feet = (): Item[] => {
       stamina: 11,
       agility: 22,
       armor: 138,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Boots of Unwavering Will',
@@ -83,6 +92,7 @@ export const feet = (): Item[] => {
       agility: 8,
       defense: 5,
       armor: 647,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Boots of Valor',
@@ -91,6 +101,7 @@ export const feet = (): Item[] => {
       stamina: 20,
       agility: 4,
       armor: 424,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Chromatic Boots',
@@ -100,6 +111,7 @@ export const feet = (): Item[] => {
       stamina: 19,
       agility: 20,
       armor: 596,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: "Conqueror's Greaves",
@@ -109,6 +121,7 @@ export const feet = (): Item[] => {
       agility: 17,
       defense: 4,
       armor: 604,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Pads of the Dread Wolf',
@@ -116,6 +129,7 @@ export const feet = (): Item[] => {
       stamina: 14,
       attackPower: 40,
       armor: 116,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'R12 Plate Boots',
@@ -125,6 +139,7 @@ export const feet = (): Item[] => {
       stamina: 24,
       agility: 12,
       armor: 592,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'R7 Plate Boots',
@@ -133,6 +148,7 @@ export const feet = (): Item[] => {
       stamina: 23,
       agility: 9,
       armor: 472,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Sabatons of Might',
@@ -141,6 +157,7 @@ export const feet = (): Item[] => {
       stamina: 26,
       defense: 5,
       armor: 515,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Sabatons of Wrath',
@@ -149,6 +166,7 @@ export const feet = (): Item[] => {
       stamina: 30,
       defense: 7,
       armor: 589,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: "Sapphiron's Scale Boots",
@@ -157,6 +175,7 @@ export const feet = (): Item[] => {
       stamina: 14,
       agility: 9,
       armor: 417,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Savage Gladiator Greaves',
@@ -165,6 +184,7 @@ export const feet = (): Item[] => {
       stamina: 13,
       agility: 15,
       armor: 233,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Slime Kickers',
@@ -174,6 +194,7 @@ export const feet = (): Item[] => {
       stamina: 12,
       agility: 12,
       armor: 519,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Swiftwalker Boots',
@@ -182,6 +203,7 @@ export const feet = (): Item[] => {
       stamina: 7,
       agility: 21,
       armor: 115,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Windreaver Greaves',
@@ -189,6 +211,7 @@ export const feet = (): Item[] => {
       hit: 1,
       agility: 20,
       armor: 247,
+      itemQuality: ItemQuality.Rare,
     },
   ];
 };

@@ -1,4 +1,4 @@
-import { Item, ItemSlot } from '../../../types/items';
+import { Item, ItemQuality, ItemSlot } from '../../../types/items';
 
 export const chests = (): Item[] => {
   return [
@@ -8,6 +8,7 @@ export const chests = (): Item[] => {
       stamina: 8,
       attackPower: 50,
       armor: 344,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Bloodsoul Breastplate',
@@ -16,6 +17,7 @@ export const chests = (): Item[] => {
       stamina: 13,
       agility: 9,
       armor: 381,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Breastplate of Annihilation',
@@ -25,6 +27,7 @@ export const chests = (): Item[] => {
       strength: 37,
       stamina: 13,
       armor: 824,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Breastplate of Bloodthirst',
@@ -34,6 +37,7 @@ export const chests = (): Item[] => {
       stamina: 20,
       dodge: 1,
       armor: 190,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Breastplate of Heroism',
@@ -43,6 +47,7 @@ export const chests = (): Item[] => {
       stamina: 26,
       agility: 13,
       armor: 684,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Breastplate of Might',
@@ -51,6 +56,7 @@ export const chests = (): Item[] => {
       stamina: 28,
       defense: 7,
       armor: 749,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Breastplate of the Chromatic Flight',
@@ -59,6 +65,7 @@ export const chests = (): Item[] => {
       stamina: 30,
       agility: 10,
       armor: 706,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Breastplate of Valor',
@@ -67,6 +74,7 @@ export const chests = (): Item[] => {
       stamina: 24,
       agility: 10,
       armor: 657,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Breastplate of Wrath',
@@ -75,6 +83,7 @@ export const chests = (): Item[] => {
       stamina: 40,
       defense: 11,
       armor: 857,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Cadaverous armor',
@@ -83,6 +92,7 @@ export const chests = (): Item[] => {
       agility: 8,
       attackPower: 60,
       armor: 172,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: "Conqueror's Breastplate",
@@ -92,6 +102,7 @@ export const chests = (): Item[] => {
       agility: 24,
       defense: 6,
       armor: 985,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Deathdealer Breastplate',
@@ -100,6 +111,7 @@ export const chests = (): Item[] => {
       strength: 8,
       stamina: 8,
       armor: 338,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Ghoul Skin Tunic',
@@ -108,6 +120,7 @@ export const chests = (): Item[] => {
       strength: 40,
       stamina: 22,
       armor: 411,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: "Malfurion's Blessed Bulwark",
@@ -115,6 +128,7 @@ export const chests = (): Item[] => {
       strength: 40,
       stamina: 22,
       armor: 814,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Obsidian Mail Tunic',
@@ -122,6 +136,7 @@ export const chests = (): Item[] => {
       crit: 1,
       attackPower: 76,
       armor: 311,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Ogre Forged Hauberk',
@@ -131,6 +146,7 @@ export const chests = (): Item[] => {
       stamina: 13,
       agility: 20,
       armor: 365,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Plated Abomination Ribcage',
@@ -140,6 +156,7 @@ export const chests = (): Item[] => {
       strength: 45,
       stamina: 25,
       armor: 953,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'R13 Plate armor',
@@ -149,6 +166,7 @@ export const chests = (): Item[] => {
       stamina: 33,
       agility: 14,
       armor: 875,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'R8 Plate armor',
@@ -157,6 +175,7 @@ export const chests = (): Item[] => {
       strength: 21,
       stamina: 23,
       armor: 706,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Runed Bloodstained Hauberk',
@@ -165,6 +184,7 @@ export const chests = (): Item[] => {
       stamina: 19,
       attackPower: 58,
       armor: 416,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Savage Gladiator Chain',
@@ -174,6 +194,7 @@ export const chests = (): Item[] => {
       stamina: 13,
       agility: 14,
       armor: 369,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: "Zandalar Vindicator's Breastplate",
@@ -183,6 +204,7 @@ export const chests = (): Item[] => {
       agility: 15,
       defense: 4,
       armor: 828,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Tombstone Breastplate',
@@ -191,6 +213,7 @@ export const chests = (): Item[] => {
       strength: 10,
       stamina: 10,
       armor: 174,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Traphook Jerkin',
@@ -198,6 +221,7 @@ export const chests = (): Item[] => {
       strength: 5,
       agility: 24,
       armor: 152,
+      itemQuality: ItemQuality.Uncommon,
     },
     {
       name: 'Vest of Swift Execution',
@@ -206,6 +230,7 @@ export const chests = (): Item[] => {
       stamina: 20,
       agility: 41,
       armor: 229,
+      itemQuality: ItemQuality.Epic,
     },
   ];
 };

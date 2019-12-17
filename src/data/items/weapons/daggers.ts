@@ -1,4 +1,9 @@
-import { ItemSlot, Weapon, WeaponType } from '../../../types/items';
+import {
+  ItemQuality,
+  ItemSlot,
+  Weapon,
+  WeaponType,
+} from '../../../types/items';
 
 export const daggers = (): Weapon[] => {
   return [
@@ -13,6 +18,7 @@ export const daggers = (): Weapon[] => {
       resistance: {
         fire: 10,
       },
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Black Amnesty',
@@ -22,6 +28,7 @@ export const daggers = (): Weapon[] => {
       weaponType: WeaponType.Daggers,
       dps: 47.81,
       itemSlot: ItemSlot.OneHand,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Blessed Qiraji Pugio',
@@ -35,6 +42,7 @@ export const daggers = (): Weapon[] => {
       weaponType: WeaponType.Daggers,
       dps: 60.59,
       itemSlot: ItemSlot.OneHand,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Bonescraper',
@@ -45,6 +53,7 @@ export const daggers = (): Weapon[] => {
       weaponType: WeaponType.Daggers,
       dps: 40.71,
       itemSlot: ItemSlot.OneHand,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Core Hound Tooth',
@@ -57,6 +66,7 @@ export const daggers = (): Weapon[] => {
       weaponType: WeaponType.Daggers,
       dps: 51.25,
       itemSlot: ItemSlot.OneHand,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Darrowspike',
@@ -66,6 +76,7 @@ export const daggers = (): Weapon[] => {
       weaponType: WeaponType.Daggers,
       dps: 41.33,
       itemSlot: ItemSlot.OneHand,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: "Death's Sting",
@@ -81,6 +92,7 @@ export const daggers = (): Weapon[] => {
       weaponType: WeaponType.Daggers,
       dps: 66.39,
       itemSlot: ItemSlot.OneHand,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Distracting Dagger',
@@ -94,6 +106,7 @@ export const daggers = (): Weapon[] => {
       weaponType: WeaponType.Daggers,
       dps: 40.77,
       itemSlot: ItemSlot.OneHand,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Dragonfang Blade',
@@ -105,6 +118,7 @@ export const daggers = (): Weapon[] => {
       weaponType: WeaponType.Daggers,
       dps: 55.28,
       itemSlot: ItemSlot.OneHand,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Emerald Dragonfang',
@@ -115,6 +129,7 @@ export const daggers = (): Weapon[] => {
       weaponType: WeaponType.Daggers,
       dps: 52.5,
       itemSlot: ItemSlot.OneHand,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Fang of the Faceless',
@@ -126,6 +141,7 @@ export const daggers = (): Weapon[] => {
       weaponType: WeaponType.Daggers,
       dps: 49.78,
       itemSlot: ItemSlot.OneHand,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Felstriker',
@@ -135,6 +151,7 @@ export const daggers = (): Weapon[] => {
       weaponType: WeaponType.Daggers,
       dps: 45.59,
       itemSlot: ItemSlot.OneHand,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: "Finkle's Skinner",
@@ -144,6 +161,7 @@ export const daggers = (): Weapon[] => {
       weaponType: WeaponType.Daggers,
       dps: 41.15,
       itemSlot: ItemSlot.MainHand,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Glacial Blade',
@@ -154,6 +172,7 @@ export const daggers = (): Weapon[] => {
       weaponType: WeaponType.Daggers,
       dps: 42.5,
       itemSlot: ItemSlot.OneHand,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Gutgore Ripper',
@@ -163,6 +182,7 @@ export const daggers = (): Weapon[] => {
       weaponType: WeaponType.Daggers,
       dps: 50.56,
       itemSlot: ItemSlot.OneHand,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Harbinger of Doom',
@@ -176,6 +196,7 @@ export const daggers = (): Weapon[] => {
       weaponType: WeaponType.Daggers,
       dps: 65.31,
       itemSlot: ItemSlot.OneHand,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Heartseeker',
@@ -187,6 +208,7 @@ export const daggers = (): Weapon[] => {
       weaponType: WeaponType.Daggers,
       dps: 41.47,
       itemSlot: ItemSlot.OneHand,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'R14 Dagger',
@@ -199,6 +221,7 @@ export const daggers = (): Weapon[] => {
       weaponType: WeaponType.Daggers,
       dps: 59.5,
       itemSlot: ItemSlot.OneHand,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Kingsfall',
@@ -213,6 +236,7 @@ export const daggers = (): Weapon[] => {
       itemSlot: ItemSlot.OneHand,
       phase: 6,
       wowHeadId: 22802,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: "Maexxna's Fang",
@@ -227,6 +251,7 @@ export const daggers = (): Weapon[] => {
       itemSlot: ItemSlot.OneHand,
       phase: 6,
       wowHeadId: 22804,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: "Perdition's Blade",
@@ -238,6 +263,7 @@ export const daggers = (): Weapon[] => {
       itemSlot: ItemSlot.OneHand,
       phase: 1,
       wowHeadId: 18816,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Qiraji Sacrificial Dagger',
@@ -251,6 +277,7 @@ export const daggers = (): Weapon[] => {
       itemSlot: ItemSlot.OneHand,
       phase: 5,
       wowHeadId: 21498,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Scarlet Kris',
@@ -264,6 +291,7 @@ export const daggers = (): Weapon[] => {
       itemSlot: ItemSlot.OneHand,
       phase: 1,
       wowHeadId: 5267,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: "Scout's Blade",
@@ -277,6 +305,7 @@ export const daggers = (): Weapon[] => {
       itemSlot: ItemSlot.OneHand,
       phase: 2.5,
       wowHeadId: 19542,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: "Shadowsong's Sorrow",
@@ -291,6 +320,7 @@ export const daggers = (): Weapon[] => {
       itemSlot: ItemSlot.OneHand,
       phase: 5,
       wowHeadId: 21522,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'The Lobotomizer',
@@ -302,6 +332,7 @@ export const daggers = (): Weapon[] => {
       itemSlot: ItemSlot.OneHand,
       phase: 2.5,
       wowHeadId: 19324,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'The Thunderwood Poker',
@@ -315,6 +346,7 @@ export const daggers = (): Weapon[] => {
       itemSlot: ItemSlot.OneHand,
       phase: 5,
       wowHeadId: 22377,
+      itemQuality: ItemQuality.Rare,
     },
   ];
 };
