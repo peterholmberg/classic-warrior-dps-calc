@@ -3,7 +3,7 @@ import { Item, ItemQuality, ItemSlot } from '../../../types/items';
 export const feet = (): Item[] => {
   return [
     {
-      name: 'Defilers Plate Greaves',
+      name: 'Arathi Plate Greaves',
       itemSlot: ItemSlot.Feet,
       strength: 14,
       stamina: 12,

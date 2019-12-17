@@ -1,6 +1,6 @@
-import { ItemSlot } from '../../../types/items';
+import { Item, ItemQuality, ItemSlot } from '../../../types/items';
 
-export const legs = () => {
+export const legs = (): Item[] => {
   return [
     {
       name: 'Abyssal Plate Legplates',
@@ -10,6 +10,7 @@ export const legs = () => {
       stamina: 15,
       agility: 15,
       armor: 566,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Black Dragonscale Leggings',
@@ -17,6 +18,7 @@ export const legs = () => {
       stamina: 8,
       attackPower: 54,
       armor: 320,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Blademaster Leggings',
@@ -26,6 +28,7 @@ export const legs = () => {
       agility: 5,
       dodge: 2,
       armor: 154,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Bloodsoaked Legplates',
@@ -34,6 +37,7 @@ export const legs = () => {
       stamina: 21,
       defense: 10,
       armor: 674,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Cadaverous Leggings',
@@ -41,6 +45,7 @@ export const legs = () => {
       stamina: 18,
       attackPower: 52,
       armor: 150,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Cloudkeeper Legplates',
@@ -50,6 +55,7 @@ export const legs = () => {
       agility: 20,
       attackPower: 0,
       armor: 617,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: "Conqueror's Legguards",
@@ -60,6 +66,7 @@ export const legs = () => {
       agility: 21,
       defense: 6,
       armor: 796,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Dark Heart Pants',
@@ -68,6 +75,7 @@ export const legs = () => {
       stamina: 20,
       attackPower: 48,
       armor: 296,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Devilsaur Leggings',
@@ -76,6 +84,7 @@ export const legs = () => {
       stamina: 12,
       attackPower: 46,
       armor: 148,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Eldritch Reinforced Legplates',
@@ -85,6 +94,7 @@ export const legs = () => {
       stamina: 20,
       agility: 9,
       armor: 566,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Handcrafted Mastersmith Leggings',
@@ -92,6 +102,7 @@ export const legs = () => {
       strength: 29,
       stamina: 12,
       armor: 548,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Leggings of the Apocalypse',
@@ -101,6 +112,7 @@ export const legs = () => {
       stamina: 23,
       agility: 31,
       armor: 211,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Leggings of the Ursa',
@@ -108,6 +120,7 @@ export const legs = () => {
       crit: 1,
       strength: 17,
       armor: 459,
+      itemQuality: ItemQuality.Uncommon,
     },
     {
       name: 'Legguards of the Fallen Crusader',
@@ -116,6 +129,7 @@ export const legs = () => {
       stamina: 22,
       agility: 22,
       armor: 740,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Legplates of Carnage',
@@ -124,6 +138,7 @@ export const legs = () => {
       strength: 42,
       stamina: 18,
       armor: 815,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Legplates of Heroism',
@@ -133,6 +148,7 @@ export const legs = () => {
       agility: 11,
       defense: 5,
       armor: 601,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Legplates of Might',
@@ -142,6 +158,7 @@ export const legs = () => {
       parry: 1,
       defense: 7,
       armor: 655,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Legplates of the Qiraji Command',
@@ -150,6 +167,7 @@ export const legs = () => {
       strength: 20,
       stamina: 13,
       armor: 644,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Legplates of Valor',
@@ -158,6 +176,7 @@ export const legs = () => {
       stamina: 15,
       agility: 11,
       armor: 557,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Legplates of Wrath',
@@ -167,6 +186,7 @@ export const legs = () => {
       dodge: 2,
       defense: 11,
       armor: 749,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'R12 Plate Legguards',
@@ -176,6 +196,7 @@ export const legs = () => {
       strength: 20,
       stamina: 28,
       armor: 743,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'R8 Plate Leggings',
@@ -184,6 +205,7 @@ export const legs = () => {
       strength: 12,
       stamina: 17,
       armor: 618,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Scaled Sand Reaver Leggings',
@@ -192,6 +214,7 @@ export const legs = () => {
       stamina: 23,
       attackPower: 62,
       armor: 427,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: "Sentinel's Plate Legguards",
@@ -201,6 +224,7 @@ export const legs = () => {
       strength: 28,
       stamina: 27,
       armor: 646,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Titanic Leggings',
@@ -209,6 +233,7 @@ export const legs = () => {
       hit: 2,
       strength: 30,
       armor: 598,
+      itemQuality: ItemQuality.Epic,
     },
   ];
 };

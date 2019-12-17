@@ -1,4 +1,4 @@
-import { Item, ItemSlot, WeaponType } from '../../../types/items';
+import { Item, ItemQuality, ItemSlot, WeaponType } from '../../../types/items';
 
 export const waists = (): Item[] => {
   return [
@@ -9,6 +9,7 @@ export const waists = (): Item[] => {
       strength: 17,
       stamina: 10,
       armor: 369,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Belt of Heroism',
@@ -18,6 +19,7 @@ export const waists = (): Item[] => {
       agility: 9,
       defense: 7,
       armor: 380,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Belt of Might',
@@ -27,6 +29,7 @@ export const waists = (): Item[] => {
       dodge: 1,
       defense: 5,
       armor: 412,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Belt of Never-ending Agony',
@@ -36,6 +39,7 @@ export const waists = (): Item[] => {
       stamina: 20,
       attackPower: 64,
       armor: 142,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Belt of Preserved Heads',
@@ -45,6 +49,7 @@ export const waists = (): Item[] => {
       stamina: 11,
       agility: 15,
       armor: 108,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Belt of Shrunken Heads',
@@ -53,6 +58,7 @@ export const waists = (): Item[] => {
       stamina: 11,
       agility: 7,
       armor: 408,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Belt of the Sand Reaver',
@@ -61,6 +67,7 @@ export const waists = (): Item[] => {
       stamina: 18,
       defense: 5,
       armor: 494,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Belt of Valor',
@@ -69,6 +76,7 @@ export const waists = (): Item[] => {
       stamina: 8,
       agility: 7,
       armor: 341,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Brigam Girdle',
@@ -77,6 +85,7 @@ export const waists = (): Item[] => {
       strength: 15,
       stamina: 16,
       armor: 369,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Cloudrunner Girdle',
@@ -84,6 +93,7 @@ export const waists = (): Item[] => {
       strength: 14,
       agility: 15,
       armor: 185,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Girdle of the Mentor',
@@ -94,6 +104,7 @@ export const waists = (): Item[] => {
       stamina: 21,
       agility: 20,
       armor: 536,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: "Mugger's Belt",
@@ -105,6 +116,7 @@ export const waists = (): Item[] => {
         value: 5,
         weaponType: [WeaponType.Daggers],
       },
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: "Omokk's Girth Restrainer",
@@ -113,6 +125,7 @@ export const waists = (): Item[] => {
       strength: 15,
       stamina: 9,
       armor: 353,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Onslaught Girdle',
@@ -122,6 +135,7 @@ export const waists = (): Item[] => {
       strength: 31,
       stamina: 11,
       armor: 494,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: "Ossirian's Binding",
@@ -131,6 +145,7 @@ export const waists = (): Item[] => {
       stamina: 19,
       agility: 20,
       armor: 258,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Royal Qiraji Belt',
@@ -141,6 +156,7 @@ export const waists = (): Item[] => {
       parry: 1,
       defense: 8,
       armor: 512,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: "Zandalar Vindicator's Belt",
@@ -149,6 +165,7 @@ export const waists = (): Item[] => {
       strength: 25,
       stamina: 10,
       armor: 391,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: "Therazane's Link",
@@ -157,6 +174,7 @@ export const waists = (): Item[] => {
       stamina: 22,
       attackPower: 44,
       armor: 295,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Triad Girdle',
@@ -165,6 +183,7 @@ export const waists = (): Item[] => {
       stamina: 17,
       agility: 19,
       armor: 476,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Waistband of Wrath',
@@ -173,6 +192,7 @@ export const waists = (): Item[] => {
       stamina: 20,
       defense: 7,
       armor: 482,
+      itemQuality: ItemQuality.Epic,
     },
   ];
 };
