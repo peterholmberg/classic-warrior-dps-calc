@@ -1,4 +1,9 @@
-import { ItemSlot, Weapon, WeaponType } from '../../../types/items';
+import {
+  ItemQuality,
+  ItemSlot,
+  Weapon,
+  WeaponType,
+} from '../../../types/items';
 
 export const polearms = (): Weapon[] => {
   return [
@@ -14,6 +19,7 @@ export const polearms = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 5,
       wowHeadId: 21635,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Blackfury',
@@ -28,6 +34,7 @@ export const polearms = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 1,
       wowHeadId: 19167,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Blackhand Doomsaw',
@@ -39,6 +46,7 @@ export const polearms = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 1,
       wowHeadId: 12583,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Halberd of Smiting',
@@ -50,6 +58,7 @@ export const polearms = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 4,
       wowHeadId: 19874,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: "Huntsman's Harpoon",
@@ -62,6 +71,7 @@ export const polearms = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 1,
       wowHeadId: 22314,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'R14 Polearm',
@@ -76,6 +86,7 @@ export const polearms = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 2.5,
       wowHeadId: 18871,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Ice Barbed Spear',
@@ -90,6 +101,7 @@ export const polearms = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 2.5,
       wowHeadId: 19106,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Monstrous Glaive',
@@ -104,6 +116,7 @@ export const polearms = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 2,
       wowHeadId: 18502,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Thunderstrike',
@@ -115,6 +128,7 @@ export const polearms = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 1,
       wowHeadId: 17223,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Peacemaker',
@@ -128,6 +142,7 @@ export const polearms = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 1,
       wowHeadId: 18725,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Pitchfork of Madness',
@@ -139,6 +154,7 @@ export const polearms = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 4,
       wowHeadId: 19963,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Stonecutting Glaive',
@@ -152,6 +168,7 @@ export const polearms = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 5,
       wowHeadId: 20660,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'The Eye of Nerub',
@@ -165,6 +182,7 @@ export const polearms = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 6,
       wowHeadId: 23039,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: "Tigule's Harpoon",
@@ -178,6 +196,7 @@ export const polearms = (): Weapon[] => {
       itemSlot: ItemSlot.TwoHand,
       phase: 4,
       wowHeadId: 19946,
+      itemQuality: ItemQuality.Rare,
     },
   ];
 };

@@ -1,4 +1,9 @@
-import { ItemSlot, Weapon, WeaponType } from '../../../types/items';
+import {
+  ItemQuality,
+  ItemSlot,
+  Weapon,
+  WeaponType,
+} from '../../../types/items';
 
 export const axes = (): Weapon[] => {
   return [
@@ -10,6 +15,7 @@ export const axes = (): Weapon[] => {
       weaponType: WeaponType.Axe,
       dps: 49.75,
       itemSlot: ItemSlot.OneHand,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Annihilator',
@@ -19,6 +25,7 @@ export const axes = (): Weapon[] => {
       weaponType: WeaponType.Axe,
       dps: 41.47,
       itemSlot: ItemSlot.MainHand,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Axe of the Deep Woods',
@@ -28,6 +35,7 @@ export const axes = (): Weapon[] => {
       weaponType: WeaponType.Axe,
       dps: 41.48,
       itemSlot: ItemSlot.MainHand,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Blessed Qiraji War Axe',
@@ -41,6 +49,7 @@ export const axes = (): Weapon[] => {
       weaponType: WeaponType.Axe,
       dps: 60.58,
       itemSlot: ItemSlot.OneHand,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Bone Slicing Hatchet',
@@ -52,6 +61,7 @@ export const axes = (): Weapon[] => {
       weaponType: WeaponType.Axe,
       dps: 40.59,
       itemSlot: ItemSlot.OneHand,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: "Crul'Shorukh, Edge of Chaos",
@@ -63,6 +73,7 @@ export const axes = (): Weapon[] => {
       weaponType: WeaponType.Axe,
       dps: 62.83,
       itemSlot: ItemSlot.OneHand,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Dark Iron Destroyer',
@@ -73,6 +84,7 @@ export const axes = (): Weapon[] => {
       weaponType: WeaponType.Axe,
       dps: 42.71,
       itemSlot: ItemSlot.MainHand,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Deathbringer',
@@ -82,6 +94,7 @@ export const axes = (): Weapon[] => {
       weaponType: WeaponType.Axe,
       dps: 56.38,
       itemSlot: ItemSlot.OneHand,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: "Doom's Edge",
@@ -94,6 +107,7 @@ export const axes = (): Weapon[] => {
       weaponType: WeaponType.Axe,
       dps: 51.52,
       itemSlot: ItemSlot.OneHand,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Flurry Axe',
@@ -103,6 +117,7 @@ export const axes = (): Weapon[] => {
       weaponType: WeaponType.Axe,
       dps: 35.33,
       itemSlot: ItemSlot.OneHand,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Frostbite',
@@ -113,6 +128,7 @@ export const axes = (): Weapon[] => {
       weaponType: WeaponType.Axe,
       dps: 52.59,
       itemSlot: ItemSlot.OneHand,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Hatchet of Sundered Bone',
@@ -124,6 +140,7 @@ export const axes = (): Weapon[] => {
       weaponType: WeaponType.Axe,
       dps: 65.38,
       itemSlot: ItemSlot.OneHand,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Iceblade Hacker',
@@ -133,6 +150,7 @@ export const axes = (): Weapon[] => {
       weaponType: WeaponType.Axe,
       dps: 42.25,
       itemSlot: ItemSlot.MainHand,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'R14 Axe',
@@ -145,6 +163,7 @@ export const axes = (): Weapon[] => {
       weaponType: WeaponType.Axe,
       dps: 59.48,
       itemSlot: ItemSlot.OneHand,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Rivenspike',
@@ -154,6 +173,7 @@ export const axes = (): Weapon[] => {
       weaponType: WeaponType.Axe,
       dps: 38.1,
       itemSlot: ItemSlot.OneHand,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Serathil',
@@ -165,6 +185,7 @@ export const axes = (): Weapon[] => {
       weaponType: WeaponType.Axe,
       dps: 40.0,
       itemSlot: ItemSlot.OneHand,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Sickle of Unyielding Strength',
@@ -178,6 +199,7 @@ export const axes = (): Weapon[] => {
       weaponType: WeaponType.Axe,
       dps: 51.43,
       itemSlot: ItemSlot.OneHand,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Soulrender',
@@ -188,6 +210,7 @@ export const axes = (): Weapon[] => {
       weaponType: WeaponType.Axe,
       dps: 40.8,
       itemSlot: ItemSlot.OneHand,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Zulian Hacker of Strength',
@@ -202,6 +225,7 @@ export const axes = (): Weapon[] => {
       weaponType: WeaponType.Axe,
       dps: 42.71,
       itemSlot: ItemSlot.OneHand,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Zulian Hacker of the Tiger',
@@ -217,6 +241,7 @@ export const axes = (): Weapon[] => {
       weaponType: WeaponType.Axe,
       dps: 42.71,
       itemSlot: ItemSlot.OneHand,
+      itemQuality: ItemQuality.Rare,
     },
   ];
 };

@@ -1,4 +1,9 @@
-import {ItemSlot, Weapon, WeaponType} from '../../../types/items';
+import {
+  ItemQuality,
+  ItemSlot,
+  Weapon,
+  WeaponType,
+} from '../../../types/items';
 
 export const fists = (): Weapon[] => {
   return [
@@ -12,6 +17,7 @@ export const fists = (): Weapon[] => {
       itemSlot: ItemSlot.OffHand,
       phase: 4,
       wowHeadId: 19910,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Claw of the Black Drake',
@@ -26,6 +32,7 @@ export const fists = (): Weapon[] => {
       itemSlot: ItemSlot.MainHand,
       phase: 3,
       wowHeadId: 19365,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'Claw of the Frost Wyrm',
@@ -41,6 +48,7 @@ export const fists = (): Weapon[] => {
       itemSlot: ItemSlot.OffHand,
       phase: 6,
       wowHeadId: 23242,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: "Eskhandar's Left Claw",
@@ -53,6 +61,7 @@ export const fists = (): Weapon[] => {
       itemSlot: ItemSlot.OffHand,
       phase: 2,
       wowHeadId: 18202,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: "Eskhandar's Right Claw",
@@ -65,6 +74,7 @@ export const fists = (): Weapon[] => {
       itemSlot: ItemSlot.MainHand,
       phase: 1,
       wowHeadId: 18203,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: 'R14 Claw',
@@ -79,6 +89,7 @@ export const fists = (): Weapon[] => {
       itemSlot: ItemSlot.MainHand,
       phase: 2.5,
       wowHeadId: 18844,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: "Lefty's Brass Knuckle",
@@ -92,6 +103,7 @@ export const fists = (): Weapon[] => {
       itemSlot: ItemSlot.OneHand,
       phase: 1,
       wowHeadId: 22317,
+      itemQuality: ItemQuality.Rare,
     },
     {
       name: 'Silithid Claw',
@@ -105,6 +117,7 @@ export const fists = (): Weapon[] => {
       itemSlot: ItemSlot.MainHand,
       phase: 5,
       wowHeadId: 21673,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: "Thekal's Grasp",
@@ -118,6 +131,7 @@ export const fists = (): Weapon[] => {
       itemSlot: ItemSlot.MainHand,
       phase: 4,
       wowHeadId: 19896,
+      itemQuality: ItemQuality.Epic,
     },
     {
       name: "Willey's Back Scratcher",
@@ -127,10 +141,11 @@ export const fists = (): Weapon[] => {
       maxHit: 136,
       speed: 2.6,
       weaponType: WeaponType.Fist,
-        dps: 40.19,
-        itemSlot: ItemSlot.MainHand,
-        phase: 1,
-        wowHeadId: 22404
+      dps: 40.19,
+      itemSlot: ItemSlot.MainHand,
+      phase: 1,
+      wowHeadId: 22404,
+      itemQuality: ItemQuality.Rare,
     },
   ];
 };
