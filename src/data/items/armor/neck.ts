@@ -9,6 +9,8 @@ export const necks = (): Item[] => {
       stamina: 10,
       agility: 19,
       itemQuality: ItemQuality.Epic,
+      phase: 3,
+      wowHeadId: 19491,
     },
     {
       name: 'Barbed Choker',
@@ -17,6 +19,8 @@ export const necks = (): Item[] => {
       stamina: 10,
       attackPower: 44,
       itemQuality: ItemQuality.Epic,
+      phase: 5,
+      wowHeadId: 21664,
     },
     {
       name: 'Beads of Ogre Might',
@@ -25,6 +29,8 @@ export const necks = (): Item[] => {
       stamina: 7,
       attackPower: 24,
       itemQuality: ItemQuality.Rare,
+      phase: 2,
+      wowHeadId: 22150,
     },
     {
       name: 'Blazefury Medallion',
@@ -32,6 +38,8 @@ export const necks = (): Item[] => {
       stamina: 13,
       agility: 14,
       itemQuality: ItemQuality.Epic,
+      phase: 2,
+      wowHeadId: 17111,
     },
     {
       name: 'Choker of the Shifting Sands',
@@ -39,6 +47,8 @@ export const necks = (): Item[] => {
       stamina: 16,
       attackPower: 42,
       itemQuality: ItemQuality.Epic,
+      phase: 5,
+      wowHeadId: 21505,
     },
     {
       name: "Eskhandar's Collar",
@@ -47,6 +57,8 @@ export const necks = (): Item[] => {
       stamina: 17,
       dodge: 1,
       itemQuality: ItemQuality.Epic,
+      phase: 1,
+      wowHeadId: 18205,
     },
     {
       name: 'Fury of the Forgotten Swarm',
@@ -55,6 +67,8 @@ export const necks = (): Item[] => {
       hit: 1,
       strength: 8,
       itemQuality: ItemQuality.Rare,
+      phase: 5,
+      wowHeadId: 21809,
     },
     {
       name: 'Imperial Jewel',
@@ -62,6 +76,8 @@ export const necks = (): Item[] => {
       stamina: 7,
       attackPower: 32,
       itemQuality: ItemQuality.Rare,
+      phase: 1,
+      wowHeadId: 11933,
     },
     {
       name: 'Mark of Fordring',
@@ -69,6 +85,8 @@ export const necks = (): Item[] => {
       crit: 1,
       attackPower: 26,
       itemQuality: ItemQuality.Rare,
+      phase: 1,
+      wowHeadId: 15411,
     },
     {
       name: 'Onyxia Tooth Pendant',
@@ -78,6 +96,8 @@ export const necks = (): Item[] => {
       stamina: 9,
       agility: 12,
       itemQuality: ItemQuality.Epic,
+      phase: 1,
+      wowHeadId: 18404,
     },
     {
       name: 'Pendant of Celerity',
@@ -85,6 +105,8 @@ export const necks = (): Item[] => {
       hit: 1,
       agility: 15,
       itemQuality: ItemQuality.Rare,
+      phase: 1,
+      wowHeadId: 22340,
     },
     {
       name: "Prestor's Talisman of Connivery",
@@ -92,6 +114,8 @@ export const necks = (): Item[] => {
       hit: 1,
       agility: 30,
       itemQuality: ItemQuality.Epic,
+      phase: 3,
+      wowHeadId: 19377,
     },
     {
       name: "Sadist's Collar",
@@ -100,6 +124,8 @@ export const necks = (): Item[] => {
       stamina: 24,
       attackPower: 20,
       itemQuality: ItemQuality.Epic,
+      phase: 6,
+      wowHeadId: 23023,
     },
     {
       name: "Stormrage's Talisman of Seething",
@@ -108,12 +134,16 @@ export const necks = (): Item[] => {
       stamina: 12,
       attackPower: 26,
       itemQuality: ItemQuality.Epic,
+      phase: 6,
+      wowHeadId: 23053,
     },
     {
       name: 'Zealous Shadowshard Pendant',
       itemSlot: ItemSlot.Neck,
       attackPower: 20,
       itemQuality: ItemQuality.Uncommon,
+      phase: 1,
+      wowHeadId: 17772,
     },
     {
       name: 'The Eye of Hakkar',
@@ -121,6 +151,8 @@ export const necks = (): Item[] => {
       crit: 1,
       attackPower: 40,
       itemQuality: ItemQuality.Epic,
+      phase: 4,
+      wowHeadId: 19856,
     },
     {
       name: 'Will of the Martyr',
@@ -128,6 +160,8 @@ export const necks = (): Item[] => {
       stamina: 10,
       attackPower: 30,
       itemQuality: ItemQuality.Rare,
+      phase: 1,
+      wowHeadId: 17044,
     },
   ];
 };
