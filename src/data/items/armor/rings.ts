@@ -8,6 +8,8 @@ export const rings = (): Item[] => {
       stamina: 28,
       agility: 14,
       itemQuality: ItemQuality.Epic,
+      phase: 3,
+      wowHeadId: 19376,
     },
     {
       name: 'Band of Accuria',
@@ -16,6 +18,8 @@ export const rings = (): Item[] => {
       stamina: 10,
       agility: 16,
       itemQuality: ItemQuality.Epic,
+      phase: 1,
+      wowHeadId: 17063,
     },
     {
       name: 'Band of Earthen Might',
@@ -24,6 +28,8 @@ export const rings = (): Item[] => {
       hit: 1,
       strength: 6,
       itemQuality: ItemQuality.Rare,
+      phase: 5,
+      wowHeadId: 21182,
     },
     {
       name: 'Band of Jin',
@@ -32,12 +38,16 @@ export const rings = (): Item[] => {
       stamina: 8,
       agility: 14,
       itemQuality: ItemQuality.Rare,
+      phase: 4,
+      wowHeadId: 19925,
     },
     {
       name: 'Band of Reanimation',
       itemSlot: ItemSlot.Ring,
       agility: 34,
       itemQuality: ItemQuality.Epic,
+      phase: 6,
+      wowHeadId: 22961,
     },
     {
       name: 'Band of the Ogre King',
@@ -45,12 +55,16 @@ export const rings = (): Item[] => {
       strength: 14,
       stamina: 13,
       itemQuality: ItemQuality.Rare,
+      phase: 2,
+      wowHeadId: 18522,
     },
     {
       name: 'Band of the Penitent',
       itemSlot: ItemSlot.Ring,
       crit: 1,
       itemQuality: ItemQuality.Uncommon,
+      phase: 1,
+      wowHeadId: 13217,
     },
     {
       name: 'Band of Unnatural Forces',
@@ -59,6 +73,8 @@ export const rings = (): Item[] => {
       hit: 1,
       attackPower: 52,
       itemQuality: ItemQuality.Epic,
+      phase: 6,
+      wowHeadId: 23038,
     },
     {
       name: 'Blackstone Ring',
@@ -67,6 +83,8 @@ export const rings = (): Item[] => {
       stamina: 6,
       attackPower: 20,
       itemQuality: ItemQuality.Rare,
+      phase: 1,
+      wowHeadId: 17713,
     },
     {
       name: 'Circle of Applied Force',
@@ -75,6 +93,8 @@ export const rings = (): Item[] => {
       stamina: 9,
       agility: 22,
       itemQuality: ItemQuality.Epic,
+      phase: 3,
+      wowHeadId: 19432,
     },
     {
       name: "Don Julio's Band",
@@ -84,6 +104,8 @@ export const rings = (): Item[] => {
       stamina: 11,
       attackPower: 16,
       itemQuality: ItemQuality.Epic,
+      phase: 2.5,
+      wowHeadId: 19325,
     },
     {
       name: "Magni's Will",
@@ -92,6 +114,8 @@ export const rings = (): Item[] => {
       strength: 6,
       stamina: 7,
       itemQuality: ItemQuality.Rare,
+      phase: 1,
+      wowHeadId: 12548,
     },
     {
       name: "Master Dragonslayer's Ring",
@@ -100,6 +124,8 @@ export const rings = (): Item[] => {
       stamina: 14,
       attackPower: 48,
       itemQuality: ItemQuality.Epic,
+      phase: 3,
+      wowHeadId: 19384,
     },
     {
       name: 'Might of Cenarius',
@@ -107,6 +133,8 @@ export const rings = (): Item[] => {
       hit: 1,
       stamina: 8,
       itemQuality: ItemQuality.Epic,
+      phase: 5,
+      wowHeadId: 21189,
     },
     {
       name: 'Naglering',
@@ -115,6 +143,8 @@ export const rings = (): Item[] => {
       defense: 5,
       armor: 50,
       itemQuality: ItemQuality.Rare,
+      phase: 1,
+      wowHeadId: 11669,
     },
     {
       name: 'Painweaver Band',
@@ -123,6 +153,8 @@ export const rings = (): Item[] => {
       stamina: 7,
       attackPower: 16,
       itemQuality: ItemQuality.Rare,
+      phase: 1,
+      wowHeadId: 13098,
     },
     {
       name: "Protector's Band",
@@ -131,6 +163,8 @@ export const rings = (): Item[] => {
       stamina: 8,
       agility: 11,
       itemQuality: ItemQuality.Rare,
+      phase: 2.5,
+      wowHeadId: 19514,
     },
     {
       name: 'Quick Strike Ring',
@@ -140,6 +174,8 @@ export const rings = (): Item[] => {
       stamina: 8,
       attackPower: 30,
       itemQuality: ItemQuality.Epic,
+      phase: 1,
+      wowHeadId: 18821,
     },
     {
       name: "Ring of Emperor Vek'lor",
@@ -149,6 +185,8 @@ export const rings = (): Item[] => {
       defense: 9,
       armor: 100,
       itemQuality: ItemQuality.Epic,
+      phase: 5,
+      wowHeadId: 21601,
     },
     {
       name: 'Ring of Fury',
@@ -157,6 +195,8 @@ export const rings = (): Item[] => {
       stamina: 9,
       attackPower: 30,
       itemQuality: ItemQuality.Rare,
+      phase: 5,
+      wowHeadId: 21477,
     },
     {
       name: 'Ring of the Godslayer',
@@ -164,6 +204,8 @@ export const rings = (): Item[] => {
       stamina: 17,
       agility: 27,
       itemQuality: ItemQuality.Epic,
+      phase: 5,
+      wowHeadId: 21596,
     },
     {
       name: 'Ring of the Qiraji Fury',
@@ -172,6 +214,8 @@ export const rings = (): Item[] => {
       stamina: 12,
       attackPower: 40,
       itemQuality: ItemQuality.Epic,
+      phase: 5,
+      wowHeadId: 21677,
     },
     {
       name: 'Seal of Jin',
@@ -180,6 +224,8 @@ export const rings = (): Item[] => {
       stamina: 8,
       attackPower: 20,
       itemQuality: ItemQuality.Rare,
+      phase: 4,
+      wowHeadId: 19898,
     },
     {
       name: 'Seal of the Gurubashi Berserker',
@@ -187,6 +233,8 @@ export const rings = (): Item[] => {
       stamina: 13,
       attackPower: 40,
       itemQuality: ItemQuality.Epic,
+      phase: 4,
+      wowHeadId: 22722,
     },
     {
       name: 'Signet of the Fallen Defender',
@@ -195,6 +243,8 @@ export const rings = (): Item[] => {
       stamina: 24,
       armor: 140,
       itemQuality: ItemQuality.Epic,
+      phase: 6,
+      wowHeadId: 23018,
     },
     {
       name: 'Signet of Unyielding Strength',
@@ -203,6 +253,8 @@ export const rings = (): Item[] => {
       strength: 11,
       stamina: 14,
       itemQuality: ItemQuality.Epic,
+      phase: 5,
+      wowHeadId: 21393,
     },
     {
       name: 'Signet Ring of the Bronze Dragonflight',
@@ -211,6 +263,8 @@ export const rings = (): Item[] => {
       stamina: 13,
       agility: 24,
       itemQuality: ItemQuality.Epic,
+      phase: 5,
+      wowHeadId: 21205,
     },
     {
       name: 'Tarnished Elven Ring',
@@ -218,6 +272,8 @@ export const rings = (): Item[] => {
       hit: 1,
       agility: 15,
       itemQuality: ItemQuality.Rare,
+      phase: 2,
+      wowHeadId: 18500,
     },
   ];
 };
