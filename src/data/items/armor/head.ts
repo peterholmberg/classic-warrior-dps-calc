@@ -23,6 +23,8 @@ export const heads = (): Item[] => {
       defense: 6,
       armor: 739,
       itemQuality: ItemQuality.Epic,
+      phase: 5,
+      wowHeadId: 21329,
     },
     {
       name: 'Crown of Destruction',
@@ -32,6 +34,8 @@ export const heads = (): Item[] => {
       attackPower: 44,
       armor: 392,
       itemQuality: ItemQuality.Epic,
+      phase: 1,
+      wowHeadId: 18817,
     },
     {
       name: 'Dreadnaught Helm',
@@ -42,6 +46,8 @@ export const heads = (): Item[] => {
       defense: 14,
       armor: 800,
       itemQuality: ItemQuality.Epic,
+      phase: 6,
+      wowHeadId: 22418,
     },
     {
       name: "Expert Goldminer's Helmet",
@@ -54,6 +60,8 @@ export const heads = (): Item[] => {
         weaponType: [WeaponType.Axe],
       },
       itemQuality: ItemQuality.Rare,
+      phase: 1,
+      wowHeadId: 9375,
     },
     {
       name: 'Eye of Rend',
@@ -63,6 +71,8 @@ export const heads = (): Item[] => {
       stamina: 7,
       armor: 143,
       itemQuality: ItemQuality.Rare,
+      phase: 1,
+      wowHeadId: 12587,
     },
     {
       name: 'Fury Visor',
@@ -72,6 +82,8 @@ export const heads = (): Item[] => {
       strength: 18,
       armor: 445,
       itemQuality: ItemQuality.Rare,
+      phase: 1,
+      wowHeadId: 20521,
     },
     {
       name: 'Helm of Domination',
@@ -83,6 +95,8 @@ export const heads = (): Item[] => {
       defense: 7,
       armor: 661,
       itemQuality: ItemQuality.Epic,
+      phase: 5,
+      wowHeadId: 20521,
     },
     {
       name: 'Helm of Endless Rage',
@@ -92,6 +106,8 @@ export const heads = (): Item[] => {
       agility: 26,
       armor: 679,
       itemQuality: ItemQuality.Epic,
+      phase: 3,
+      wowHeadId: 19372,
     },
     {
       name: 'Helm of Heroism',
@@ -101,6 +117,8 @@ export const heads = (): Item[] => {
       stamina: 32,
       armor: 556,
       itemQuality: ItemQuality.Epic,
+      phase: 1,
+      wowHeadId: 21999,
     },
     {
       name: 'Helm of Might',
@@ -111,6 +129,8 @@ export const heads = (): Item[] => {
       defense: 7,
       armor: 608,
       itemQuality: ItemQuality.Epic,
+      phase: 1,
+      wowHeadId: 16866,
     },
     {
       name: 'Helm of the Executioner',
@@ -120,6 +140,8 @@ export const heads = (): Item[] => {
       stamina: 20,
       armor: 534,
       itemQuality: ItemQuality.Rare,
+      phase: 1,
+      wowHeadId: 22411,
     },
     {
       name: 'Helm of Valor',
@@ -129,6 +151,8 @@ export const heads = (): Item[] => {
       agility: 9,
       armor: 526,
       itemQuality: ItemQuality.Epic,
+      phase: 1,
+      wowHeadId: 16731,
     },
     {
       name: 'Helm of Wrath',
@@ -138,6 +162,8 @@ export const heads = (): Item[] => {
       defense: 11,
       armor: 696,
       itemQuality: ItemQuality.Epic,
+      phase: 1,
+      wowHeadId: 16963,
     },
     {
       name: 'Lionheart Helm',
@@ -147,6 +173,8 @@ export const heads = (): Item[] => {
       strength: 18,
       armor: 565,
       itemQuality: ItemQuality.Epic,
+      phase: 1,
+      wowHeadId: 12640,
     },
     {
       name: 'Mask of the Unforgiven',
@@ -156,6 +184,8 @@ export const heads = (): Item[] => {
       stamina: 12,
       armor: 123,
       itemQuality: ItemQuality.Rare,
+      phase: 1,
+      wowHeadId: 13404,
     },
     {
       name: 'R10 Plate Helm',
@@ -166,6 +196,8 @@ export const heads = (): Item[] => {
       stamina: 24,
       armor: 598,
       itemQuality: ItemQuality.Rare,
+      phase: 2,
+      wowHeadId: 23244,
     },
     {
       name: 'R13 Plate Helm',
@@ -175,6 +207,8 @@ export const heads = (): Item[] => {
       stamina: 34,
       armor: 719,
       itemQuality: ItemQuality.Epic,
+      phase: 2,
+      wowHeadId: 16542,
     },
     {
       name: "Raging Berserker's Helm",
@@ -184,6 +218,8 @@ export const heads = (): Item[] => {
       stamina: 8,
       armor: 213,
       itemQuality: ItemQuality.Rare,
+      phase: 1,
+      wowHeadId: 7719,
     },
   ];
 };

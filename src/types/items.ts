@@ -66,7 +66,7 @@ export interface Item {
   name: string;
   itemSlot: ItemSlot;
   armorType?: ItemQuality;
-  wowHeadId?: number;
+  wowHeadId: number;
   armor?: number;
   strength?: number;
   agility?: number;
@@ -82,7 +82,7 @@ export interface Item {
   attackPower?: number;
   weaponSkill?: WeaponSkill;
   proc?: number;
-  phase?: Phase;
+  phase: Phase;
   itemQuality: ItemQuality;
 }
 
