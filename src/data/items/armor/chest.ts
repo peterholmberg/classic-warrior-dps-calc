@@ -9,6 +9,8 @@ export const chests = (): Item[] => {
       attackPower: 50,
       armor: 344,
       itemQuality: ItemQuality.Rare,
+      phase: 1,
+      wowHeadId: 15050,
     },
     {
       name: 'Bloodsoul Breastplate',
@@ -18,6 +20,8 @@ export const chests = (): Item[] => {
       agility: 9,
       armor: 381,
       itemQuality: ItemQuality.Rare,
+      phase: 1,
+      wowHeadId: 19690,
     },
     {
       name: 'Breastplate of Annihilation',
@@ -28,6 +32,8 @@ export const chests = (): Item[] => {
       stamina: 13,
       armor: 824,
       itemQuality: ItemQuality.Epic,
+      phase: 5,
+      wowHeadId: 21814,
     },
     {
       name: 'Breastplate of Bloodthirst',
@@ -38,6 +44,8 @@ export const chests = (): Item[] => {
       dodge: 1,
       armor: 190,
       itemQuality: ItemQuality.Epic,
+      phase: 1,
+      wowHeadId: 12757,
     },
     {
       name: 'Breastplate of Heroism',
@@ -48,6 +56,8 @@ export const chests = (): Item[] => {
       agility: 13,
       armor: 684,
       itemQuality: ItemQuality.Epic,
+      phase: 1,
+      wowHeadId: 21997,
     },
     {
       name: 'Breastplate of Might',
@@ -57,6 +67,8 @@ export const chests = (): Item[] => {
       defense: 7,
       armor: 749,
       itemQuality: ItemQuality.Epic,
+      phase: 1,
+      wowHeadId: 16865,
     },
     {
       name: 'Breastplate of the Chromatic Flight',
@@ -66,6 +78,8 @@ export const chests = (): Item[] => {
       agility: 10,
       armor: 706,
       itemQuality: ItemQuality.Epic,
+      phase: 1,
+      wowHeadId: 12895,
     },
     {
       name: 'Breastplate of Valor',
@@ -75,6 +89,8 @@ export const chests = (): Item[] => {
       agility: 10,
       armor: 657,
       itemQuality: ItemQuality.Rare,
+      phase: 1,
+      wowHeadId: 16730,
     },
     {
       name: 'Breastplate of Wrath',
@@ -84,6 +100,8 @@ export const chests = (): Item[] => {
       defense: 11,
       armor: 857,
       itemQuality: ItemQuality.Epic,
+      phase: 1,
+      wowHeadId: 16966,
     },
     {
       name: 'Cadaverous armor',
@@ -93,6 +111,8 @@ export const chests = (): Item[] => {
       attackPower: 60,
       armor: 172,
       itemQuality: ItemQuality.Rare,
+      phase: 1,
+      wowHeadId: 14637,
     },
     {
       name: "Conqueror's Breastplate",
@@ -103,6 +123,8 @@ export const chests = (): Item[] => {
       defense: 6,
       armor: 985,
       itemQuality: ItemQuality.Epic,
+      phase: 5,
+      wowHeadId: 21331,
     },
     {
       name: 'Deathdealer Breastplate',
@@ -112,6 +134,8 @@ export const chests = (): Item[] => {
       stamina: 8,
       armor: 338,
       itemQuality: ItemQuality.Rare,
+      phase: 1,
+      wowHeadId: 11926,
     },
     {
       name: 'Ghoul Skin Tunic',
@@ -121,6 +145,8 @@ export const chests = (): Item[] => {
       stamina: 22,
       armor: 411,
       itemQuality: ItemQuality.Epic,
+      phase: 1,
+      wowHeadId: 23226,
     },
     {
       name: "Malfurion's Blessed Bulwark",
@@ -129,6 +155,8 @@ export const chests = (): Item[] => {
       stamina: 22,
       armor: 814,
       itemQuality: ItemQuality.Epic,
+      phase: 3,
+      wowHeadId: 19405,
     },
     {
       name: 'Obsidian Mail Tunic',
@@ -137,6 +165,8 @@ export const chests = (): Item[] => {
       attackPower: 76,
       armor: 311,
       itemQuality: ItemQuality.Epic,
+      phase: 1,
+      wowHeadId: 22191,
     },
     {
       name: 'Ogre Forged Hauberk',
@@ -147,6 +177,8 @@ export const chests = (): Item[] => {
       agility: 20,
       armor: 365,
       itemQuality: ItemQuality.Rare,
+      phase: 2,
+      wowHeadId: 18530,
     },
     {
       name: 'Plated Abomination Ribcage',
@@ -157,6 +189,8 @@ export const chests = (): Item[] => {
       stamina: 25,
       armor: 953,
       itemQuality: ItemQuality.Epic,
+      phase: 6,
+      wowHeadId: 23000,
     },
     {
       name: 'R13 Plate armor',
@@ -167,6 +201,8 @@ export const chests = (): Item[] => {
       agility: 14,
       armor: 875,
       itemQuality: ItemQuality.Epic,
+      phase: 2,
+      wowHeadId: 16541,
     },
     {
       name: 'R8 Plate armor',
@@ -176,6 +212,8 @@ export const chests = (): Item[] => {
       stamina: 23,
       armor: 706,
       itemQuality: ItemQuality.Rare,
+      phase: 2,
+      wowHeadId: 22872,
     },
     {
       name: 'Runed Bloodstained Hauberk',
@@ -185,6 +223,8 @@ export const chests = (): Item[] => {
       attackPower: 58,
       armor: 416,
       itemQuality: ItemQuality.Epic,
+      phase: 4,
+      wowHeadId: 19904,
     },
     {
       name: 'Savage Gladiator Chain',
@@ -195,6 +235,8 @@ export const chests = (): Item[] => {
       agility: 14,
       armor: 369,
       itemQuality: ItemQuality.Epic,
+      phase: 1,
+      wowHeadId: 11726,
     },
     {
       name: "Zandalar Vindicator's Breastplate",
@@ -205,6 +247,8 @@ export const chests = (): Item[] => {
       defense: 4,
       armor: 828,
       itemQuality: ItemQuality.Epic,
+      phase: 4,
+      wowHeadId: 19822,
     },
     {
       name: 'Tombstone Breastplate',
@@ -214,6 +258,8 @@ export const chests = (): Item[] => {
       stamina: 10,
       armor: 174,
       itemQuality: ItemQuality.Rare,
+      phase: 1,
+      wowHeadId: 13944,
     },
     {
       name: 'Traphook Jerkin',
@@ -222,6 +268,8 @@ export const chests = (): Item[] => {
       agility: 24,
       armor: 152,
       itemQuality: ItemQuality.Uncommon,
+      phase: 1,
+      wowHeadId: 15825,
     },
     {
       name: 'Vest of Swift Execution',
@@ -231,6 +279,8 @@ export const chests = (): Item[] => {
       agility: 41,
       armor: 229,
       itemQuality: ItemQuality.Epic,
+      phase: 5,
+      wowHeadId: 21680,
     },
   ];
 };
