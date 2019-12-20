@@ -14,6 +14,8 @@ export const hands = (): Item[] => {
         weaponType: [WeaponType.Daggers],
       },
       itemQuality: ItemQuality.Epic,
+      phase: 1,
+      wowHeadId: 18823,
     },
     {
       name: 'Devilsaur Gauntlets',
@@ -23,6 +25,8 @@ export const hands = (): Item[] => {
       attackPower: 28,
       armor: 103,
       itemQuality: ItemQuality.Rare,
+      phase: 1,
+      wowHeadId: 15063,
     },
     {
       name: "Edgemaster's Handguards",
@@ -33,6 +37,8 @@ export const hands = (): Item[] => {
         weaponType: [WeaponType.Axe, WeaponType.Daggers, WeaponType.Sword],
       },
       itemQuality: ItemQuality.Epic,
+      phase: 1,
+      wowHeadId: 14551,
     },
     {
       name: 'Flameguard Gauntlets',
@@ -42,6 +48,8 @@ export const hands = (): Item[] => {
       attackPower: 54,
       armor: 488,
       itemQuality: ItemQuality.Epic,
+      phase: 1,
+      wowHeadId: 19143,
     },
     {
       name: 'Gargoyle Slashers',
@@ -52,6 +60,8 @@ export const hands = (): Item[] => {
       agility: 5,
       armor: 107,
       itemQuality: ItemQuality.Rare,
+      phase: 1,
+      wowHeadId: 13957,
     },
     {
       name: 'Gauntlets of Annihilation',
@@ -62,6 +72,8 @@ export const hands = (): Item[] => {
       stamina: 15,
       armor: 615,
       itemQuality: ItemQuality.Epic,
+      phase: 5,
+      wowHeadId: 21581,
     },
     {
       name: 'Gauntlets of Heroism',
@@ -71,6 +83,8 @@ export const hands = (): Item[] => {
       stamina: 12,
       armor: 393,
       itemQuality: ItemQuality.Epic,
+      phase: 1,
+      wowHeadId: 21998,
     },
     {
       name: 'Gauntlets of Might',
@@ -81,6 +95,8 @@ export const hands = (): Item[] => {
       defense: 5,
       armor: 468,
       itemQuality: ItemQuality.Epic,
+      phase: 1,
+      wowHeadId: 16863,
     },
     {
       name: 'Gauntlets of Steadfast Determination',
@@ -91,6 +107,8 @@ export const hands = (): Item[] => {
       defense: 9,
       armor: 535,
       itemQuality: ItemQuality.Epic,
+      phase: 5,
+      wowHeadId: 21674,
     },
     {
       name: 'Gauntlets of the Immovable',
@@ -101,6 +119,8 @@ export const hands = (): Item[] => {
       defense: 5,
       armor: 482,
       itemQuality: ItemQuality.Epic,
+      phase: 5,
+      wowHeadId: 21479,
     },
     {
       name: 'Gauntlets of Valor',
@@ -110,6 +130,8 @@ export const hands = (): Item[] => {
       agility: 3,
       armor: 386,
       itemQuality: ItemQuality.Rare,
+      phase: 1,
+      wowHeadId: 16737,
     },
     {
       name: 'Gauntlets of Wrath',
@@ -120,6 +142,8 @@ export const hands = (): Item[] => {
       defense: 7,
       armor: 535,
       itemQuality: ItemQuality.Epic,
+      phase: 3,
+      wowHeadId: 16964,
     },
     {
       name: 'Gloves of Enforcement',
@@ -130,6 +154,8 @@ export const hands = (): Item[] => {
       agility: 20,
       armor: 140,
       itemQuality: ItemQuality.Epic,
+      phase: 5,
+      wowHeadId: 21672,
     },
     {
       name: 'R12 Gauntlets',
@@ -139,6 +165,8 @@ export const hands = (): Item[] => {
       stamina: 23,
       armor: 532,
       itemQuality: ItemQuality.Epic,
+      phase: 2,
+      wowHeadId: 16548,
     },
     {
       name: 'R7 Gauntlets',
@@ -147,6 +175,8 @@ export const hands = (): Item[] => {
       stamina: 17,
       armor: 429,
       itemQuality: ItemQuality.Rare,
+      phase: 2,
+      wowHeadId: 22868,
     },
     {
       name: 'Reiver Claws',
@@ -156,6 +186,8 @@ export const hands = (): Item[] => {
       stamina: 15,
       armor: 398,
       itemQuality: ItemQuality.Rare,
+      phase: 1,
+      wowHeadId: 13162,
     },
     {
       name: 'Sacrificial Gauntlets',
@@ -165,6 +197,8 @@ export const hands = (): Item[] => {
       strength: 19,
       armor: 441,
       itemQuality: ItemQuality.Rare,
+      phase: 4,
+      wowHeadId: 22714,
     },
     {
       name: 'Stronghold Gauntlets',
@@ -174,6 +208,8 @@ export const hands = (): Item[] => {
       parry: 1,
       armor: 441,
       itemQuality: ItemQuality.Epic,
+      phase: 1,
+      wowHeadId: 12639,
     },
     {
       name: "Voone's Vice Grips",
@@ -183,6 +219,8 @@ export const hands = (): Item[] => {
       agility: 9,
       armor: 221,
       itemQuality: ItemQuality.Rare,
+      phase: 1,
+      wowHeadId: 13963,
     },
   ];
 };
