@@ -10,6 +10,8 @@ export const feet = (): Item[] => {
       agility: 12,
       armor: 452,
       itemQuality: ItemQuality.Rare,
+      phase: 4,
+      wowHeadId: 20208,
     },
     {
       name: "Battlechaser's Greaves",
@@ -19,6 +21,8 @@ export const feet = (): Item[] => {
       agility: 13,
       armor: 397,
       itemQuality: ItemQuality.Rare,
+      phase: 1,
+      wowHeadId: 12555,
     },
     {
       name: 'Black Dragonscale Boots',
@@ -27,6 +31,8 @@ export const feet = (): Item[] => {
       attackPower: 28,
       armor: 270,
       itemQuality: ItemQuality.Epic,
+      phase: 1,
+      wowHeadId: 16984,
     },
     {
       name: 'Blooddrenched Footpads',
@@ -36,6 +42,8 @@ export const feet = (): Item[] => {
       agility: 21,
       armor: 129,
       itemQuality: ItemQuality.Rare,
+      phase: 4,
+      wowHeadId: 19906,
     },
     {
       name: 'Bloodmail Boots',
@@ -46,6 +54,8 @@ export const feet = (): Item[] => {
       agility: 9,
       armor: 247,
       itemQuality: ItemQuality.Rare,
+      phase: 1,
+      wowHeadId: 14616,
     },
     {
       name: 'Boots of Heroism',
@@ -55,6 +65,8 @@ export const feet = (): Item[] => {
       stamina: 20,
       armor: 470,
       itemQuality: ItemQuality.Epic,
+      phase: 1,
+      wowHeadId: 21995,
     },
     {
       name: 'Boots of the Fallen Hero',
@@ -65,6 +77,8 @@ export const feet = (): Item[] => {
       agility: 14,
       armor: 581,
       itemQuality: ItemQuality.Epic,
+      phase: 5,
+      wowHeadId: 21688,
     },
     {
       name: 'Boots of the Shadow Flame',
@@ -74,6 +88,8 @@ export const feet = (): Item[] => {
       attackPower: 44,
       armor: 286,
       itemQuality: ItemQuality.Epic,
+      phase: 3,
+      wowHeadId: 19381,
     },
     {
       name: 'Boots of the Vanguard',
@@ -83,6 +99,8 @@ export const feet = (): Item[] => {
       agility: 22,
       armor: 138,
       itemQuality: ItemQuality.Epic,
+      phase: 5,
+      wowHeadId: 21493,
     },
     {
       name: 'Boots of Unwavering Will',
@@ -93,6 +111,8 @@ export const feet = (): Item[] => {
       defense: 5,
       armor: 647,
       itemQuality: ItemQuality.Epic,
+      phase: 5,
+      wowHeadId: 21706,
     },
     {
       name: 'Boots of Valor',
@@ -102,6 +122,8 @@ export const feet = (): Item[] => {
       agility: 4,
       armor: 424,
       itemQuality: ItemQuality.Rare,
+      phase: 1,
+      wowHeadId: 16734,
     },
     {
       name: 'Chromatic Boots',
@@ -112,6 +134,8 @@ export const feet = (): Item[] => {
       agility: 20,
       armor: 596,
       itemQuality: ItemQuality.Epic,
+      phase: 3,
+      wowHeadId: 19387,
     },
     {
       name: "Conqueror's Greaves",
@@ -122,6 +146,8 @@ export const feet = (): Item[] => {
       defense: 4,
       armor: 604,
       itemQuality: ItemQuality.Epic,
+      phase: 3,
+      wowHeadId: 21333,
     },
     {
       name: 'Pads of the Dread Wolf',
@@ -130,6 +156,8 @@ export const feet = (): Item[] => {
       attackPower: 40,
       armor: 116,
       itemQuality: ItemQuality.Rare,
+      phase: 1,
+      wowHeadId: 13210,
     },
     {
       name: 'R12 Plate Boots',
@@ -140,6 +168,8 @@ export const feet = (): Item[] => {
       agility: 12,
       armor: 592,
       itemQuality: ItemQuality.Epic,
+      phase: 2,
+      wowHeadId: 16545,
     },
     {
       name: 'R7 Plate Boots',
@@ -149,6 +179,8 @@ export const feet = (): Item[] => {
       agility: 9,
       armor: 472,
       itemQuality: ItemQuality.Rare,
+      phase: 2,
+      wowHeadId: 22858,
     },
     {
       name: 'Sabatons of Might',
@@ -158,6 +190,8 @@ export const feet = (): Item[] => {
       defense: 5,
       armor: 515,
       itemQuality: ItemQuality.Epic,
+      phase: 1,
+      wowHeadId: 16862,
     },
     {
       name: 'Sabatons of Wrath',
@@ -167,6 +201,8 @@ export const feet = (): Item[] => {
       defense: 7,
       armor: 589,
       itemQuality: ItemQuality.Epic,
+      phase: 3,
+      wowHeadId: 16965,
     },
     {
       name: "Sapphiron's Scale Boots",
@@ -176,6 +212,8 @@ export const feet = (): Item[] => {
       agility: 9,
       armor: 417,
       itemQuality: ItemQuality.Rare,
+      phase: 1,
+      wowHeadId: 13070,
     },
     {
       name: 'Savage Gladiator Greaves',
@@ -185,6 +223,8 @@ export const feet = (): Item[] => {
       agility: 15,
       armor: 233,
       itemQuality: ItemQuality.Rare,
+      phase: 1,
+      wowHeadId: 11731,
     },
     {
       name: 'Slime Kickers',
@@ -195,6 +235,8 @@ export const feet = (): Item[] => {
       agility: 12,
       armor: 519,
       itemQuality: ItemQuality.Rare,
+      phase: 5,
+      wowHeadId: 21490,
     },
     {
       name: 'Swiftwalker Boots',
@@ -204,6 +246,8 @@ export const feet = (): Item[] => {
       agility: 21,
       armor: 115,
       itemQuality: ItemQuality.Rare,
+      phase: 1,
+      wowHeadId: 12553,
     },
     {
       name: 'Windreaver Greaves',
@@ -212,6 +256,8 @@ export const feet = (): Item[] => {
       agility: 20,
       armor: 247,
       itemQuality: ItemQuality.Rare,
+      phase: 1,
+      wowHeadId: 13967,
     },
   ];
 };
