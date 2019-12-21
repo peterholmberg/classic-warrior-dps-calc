@@ -65,7 +65,7 @@ interface WeaponSkill {
 export interface Item {
   name: string;
   itemSlot: ItemSlot;
-  armorType?: ItemQuality;
+  armorType?: ArmorType;
   wowHeadId: number;
   armor?: number;
   strength?: number;

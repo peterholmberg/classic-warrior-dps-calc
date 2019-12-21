@@ -16,6 +16,8 @@ export const axes = (): Weapon[] => {
       dps: 49.75,
       itemSlot: ItemSlot.OneHand,
       itemQuality: ItemQuality.Epic,
+      phase: 4,
+      wowHeadId: 19852,
     },
     {
       name: 'Annihilator',
@@ -26,6 +28,8 @@ export const axes = (): Weapon[] => {
       dps: 41.47,
       itemSlot: ItemSlot.MainHand,
       itemQuality: ItemQuality.Rare,
+      phase: 1,
+      wowHeadId: 12798,
     },
     {
       name: 'Axe of the Deep Woods',
@@ -36,6 +40,8 @@ export const axes = (): Weapon[] => {
       dps: 41.48,
       itemSlot: ItemSlot.MainHand,
       itemQuality: ItemQuality.Epic,
+      phase: 1,
+      wowHeadId: 811,
     },
     {
       name: 'Blessed Qiraji War Axe',
@@ -50,6 +56,8 @@ export const axes = (): Weapon[] => {
       dps: 60.58,
       itemSlot: ItemSlot.OneHand,
       itemQuality: ItemQuality.Epic,
+      phase: 5,
+      wowHeadId: 21242,
     },
     {
       name: 'Bone Slicing Hatchet',
@@ -62,6 +70,8 @@ export const axes = (): Weapon[] => {
       dps: 40.59,
       itemSlot: ItemSlot.OneHand,
       itemQuality: ItemQuality.Rare,
+      phase: 1,
+      wowHeadId: 18737,
     },
     {
       name: "Crul'Shorukh, Edge of Chaos",
@@ -74,6 +84,8 @@ export const axes = (): Weapon[] => {
       dps: 62.83,
       itemSlot: ItemSlot.OneHand,
       itemQuality: ItemQuality.Epic,
+      phase: 3,
+      wowHeadId: 19363,
     },
     {
       name: 'Dark Iron Destroyer',
@@ -85,6 +97,8 @@ export const axes = (): Weapon[] => {
       dps: 42.71,
       itemSlot: ItemSlot.MainHand,
       itemQuality: ItemQuality.Epic,
+      phase: 1,
+      wowHeadId: 17016,
     },
     {
       name: 'Deathbringer',
@@ -95,6 +109,8 @@ export const axes = (): Weapon[] => {
       dps: 56.38,
       itemSlot: ItemSlot.OneHand,
       itemQuality: ItemQuality.Epic,
+      phase: 1,
+      wowHeadId: 17068,
     },
     {
       name: "Doom's Edge",
@@ -108,6 +124,8 @@ export const axes = (): Weapon[] => {
       dps: 51.52,
       itemSlot: ItemSlot.OneHand,
       itemQuality: ItemQuality.Epic,
+      phase: 3,
+      wowHeadId: 19362,
     },
     {
       name: 'Flurry Axe',
@@ -118,6 +136,8 @@ export const axes = (): Weapon[] => {
       dps: 35.33,
       itemSlot: ItemSlot.OneHand,
       itemQuality: ItemQuality.Epic,
+      phase: 1,
+      wowHeadId: 871,
     },
     {
       name: 'Frostbite',
@@ -129,6 +149,8 @@ export const axes = (): Weapon[] => {
       dps: 52.59,
       itemSlot: ItemSlot.OneHand,
       itemQuality: ItemQuality.Rare,
+      phase: 2.5,
+      wowHeadId: 19103,
     },
     {
       name: 'Hatchet of Sundered Bone',
@@ -141,6 +163,8 @@ export const axes = (): Weapon[] => {
       dps: 65.38,
       itemSlot: ItemSlot.OneHand,
       itemQuality: ItemQuality.Epic,
+      phase: 6,
+      wowHeadId: 22816,
     },
     {
       name: 'Iceblade Hacker',
@@ -151,6 +175,8 @@ export const axes = (): Weapon[] => {
       dps: 42.25,
       itemSlot: ItemSlot.MainHand,
       itemQuality: ItemQuality.Rare,
+      phase: 1,
+      wowHeadId: 13952,
     },
     {
       name: 'R14 Axe',
@@ -164,6 +190,8 @@ export const axes = (): Weapon[] => {
       dps: 59.48,
       itemSlot: ItemSlot.OneHand,
       itemQuality: ItemQuality.Epic,
+      phase: 2,
+      wowHeadId: 18828,
     },
     {
       name: 'Rivenspike',
@@ -174,6 +202,8 @@ export const axes = (): Weapon[] => {
       dps: 38.1,
       itemSlot: ItemSlot.OneHand,
       itemQuality: ItemQuality.Rare,
+      phase: 1,
+      wowHeadId: 13286,
     },
     {
       name: 'Serathil',
@@ -186,6 +216,8 @@ export const axes = (): Weapon[] => {
       dps: 40.0,
       itemSlot: ItemSlot.OneHand,
       itemQuality: ItemQuality.Rare,
+      phase: 1,
+      wowHeadId: 13015,
     },
     {
       name: 'Sickle of Unyielding Strength',
@@ -200,6 +232,8 @@ export const axes = (): Weapon[] => {
       dps: 51.43,
       itemSlot: ItemSlot.OneHand,
       itemQuality: ItemQuality.Epic,
+      phase: 5,
+      wowHeadId: 21392,
     },
     {
       name: 'Soulrender',
@@ -211,6 +245,8 @@ export const axes = (): Weapon[] => {
       dps: 40.8,
       itemSlot: ItemSlot.OneHand,
       itemQuality: ItemQuality.Rare,
+      phase: 5,
+      wowHeadId: 20675,
     },
     {
       name: 'Zulian Hacker of Strength',
@@ -226,6 +262,8 @@ export const axes = (): Weapon[] => {
       dps: 42.71,
       itemSlot: ItemSlot.OneHand,
       itemQuality: ItemQuality.Rare,
+      phase: 4,
+      wowHeadId: 19921,
     },
     {
       name: 'Zulian Hacker of the Tiger',
@@ -242,6 +280,8 @@ export const axes = (): Weapon[] => {
       dps: 42.71,
       itemSlot: ItemSlot.OneHand,
       itemQuality: ItemQuality.Rare,
+      phase: 4,
+      wowHeadId: 19921,
     },
   ];
 };

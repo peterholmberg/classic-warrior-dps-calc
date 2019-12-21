@@ -11,6 +11,8 @@ export const shoulders = (): Item[] => {
       agility: 13,
       armor: 530,
       itemQuality: ItemQuality.Rare,
+      phase: 5,
+      wowHeadId: 20683,
     },
     {
       name: 'Arathi Plate Spaulders',
@@ -20,6 +22,8 @@ export const shoulders = (): Item[] => {
       agility: 17,
       armor: 553,
       itemQuality: ItemQuality.Epic,
+      phase: 4,
+      wowHeadId: 20212,
     },
     {
       name: 'Black Dragonscale Shoulders',
@@ -28,6 +32,8 @@ export const shoulders = (): Item[] => {
       attackPower: 40,
       armor: 266,
       itemQuality: ItemQuality.Rare,
+      phase: 1,
+      wowHeadId: 15051,
     },
     {
       name: 'Bloodsoaked Pauldrons',
@@ -38,6 +44,8 @@ export const shoulders = (): Item[] => {
       defense: 3,
       armor: 552,
       itemQuality: ItemQuality.Rare,
+      phase: 5,
+      wowHeadId: 19878,
     },
     {
       name: "Conqueror's Spaulders",
@@ -49,6 +57,8 @@ export const shoulders = (): Item[] => {
       defense: 4,
       armor: 659,
       itemQuality: ItemQuality.Epic,
+      phase: 5,
+      wowHeadId: 21330,
     },
     {
       name: 'Drake Talon Pauldrons',
@@ -59,6 +69,8 @@ export const shoulders = (): Item[] => {
       dodge: 1,
       armor: 634,
       itemQuality: ItemQuality.Epic,
+      phase: 3,
+      wowHeadId: 19394,
     },
     {
       name: 'Dreadnaught Pauldrons',
@@ -69,6 +81,8 @@ export const shoulders = (): Item[] => {
       defense: 9,
       armor: 722,
       itemQuality: ItemQuality.Epic,
+      phase: 6,
+      wowHeadId: 22419,
     },
     {
       name: 'Pauldrons of Might',
@@ -78,6 +92,8 @@ export const shoulders = (): Item[] => {
       defense: 5,
       armor: 562,
       itemQuality: ItemQuality.Epic,
+      phase: 1,
+      wowHeadId: 16868,
     },
     {
       name: 'Pauldrons of the Unrelenting',
@@ -88,6 +104,8 @@ export const shoulders = (): Item[] => {
       defense: 9,
       armor: 650,
       itemQuality: ItemQuality.Epic,
+      phase: 5,
+      wowHeadId: 21639,
     },
     {
       name: 'Pauldrons of Wrath',
@@ -97,6 +115,8 @@ export const shoulders = (): Item[] => {
       defense: 7,
       armor: 642,
       itemQuality: ItemQuality.Epic,
+      phase: 3,
+      wowHeadId: 16961,
     },
     {
       name: 'Polished Obsidian Pauldrons',
@@ -106,6 +126,8 @@ export const shoulders = (): Item[] => {
       defense: 7,
       armor: 530,
       itemQuality: ItemQuality.Rare,
+      phase: 5,
+      wowHeadId: 21805,
     },
     {
       name: 'R10 Plate Shoulders',
@@ -115,6 +137,8 @@ export const shoulders = (): Item[] => {
       stamina: 18,
       armor: 552,
       itemQuality: ItemQuality.Rare,
+      phase: 2,
+      wowHeadId: 23243,
     },
     {
       name: 'R13 Plate Shoulders',
@@ -125,6 +149,8 @@ export const shoulders = (): Item[] => {
       agility: 16,
       armor: 626,
       itemQuality: ItemQuality.Epic,
+      phase: 2,
+      wowHeadId: 16544,
     },
     {
       name: 'Razorsteel Shoulders',
@@ -135,6 +161,8 @@ export const shoulders = (): Item[] => {
       agility: 10,
       armor: 410,
       itemQuality: ItemQuality.Rare,
+      phase: 1,
+      wowHeadId: 20517,
     },
     {
       name: 'Spaulders of Heroism',
@@ -144,6 +172,8 @@ export const shoulders = (): Item[] => {
       agility: 12,
       armor: 507,
       itemQuality: ItemQuality.Epic,
+      phase: 1,
+      wowHeadId: 22001,
     },
     {
       name: 'Spaulders of Valor',
@@ -153,6 +183,8 @@ export const shoulders = (): Item[] => {
       agility: 9,
       armor: 470,
       itemQuality: ItemQuality.Rare,
+      phase: 1,
+      wowHeadId: 16733,
     },
     {
       name: 'Truestrike Shoulders',
@@ -161,6 +193,8 @@ export const shoulders = (): Item[] => {
       attackPower: 24,
       armor: 129,
       itemQuality: ItemQuality.Rare,
+      phase: 1,
+      wowHeadId: 12927,
     },
     {
       name: 'Wyrmhide Spaulders',
@@ -168,6 +202,8 @@ export const shoulders = (): Item[] => {
       hit: 2,
       armor: 113,
       itemQuality: ItemQuality.Uncommon,
+      phase: 1,
+      wowHeadId: 12082,
     },
   ];
 };
