@@ -11,6 +11,8 @@ export const legs = (): Item[] => {
       agility: 15,
       armor: 566,
       itemQuality: ItemQuality.Rare,
+      phase: 5,
+      wowHeadId: 20671,
     },
     {
       name: 'Black Dragonscale Leggings',
@@ -19,6 +21,8 @@ export const legs = (): Item[] => {
       attackPower: 54,
       armor: 320,
       itemQuality: ItemQuality.Rare,
+      phase: 1,
+      wowHeadId: 15052,
     },
     {
       name: 'Blademaster Leggings',
@@ -29,6 +33,8 @@ export const legs = (): Item[] => {
       dodge: 2,
       armor: 154,
       itemQuality: ItemQuality.Rare,
+      phase: 1,
+      wowHeadId: 12963,
     },
     {
       name: 'Bloodsoaked Legplates',
@@ -38,6 +44,8 @@ export const legs = (): Item[] => {
       defense: 10,
       armor: 674,
       itemQuality: ItemQuality.Epic,
+      phase: 4,
+      wowHeadId: 19855,
     },
     {
       name: 'Cadaverous Leggings',
@@ -46,6 +54,8 @@ export const legs = (): Item[] => {
       attackPower: 52,
       armor: 150,
       itemQuality: ItemQuality.Rare,
+      phase: 1,
+      wowHeadId: 14638,
     },
     {
       name: 'Cloudkeeper Legplates',
@@ -56,6 +66,8 @@ export const legs = (): Item[] => {
       attackPower: 0,
       armor: 617,
       itemQuality: ItemQuality.Epic,
+      phase: 1,
+      wowHeadId: 14554,
     },
     {
       name: "Conqueror's Legguards",
@@ -67,6 +79,8 @@ export const legs = (): Item[] => {
       defense: 6,
       armor: 796,
       itemQuality: ItemQuality.Epic,
+      phase: 5,
+      wowHeadId: 21332,
     },
     {
       name: 'Dark Heart Pants',
@@ -76,6 +90,8 @@ export const legs = (): Item[] => {
       attackPower: 48,
       armor: 296,
       itemQuality: ItemQuality.Epic,
+      phase: 4,
+      wowHeadId: 20627,
     },
     {
       name: 'Devilsaur Leggings',
@@ -85,6 +101,8 @@ export const legs = (): Item[] => {
       attackPower: 46,
       armor: 148,
       itemQuality: ItemQuality.Rare,
+      phase: 1,
+      wowHeadId: 15062,
     },
     {
       name: 'Eldritch Reinforced Legplates',
@@ -95,6 +113,8 @@ export const legs = (): Item[] => {
       agility: 9,
       armor: 566,
       itemQuality: ItemQuality.Rare,
+      phase: 2,
+      wowHeadId: 18380,
     },
     {
       name: 'Handcrafted Mastersmith Leggings',
@@ -103,6 +123,8 @@ export const legs = (): Item[] => {
       stamina: 12,
       armor: 548,
       itemQuality: ItemQuality.Rare,
+      phase: 1,
+      wowHeadId: 13498,
     },
     {
       name: 'Leggings of the Apocalypse',
@@ -113,6 +135,8 @@ export const legs = (): Item[] => {
       agility: 31,
       armor: 211,
       itemQuality: ItemQuality.Epic,
+      phase: 6,
+      wowHeadId: 23071,
     },
     {
       name: 'Leggings of the Ursa',
@@ -121,6 +145,8 @@ export const legs = (): Item[] => {
       strength: 17,
       armor: 459,
       itemQuality: ItemQuality.Uncommon,
+      phase: 1,
+      wowHeadId: 21316,
     },
     {
       name: 'Legguards of the Fallen Crusader',
@@ -130,6 +156,8 @@ export const legs = (): Item[] => {
       agility: 22,
       armor: 740,
       itemQuality: ItemQuality.Epic,
+      phase: 3,
+      wowHeadId: 19402,
     },
     {
       name: 'Legplates of Carnage',
@@ -139,6 +167,8 @@ export const legs = (): Item[] => {
       stamina: 18,
       armor: 815,
       itemQuality: ItemQuality.Epic,
+      phase: 6,
+      wowHeadId: 23068,
     },
     {
       name: 'Legplates of Heroism',
@@ -149,6 +179,8 @@ export const legs = (): Item[] => {
       defense: 5,
       armor: 601,
       itemQuality: ItemQuality.Epic,
+      phase: 1,
+      wowHeadId: 22000,
     },
     {
       name: 'Legplates of Might',
@@ -159,6 +191,8 @@ export const legs = (): Item[] => {
       defense: 7,
       armor: 655,
       itemQuality: ItemQuality.Epic,
+      phase: 1,
+      wowHeadId: 16867,
     },
     {
       name: 'Legplates of the Qiraji Command',
@@ -168,6 +202,8 @@ export const legs = (): Item[] => {
       stamina: 13,
       armor: 644,
       itemQuality: ItemQuality.Rare,
+      phase: 5,
+      wowHeadId: 21495,
     },
     {
       name: 'Legplates of Valor',
@@ -177,6 +213,8 @@ export const legs = (): Item[] => {
       agility: 11,
       armor: 557,
       itemQuality: ItemQuality.Rare,
+      phase: 1,
+      wowHeadId: 16732,
     },
     {
       name: 'Legplates of Wrath',
@@ -187,6 +225,8 @@ export const legs = (): Item[] => {
       defense: 11,
       armor: 749,
       itemQuality: ItemQuality.Epic,
+      phase: 1,
+      wowHeadId: 16962,
     },
     {
       name: 'R12 Plate Legguards',
@@ -197,6 +237,8 @@ export const legs = (): Item[] => {
       stamina: 28,
       armor: 743,
       itemQuality: ItemQuality.Epic,
+      phase: 2,
+      wowHeadId: 16543,
     },
     {
       name: 'R8 Plate Leggings',
@@ -206,6 +248,8 @@ export const legs = (): Item[] => {
       stamina: 17,
       armor: 618,
       itemQuality: ItemQuality.Rare,
+      phase: 2,
+      wowHeadId: 22873,
     },
     {
       name: 'Scaled Sand Reaver Leggings',
@@ -215,6 +259,8 @@ export const legs = (): Item[] => {
       attackPower: 62,
       armor: 427,
       itemQuality: ItemQuality.Epic,
+      phase: 5,
+      wowHeadId: 21651,
     },
     {
       name: "Sentinel's Plate Legguards",
@@ -225,6 +271,8 @@ export const legs = (): Item[] => {
       stamina: 27,
       armor: 646,
       itemQuality: ItemQuality.Epic,
+      phase: 2,
+      wowHeadId: 22672,
     },
     {
       name: 'Titanic Leggings',
@@ -234,6 +282,8 @@ export const legs = (): Item[] => {
       strength: 30,
       armor: 598,
       itemQuality: ItemQuality.Epic,
+      phase: 2,
+      wowHeadId: 22385,
     },
   ];
 };
