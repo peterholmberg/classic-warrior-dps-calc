@@ -1,4 +1,4 @@
-import { Item, ItemQuality, ItemSlot } from '../../../types/items';
+import { ArmorType, Item, ItemQuality, ItemSlot } from '../../../types/items';
 
 export const wrists = (): Item[] => {
   return [
@@ -10,6 +10,9 @@ export const wrists = (): Item[] => {
       agility: 12,
       armor: 309,
       itemQuality: ItemQuality.Rare,
+      phase: 5,
+      wowHeadId: 20687,
+      armorType: ArmorType.Plate,
     },
     {
       name: 'Battleborn Armbraces',
@@ -18,6 +21,9 @@ export const wrists = (): Item[] => {
       hit: 1,
       armor: 287,
       itemQuality: ItemQuality.Rare,
+      phase: 1,
+      wowHeadId: 12936,
+      armorType: ArmorType.Plate,
     },
     {
       name: 'Berserker Bracers',
@@ -27,6 +33,9 @@ export const wrists = (): Item[] => {
       agility: 8,
       armor: 323,
       itemQuality: ItemQuality.Epic,
+      phase: 2.5,
+      wowHeadId: 19578,
+      armorType: ArmorType.Plate,
     },
     {
       name: 'Blackmist Armguards',
@@ -36,6 +45,9 @@ export const wrists = (): Item[] => {
       stamina: 13,
       armor: 77,
       itemQuality: ItemQuality.Rare,
+      phase: 1,
+      wowHeadId: 12966,
+      armorType: ArmorType.Leather,
     },
     {
       name: 'Bracelets of Wrath',
@@ -44,6 +56,9 @@ export const wrists = (): Item[] => {
       stamina: 27,
       armor: 375,
       itemQuality: ItemQuality.Epic,
+      phase: 3,
+      wowHeadId: 16959,
+      armorType: ArmorType.Plate,
     },
     {
       name: 'Bracers of Brutality',
@@ -53,6 +68,9 @@ export const wrists = (): Item[] => {
       agility: 12,
       armor: 356,
       itemQuality: ItemQuality.Epic,
+      phase: 5,
+      wowHeadId: 21457,
+      armorType: ArmorType.Plate,
     },
     {
       name: 'Bracers of Heroism',
@@ -63,6 +81,9 @@ export const wrists = (): Item[] => {
       defense: 3,
       armor: 296,
       itemQuality: ItemQuality.Epic,
+      phase: 1,
+      wowHeadId: 21996,
+      armorType: ArmorType.Plate,
     },
     {
       name: 'Bracers of Might',
@@ -71,6 +92,9 @@ export const wrists = (): Item[] => {
       stamina: 23,
       armor: 328,
       itemQuality: ItemQuality.Epic,
+      phase: 1,
+      wowHeadId: 16861,
+      armorType: ArmorType.Plate,
     },
     {
       name: 'Bracers of Valor',
@@ -80,6 +104,9 @@ export const wrists = (): Item[] => {
       agility: 3,
       armor: 261,
       itemQuality: ItemQuality.Rare,
+      phase: 1,
+      wowHeadId: 16735,
+      armorType: ArmorType.Plate,
     },
     {
       name: 'Deepfury Bracers',
@@ -89,6 +116,9 @@ export const wrists = (): Item[] => {
       agility: 15,
       armor: 69,
       itemQuality: ItemQuality.Rare,
+      phase: 1,
+      wowHeadId: 13120,
+      armorType: ArmorType.Leather,
     },
     {
       name: 'Deeprock Bracers',
@@ -98,6 +128,9 @@ export const wrists = (): Item[] => {
       agility: 10,
       armor: 309,
       itemQuality: ItemQuality.Epic,
+      phase: 5,
+      wowHeadId: 21184,
+      armorType: ArmorType.Plate,
     },
     {
       name: 'Gordok Bracers of Power',
@@ -106,6 +139,9 @@ export const wrists = (): Item[] => {
       stamina: 7,
       armor: 287,
       itemQuality: ItemQuality.Rare,
+      phase: 1.5,
+      wowHeadId: 18533,
+      armorType: ArmorType.Plate,
     },
     {
       name: 'Hive Defiler Wristguards',
@@ -114,6 +150,9 @@ export const wrists = (): Item[] => {
       agility: 18,
       armor: 384,
       itemQuality: ItemQuality.Epic,
+      phase: 5,
+      wowHeadId: 21618,
+      armorType: ArmorType.Plate,
     },
     {
       name: 'Qiraji Execution Bracers',
@@ -124,6 +163,9 @@ export const wrists = (): Item[] => {
       agility: 16,
       armor: 103,
       itemQuality: ItemQuality.Epic,
+      phase: 5,
+      wowHeadId: 21602,
+      armorType: ArmorType.Leather,
     },
     {
       name: 'Scaled Bracers of the Gorger',
@@ -133,6 +175,9 @@ export const wrists = (): Item[] => {
       agility: 15,
       armor: 87,
       itemQuality: ItemQuality.Rare,
+      phase: 5,
+      wowHeadId: 21491,
+      armorType: ArmorType.Leather,
     },
     {
       name: 'Slashclaw Bracers',
@@ -142,6 +187,9 @@ export const wrists = (): Item[] => {
       agility: 7,
       armor: 155,
       itemQuality: ItemQuality.Rare,
+      phase: 1,
+      wowHeadId: 13211,
+      armorType: ArmorType.Mail,
     },
     {
       name: "Zandalar Vindicator's Armguards",
@@ -151,6 +199,9 @@ export const wrists = (): Item[] => {
       agility: 13,
       armor: 304,
       itemQuality: ItemQuality.Epic,
+      phase: 4,
+      wowHeadId: 19824,
+      armorType: ArmorType.Plate,
     },
     {
       name: 'Vambraces of the Sadist',
@@ -160,6 +211,9 @@ export const wrists = (): Item[] => {
       stamina: 7,
       armor: 270,
       itemQuality: ItemQuality.Rare,
+      phase: 1,
+      wowHeadId: 13400,
+      armorType: ArmorType.Plate,
     },
     {
       name: 'Wristguards of Stability',
@@ -168,6 +222,9 @@ export const wrists = (): Item[] => {
       stamina: 8,
       armor: 86,
       itemQuality: ItemQuality.Epic,
+      phase: 1,
+      wowHeadId: 19146,
+      armorType: ArmorType.Leather,
     },
     {
       name: 'Wristguards of True Flight',
@@ -177,6 +234,9 @@ export const wrists = (): Item[] => {
       agility: 19,
       armor: 198,
       itemQuality: ItemQuality.Epic,
+      phase: 1,
+      wowHeadId: 18812,
+      armorType: ArmorType.Mail,
     },
     {
       name: 'Wristguards of Vengeance',
@@ -186,6 +246,9 @@ export const wrists = (): Item[] => {
       stamina: 10,
       armor: 407,
       itemQuality: ItemQuality.Epic,
+      phase: 6,
+      wowHeadId: 22936,
+      armorType: ArmorType.Plate,
     },
   ];
 };

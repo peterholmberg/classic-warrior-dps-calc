@@ -1,4 +1,10 @@
-import { Item, ItemQuality, ItemSlot, WeaponType } from '../../../types/items';
+import {
+  ArmorType,
+  Item,
+  ItemQuality,
+  ItemSlot,
+  WeaponType,
+} from '../../../types/items';
 
 export const waists = (): Item[] => {
   return [
@@ -10,6 +16,9 @@ export const waists = (): Item[] => {
       stamina: 10,
       armor: 369,
       itemQuality: ItemQuality.Rare,
+      phase: 4,
+      wowHeadId: 20204,
+      armorType: ArmorType.Plate,
     },
     {
       name: 'Belt of Heroism',
@@ -20,6 +29,9 @@ export const waists = (): Item[] => {
       defense: 7,
       armor: 380,
       itemQuality: ItemQuality.Epic,
+      phase: 1,
+      wowHeadId: 21994,
+      armorType: ArmorType.Plate,
     },
     {
       name: 'Belt of Might',
@@ -30,6 +42,9 @@ export const waists = (): Item[] => {
       defense: 5,
       armor: 412,
       itemQuality: ItemQuality.Epic,
+      phase: 1,
+      wowHeadId: 16864,
+      armorType: ArmorType.Plate,
     },
     {
       name: 'Belt of Never-ending Agony',
@@ -40,6 +55,8 @@ export const waists = (): Item[] => {
       attackPower: 64,
       armor: 142,
       itemQuality: ItemQuality.Epic,
+      phase: 5,
+      wowHeadId: 21586,
     },
     {
       name: 'Belt of Preserved Heads',
@@ -50,6 +67,8 @@ export const waists = (): Item[] => {
       agility: 15,
       armor: 108,
       itemQuality: ItemQuality.Rare,
+      phase: 4,
+      wowHeadId: 20216,
     },
     {
       name: 'Belt of Shrunken Heads',
@@ -59,6 +78,8 @@ export const waists = (): Item[] => {
       agility: 7,
       armor: 408,
       itemQuality: ItemQuality.Rare,
+      phase: 4,
+      wowHeadId: 20213,
     },
     {
       name: 'Belt of the Sand Reaver',
@@ -68,6 +89,8 @@ export const waists = (): Item[] => {
       defense: 5,
       armor: 494,
       itemQuality: ItemQuality.Rare,
+      phase: 5,
+      wowHeadId: 21503,
     },
     {
       name: 'Belt of Valor',
@@ -77,6 +100,9 @@ export const waists = (): Item[] => {
       agility: 7,
       armor: 341,
       itemQuality: ItemQuality.Rare,
+      phase: 1,
+      wowHeadId: 16736,
+      armorType: ArmorType.Plate,
     },
     {
       name: 'Brigam Girdle',
@@ -86,6 +112,9 @@ export const waists = (): Item[] => {
       stamina: 16,
       armor: 369,
       itemQuality: ItemQuality.Rare,
+      phase: 1,
+      wowHeadId: 13142,
+      armorType: ArmorType.Plate,
     },
     {
       name: 'Cloudrunner Girdle',
@@ -94,6 +123,8 @@ export const waists = (): Item[] => {
       agility: 15,
       armor: 185,
       itemQuality: ItemQuality.Rare,
+      phase: 1,
+      wowHeadId: 13252,
     },
     {
       name: 'Girdle of the Mentor',
@@ -105,6 +136,8 @@ export const waists = (): Item[] => {
       agility: 20,
       armor: 536,
       itemQuality: ItemQuality.Epic,
+      phase: 6,
+      wowHeadId: 23219,
     },
     {
       name: "Mugger's Belt",
@@ -117,6 +150,8 @@ export const waists = (): Item[] => {
         weaponType: [WeaponType.Daggers],
       },
       itemQuality: ItemQuality.Rare,
+      phase: 2,
+      wowHeadId: 18505,
     },
     {
       name: "Omokk's Girth Restrainer",
@@ -126,6 +161,8 @@ export const waists = (): Item[] => {
       stamina: 9,
       armor: 353,
       itemQuality: ItemQuality.Rare,
+      phase: 1,
+      wowHeadId: 13959,
     },
     {
       name: 'Onslaught Girdle',
@@ -136,6 +173,9 @@ export const waists = (): Item[] => {
       stamina: 11,
       armor: 494,
       itemQuality: ItemQuality.Epic,
+      phase: 1,
+      wowHeadId: 19137,
+      armorType: ArmorType.Plate,
     },
     {
       name: "Ossirian's Binding",
@@ -146,6 +186,9 @@ export const waists = (): Item[] => {
       agility: 20,
       armor: 258,
       itemQuality: ItemQuality.Epic,
+      phase: 5,
+      wowHeadId: 21463,
+      armorType: ArmorType.Mail,
     },
     {
       name: 'Royal Qiraji Belt',
@@ -157,6 +200,9 @@ export const waists = (): Item[] => {
       defense: 8,
       armor: 512,
       itemQuality: ItemQuality.Epic,
+      phase: 5,
+      wowHeadId: 21598,
+      armorType: ArmorType.Plate,
     },
     {
       name: "Zandalar Vindicator's Belt",
@@ -166,6 +212,9 @@ export const waists = (): Item[] => {
       stamina: 10,
       armor: 391,
       itemQuality: ItemQuality.Epic,
+      phase: 4,
+      wowHeadId: 19823,
+      armorType: ArmorType.Plate,
     },
     {
       name: "Therazane's Link",
@@ -175,6 +224,9 @@ export const waists = (): Item[] => {
       attackPower: 44,
       armor: 295,
       itemQuality: ItemQuality.Epic,
+      phase: 3,
+      wowHeadId: 19380,
+      armorType: ArmorType.Mail,
     },
     {
       name: 'Triad Girdle',
@@ -184,6 +236,9 @@ export const waists = (): Item[] => {
       agility: 19,
       armor: 476,
       itemQuality: ItemQuality.Epic,
+      phase: 5,
+      wowHeadId: 21692,
+      armorType: ArmorType.Plate,
     },
     {
       name: 'Waistband of Wrath',
@@ -193,6 +248,9 @@ export const waists = (): Item[] => {
       defense: 7,
       armor: 482,
       itemQuality: ItemQuality.Epic,
+      phase: 3,
+      wowHeadId: 16960,
+      armorType: ArmorType.Plate,
     },
   ];
 };
