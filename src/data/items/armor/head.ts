@@ -1,4 +1,4 @@
-import { Item, ItemQuality, ItemSlot, WeaponType } from '../../../types/items';
+import {ArmorType, Item, ItemQuality, ItemSlot, WeaponType} from '../../../types/items';
 
 export const heads = (): Item[] => {
   return [
@@ -13,6 +13,9 @@ export const heads = (): Item[] => {
         weaponType: [WeaponType.Daggers],
       },
       itemQuality: ItemQuality.Epic,
+      phase: 4,
+      wowHeadId: 20623,
+      armorType: ArmorType.Leather,
     },
     {
       name: "Conqueror's Crown",
