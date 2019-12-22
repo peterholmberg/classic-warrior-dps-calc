@@ -53,7 +53,23 @@ export class HomeContainer extends PureComponent<null, State> {
 
     return (
       <div className="page-content">
-        <h1>The BiS calculator</h1>
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'baseline',
+          }}
+        >
+          <h1>The BiS calculator</h1>
+          <div style={{ display: 'flex', alignItems: 'baseline' }}>
+            <h4>Phase</h4>
+            <Select
+              options={phases}
+              value={phase}
+              onChange={this.handlePhaseChange}
+            />
+          </div>
+        </div>
         <div className="content-section">
           <h2>Race</h2>
           <div className="race">
@@ -85,14 +101,6 @@ export class HomeContainer extends PureComponent<null, State> {
               </table>
             </div>
           </div>
-        </div>
-        <div className="content-section">
-          <h2>Phase</h2>
-          <Select
-            options={phases}
-            value={phase}
-            onChange={this.handlePhaseChange}
-          />
         </div>
         <div className="content-section">
           <SetupTable />

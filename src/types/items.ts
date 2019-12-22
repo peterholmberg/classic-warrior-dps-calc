@@ -100,28 +100,28 @@ export interface SelectItem {
 }
 
 export interface ItemsState {
-  heads: SelectItem[];
-  necks: SelectItem[];
-  shoulders: SelectItem[];
-  backs: SelectItem[];
-  chests: SelectItem[];
-  wrists: SelectItem[];
-  hands: SelectItem[];
-  waists: SelectItem[];
-  legs: SelectItem[];
-  feet: SelectItem[];
-  rings: SelectItem[];
-  trinkets: SelectItem[];
-  axes: SelectItem[];
-  bows: SelectItem[];
-  crossbows: SelectItem[];
-  daggers: SelectItem[];
-  fists: SelectItem[];
-  guns: SelectItem[];
-  maces: SelectItem[];
-  polearms: SelectItem[];
-  swords: SelectItem[];
-  twoHandAxes: SelectItem[];
-  twoHandMaces: SelectItem[];
-  twoHandSwords: SelectItem[];
+  headItems: Item[];
+  neckItems: Item[];
+  shoulderItems: Item[];
+  backItems: Item[];
+  chestItems: Item[];
+  wristItems: Item[];
+  handItems: Item[];
+  waistItems: Item[];
+  legItems: Item[];
+  feetItems: Item[];
+  ringItems: Item[];
+  trinketItems: Item[];
+  axeItems: Weapon[];
+  bowItems: Weapon[];
+  crossbowItems: Weapon[];
+  daggerItems: Weapon[];
+  fistItems: Weapon[];
+  gunItems: Weapon[];
+  maceItems: Weapon[];
+  polearmItems: Weapon[];
+  swordItems: Weapon[];
+  twoHandAxeItems: Weapon[];
+  twoHandMaceItems: Weapon[];
+  twoHandSwordItems: Weapon[];
 }

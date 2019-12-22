@@ -5,6 +5,23 @@ import { Item } from '../types/items';
 const initialCharacterState: CharacterState = {
   race: Race.Human,
   class: Class.Warrior,
+  head: {} as Item,
+  neck: {} as Item,
+  back: {} as Item,
+  shoulders: {} as Item,
+  chest: {} as Item,
+  wrists: {} as Item,
+  hands: {} as Item,
+  waist: {} as Item,
+  legs: {} as Item,
+  feet: {} as Item,
+  ring1: {} as Item,
+  ring2: {} as Item,
+  trinket1: {} as Item,
+  trinket2: {} as Item,
+  mainHand: {} as Item,
+  offHand: {} as Item,
+  ranged: {} as Item,
 };
 
 interface CharacterReducer<S> extends Record<string, any> {
