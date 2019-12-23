@@ -7,10 +7,10 @@ interface Props {
   onChange: (event: SyntheticEvent<HTMLSelectElement>) => void;
 }
 
-export const Select: FC<Props> = ({ onChange, options, value }: Props) => {
-  console.log(options);
+export const ItemSelect: FC<Props> = ({ onChange, options, value }: Props) => {
   return (
     <select onChange={onChange} value={value}>
+      <option value={undefined} />
       {options.map((option: Item | Weapon, index: number) => {
         return (
           <option key={`${option.wowHeadId}-${index}`} value={option.wowHeadId}>

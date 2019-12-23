@@ -1,15 +1,15 @@
 import React, { FC, SyntheticEvent } from 'react';
-import {Item, Weapon} from '../types/items';
-import { ItemSelect } from './ItemSelect';
+import { WeaponGroup } from '../types/items';
+import { WeaponSelect } from './WeaponSelect';
 
 interface Props {
   slotName: string;
-  options: Item[] | Weapon[];
+  options: WeaponGroup[];
   value?: number;
   onChangeHandler: (event: SyntheticEvent<HTMLSelectElement>) => void;
 }
 
-export const ItemSlot: FC<Props> = ({
+export const WeaponSlot: FC<Props> = ({
   onChangeHandler,
   options,
   slotName,
@@ -18,7 +18,11 @@ export const ItemSlot: FC<Props> = ({
   return (
     <>
       <div>{slotName}</div>
-      <ItemSelect options={options} onChange={onChangeHandler} value={value} />
+      <WeaponSelect
+        options={options}
+        value={value}
+        onChange={onChangeHandler}
+      />
     </>
   );
 };

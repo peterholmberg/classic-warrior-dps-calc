@@ -1,6 +1,13 @@
-import { ItemSlot, ItemsState, Weapon, WeaponType } from '../types/items';
+import {
+  ItemSlot,
+  ItemsState,
+  Weapon,
+  WeaponGroup,
+  WeaponType,
+} from '../types/items';
+import { StoreState } from '../types/store';
 
-export const getMainHandWeapons = (state: ItemsState) => {
+export const getMainHandWeapons = (state: ItemsState): WeaponGroup[] => {
   const {
     axeItems,
     daggerItems,
@@ -32,7 +39,7 @@ export const getMainHandWeapons = (state: ItemsState) => {
   ];
 };
 
-export const getOffHandWeapons = (state: ItemsState) => {
+export const getOffHandWeapons = (state: ItemsState): WeaponGroup[] => {
   const { axeItems, daggerItems, fistItems, maceItems, swordItems } = state;
 
   const filteredAxes = filterOffHandWeapons(axeItems);
@@ -50,7 +57,7 @@ export const getOffHandWeapons = (state: ItemsState) => {
   ];
 };
 
-export const getRangedWeapons = (state: ItemsState) => {
+export const getRangedWeapons = (state: ItemsState): WeaponGroup[] => {
   const { bowItems, crossbowItems, gunItems } = state;
 
   return [
@@ -67,6 +74,20 @@ export const getRangedWeapons = (state: ItemsState) => {
       items: gunItems,
     },
   ];
+};
+
+export const getRings = (state: StoreState) => {
+  const { ringItems } = state.items;
+  const { phase } = state.game;
+
+  return ringItems.filter(item => item.phase <= phase);
+};
+
+export const getTrinkets = (state: StoreState) => {
+  const { trinketItems } = state.items;
+  const { phase } = state.game;
+
+  return trinketItems.filter(trinket => trinket.phase <= phase);
 };
 
 const filterOffHandWeapons = (weapons: Weapon[]) => {

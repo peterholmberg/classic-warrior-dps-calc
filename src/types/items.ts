@@ -94,9 +94,9 @@ export interface Weapon extends Item {
   speed: number;
 }
 
-export interface SelectItem {
-  label: string;
-  value: string | number;
+export interface WeaponGroup {
+  type: WeaponType;
+  items: Weapon[];
 }
 
 export interface ItemsState {

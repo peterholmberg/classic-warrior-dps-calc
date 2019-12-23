@@ -5,6 +5,7 @@ import { StoreState } from '../types/store';
 import { ActionOf, setStore } from './store';
 import characterReducers from './characterReducer';
 import itemsReducers from './itemsReducer';
+import gameReducers from './gameReducers';
 
 export function configureStore() {
   const store = rtkConfigureStore<StoreState, ActionOf<any>>({
@@ -20,5 +21,6 @@ const createRootReducer = () => {
   return combineReducers({
     ...characterReducers,
     ...itemsReducers,
+    ...gameReducers,
   });
 };
