@@ -3,8 +3,8 @@ import { Weapon, WeaponGroup } from '../types/items';
 
 interface Props {
   options: WeaponGroup[];
-  value: number;
-  onChange: (evernt: SyntheticEvent) => void;
+  value?: number;
+  onChange: (evernt: SyntheticEvent<HTMLSelectElement>) => void;
 }
 
 export const WeaponSelect: FC<Props> = ({ options, onChange, value }) => {
