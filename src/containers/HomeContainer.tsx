@@ -1,14 +1,14 @@
-import { Phase } from '../types/game';
 import React, { PureComponent, SyntheticEvent } from 'react';
 import { connect } from 'react-redux';
-import SetupTable from '../components/SetupTable';
-import { Select } from '../components/Select';
-import { getPerks } from '../data/racePerks';
-import { getRaces } from '../data/race';
+import CharacterSetup from '../components/CharacterSetup';
+import { SimpleSelect } from '../components/SimpleSelect';
+import { getRaces, getRaceStats } from '../data/race';
 import { StoreState } from '../types/store';
+import { Phase } from '../types/game';
+import { Race } from '../types/character';
 
-interface State {
-  race: string;
+interface Props {
+  race: Race;
   klass: string;
   phase: Phase;
 }
@@ -24,17 +24,7 @@ const phases = [
   { label: '6 (Naxxramas)', value: 6 },
 ];
 
-export class HomeContainer extends PureComponent<null, State> {
-  constructor(props: any) {
-    super(props);
-
-    this.state = {
-      race: 'human',
-      klass: 'warrior',
-      phase: 2.5,
-    };
-  }
-
+export class HomeContainer extends PureComponent<Props> {
   handleChangeRace = (event: SyntheticEvent<HTMLSelectElement>) => {
     this.setState({
       race: event.currentTarget.value,
@@ -48,19 +38,35 @@ export class HomeContainer extends PureComponent<null, State> {
   };
 
   render() {
-    const { phase, race } = this.state;
-    const perks = getPerks(race);
+    const { phase, race } = this.props;
+    const characterStats = getRaceStats(race);
 
     return (
       <div className="page-content">
-        <h1>The BiS calculator</h1>
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'baseline',
+          }}
+        >
+          <h1>The BiS calculator</h1>
+          <div style={{ display: 'flex', alignItems: 'baseline' }}>
+            <h4>Phase</h4>
+            <SimpleSelect
+              options={phases}
+              value={phase}
+              onChangeHandler={this.handlePhaseChange}
+            />
+          </div>
+        </div>
         <div className="content-section">
           <h2>Race</h2>
           <div className="race">
-            <Select
+            <SimpleSelect
               options={getRaces()}
               value={race}
-              onChange={this.handleChangeRace}
+              onChangeHandler={this.handleChangeRace}
             />
             <div className="race-perks">
               <h3>Race perks</h3>
@@ -72,8 +78,8 @@ export class HomeContainer extends PureComponent<null, State> {
                   </tr>
                 </thead>
                 <tbody>
-                  {perks &&
-                    Object.values(perks.perks).map(v => {
+                  {characterStats &&
+                    Object.values(characterStats.perks).map(v => {
                       return (
                         <tr key={v.skill}>
                           <td>{v.value}</td>
@@ -87,15 +93,7 @@ export class HomeContainer extends PureComponent<null, State> {
           </div>
         </div>
         <div className="content-section">
-          <h2>Phase</h2>
-          <Select
-            options={phases}
-            value={phase}
-            onChange={this.handlePhaseChange}
-          />
-        </div>
-        <div className="content-section">
-          <SetupTable />
+          <CharacterSetup />
         </div>
         <div className="content-section">
           <h2>Results</h2>
@@ -105,10 +103,12 @@ export class HomeContainer extends PureComponent<null, State> {
   }
 }
 
-function mapStateToProps(state: StoreState) {
+const mapStateToProps = (state: StoreState) => {
   return {
-    ...state,
+    phase: state.game.phase,
+    race: state.character.race,
+    klass: state.character.class,
   };
-}
+};
 
 export default connect(mapStateToProps)(HomeContainer);
