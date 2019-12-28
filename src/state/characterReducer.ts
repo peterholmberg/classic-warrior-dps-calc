@@ -91,7 +91,7 @@ export const characterSlice = createSlice<
   },
 });
 
-const recalculateStats = (state: CharacterState): CharacteStats => {
+const recalculateStats = (state: CharacterState): CharacterStats => {
   let strength = 0,
     agility = 0,
     stamina = 0,
