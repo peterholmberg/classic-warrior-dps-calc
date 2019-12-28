@@ -22,6 +22,20 @@ export enum Class {
   Rogue = 'rogue',
 }
 
+export interface CharacterStats {
+  strength: number;
+  agility: number;
+  stamina: number;
+  intellect: number;
+  spirit: number;
+  crit: number;
+  hit: number;
+  attackPower: number;
+  mainHandDamage: [number, number];
+  offHandDamage: [number, number];
+  rangedDamage: [number, number];
+}
+
 export interface CharacterState  {
   race: Race;
   class: Class;
@@ -42,4 +56,5 @@ export interface CharacterState  {
   mainHand: Item;
   offHand: Item;
   ranged: Item;
+  stats: CharacterStats;
 }

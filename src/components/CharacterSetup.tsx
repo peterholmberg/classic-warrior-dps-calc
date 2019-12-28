@@ -1,50 +1,83 @@
 import React, { PureComponent, SyntheticEvent } from 'react';
 import { connect } from 'react-redux';
-import { StoreState } from '../types/store';
-import { ItemsState } from '../types/items';
-import { ItemSlot } from './ItemSlot';
-import { CharacterState } from '../types/character';
 import WeaponTier from './WeaponTier';
-import { StatsTable } from './StatsTable';
 import MiscTier from './MiscTier';
+import { ItemSlot } from './ItemSlot';
+import { StatsTable } from './StatsTable';
+import { setItemAction } from '../state/characterReducer';
+import { CharacterState } from '../types/character';
+import {Item, ItemsState} from '../types/items';
+import { StoreState } from '../types/store';
 
 interface Props extends ItemsState {
   character: CharacterState;
+
+  setItemAction: typeof setItemAction;
 }
 
 export class CharacterSetup extends PureComponent<Props> {
   handleHeadChange = (event: SyntheticEvent<HTMLSelectElement>) => {
-    console.log('changed to', event.currentTarget.value);
+    const { headItems, setItemAction } = this.props;
+    const changedItemId = parseInt(event.currentTarget.value);
+
+    setItemAction(headItems.find(o => o.wowHeadId === changedItemId) || {} as Item);
   };
 
   handleNeckChange = (event: SyntheticEvent<HTMLSelectElement>) => {
-    console.log('changed to', event.currentTarget.value);
+    const { neckItems, setItemAction } = this.props;
+    const changedItemId = parseInt(event.currentTarget.value);
+
+    setItemAction(neckItems.find(o => o.wowHeadId === changedItemId)  || {} as Item);
   };
 
   handleShoulderChange = (event: SyntheticEvent<HTMLSelectElement>) => {
-    console.log('changed to', event.currentTarget.value);
+    const { shoulderItems, setItemAction } = this.props;
+    const changedItemId = parseInt(event.currentTarget.value);
+
+    setItemAction(shoulderItems.find(o => o.wowHeadId === changedItemId)  || {} as Item);
   };
 
   handleBackChange = (event: SyntheticEvent<HTMLSelectElement>) => {
-    console.log('changed to', event.currentTarget.value);
+    const { backItems, setItemAction } = this.props;
+    const changedItemId = parseInt(event.currentTarget.value);
+
+    setItemAction(backItems.find(o => o.wowHeadId === changedItemId)  || {} as Item);
   };
   handleChestChange = (event: SyntheticEvent<HTMLSelectElement>) => {
-    console.log('changed to', event.currentTarget.value);
+    const { chestItems, setItemAction } = this.props;
+    const changedItemId = parseInt(event.currentTarget.value);
+
+    setItemAction(chestItems.find(o => o.wowHeadId === changedItemId)  || {} as Item);
   };
   handleWristChange = (event: SyntheticEvent<HTMLSelectElement>) => {
-    console.log('changed to', event.currentTarget.value);
+    const { wristItems, setItemAction } = this.props;
+    const changedItemId = parseInt(event.currentTarget.value);
+
+    setItemAction(wristItems.find(o => o.wowHeadId === changedItemId)  || {} as Item);
   };
   handleHandsChange = (event: SyntheticEvent<HTMLSelectElement>) => {
-    console.log('changed to', event.currentTarget.value);
+    const { handItems, setItemAction } = this.props;
+    const changedItemId = parseInt(event.currentTarget.value);
+
+    setItemAction(handItems.find(o => o.wowHeadId === changedItemId) || {} as Item);
   };
   handleWaistChange = (event: SyntheticEvent<HTMLSelectElement>) => {
-    console.log('changed to', event.currentTarget.value);
+    const { waistItems, setItemAction } = this.props;
+    const changedItemId = parseInt(event.currentTarget.value);
+
+    setItemAction(waistItems.find(o => o.wowHeadId === changedItemId) || {} as Item);
   };
   handleLegsChange = (event: SyntheticEvent<HTMLSelectElement>) => {
-    console.log('changed to', event.currentTarget.value);
+    const { legItems, setItemAction } = this.props;
+    const changedItemId = parseInt(event.currentTarget.value);
+
+    setItemAction(legItems.find(o => o.wowHeadId === changedItemId) || {} as Item);
   };
   handleFeetChange = (event: SyntheticEvent<HTMLSelectElement>) => {
-    console.log('changed to', event.currentTarget.value);
+    const { feetItems, setItemAction } = this.props;
+    const changedItemId = parseInt(event.currentTarget.value);
+
+    setItemAction(feetItems.find(o => o.wowHeadId === changedItemId) || {} as Item);
   };
 
   render() {
@@ -166,4 +199,8 @@ const mapStateToProps = (state: StoreState) => {
   };
 };
 
-export default connect(mapStateToProps)(CharacterSetup);
+const mapDispatchToProps = {
+  setItemAction,
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(CharacterSetup);

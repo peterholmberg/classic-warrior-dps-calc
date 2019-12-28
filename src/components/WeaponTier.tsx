@@ -4,6 +4,11 @@ import { WeaponSlot } from './WeaponSlot';
 import { WeaponGroup } from '../types/items';
 import { StoreState } from '../types/store';
 import {
+  setMainHandWeaponAction,
+  setOffHandWeaponAction,
+  setRangedWeaponAction,
+} from '../state/characterReducer';
+import {
   getMainHandWeapons,
   getOffHandWeapons,
   getRangedWeapons,
@@ -15,17 +20,50 @@ interface Props {
   offHandWeapons: WeaponGroup[];
   rangedWeapons: WeaponGroup[];
   character: CharacterState;
+
+  setMainHandWeaponAction: typeof setMainHandWeaponAction;
+  setOffHandWeaponAction: typeof setOffHandWeaponAction;
+  setRangedWeaponAction: typeof setRangedWeaponAction;
 }
 
 class WeaponTier extends PureComponent<Props> {
   handleMainHandChange = (event: SyntheticEvent<HTMLSelectElement>) => {
-    console.log('changed to', event.currentTarget.value);
+    const { mainHandWeapons, setMainHandWeaponAction } = this.props;
+    const changedItemId = parseInt(event.currentTarget.value);
+
+    mainHandWeapons.forEach(group =>
+      group.items.forEach(o => {
+        if (o.wowHeadId === changedItemId) {
+          setMainHandWeaponAction(o);
+        }
+      })
+    );
   };
+
   handleOffHandChange = (event: SyntheticEvent<HTMLSelectElement>) => {
-    console.log('changed to', event.currentTarget.value);
+    const { offHandWeapons, setOffHandWeaponAction } = this.props;
+    const changedItemId = parseInt(event.currentTarget.value);
+
+    offHandWeapons.forEach(group =>
+      group.items.forEach(o => {
+        if (o.wowHeadId === changedItemId) {
+          setOffHandWeaponAction(o);
+        }
+      })
+    );
   };
+
   handleRangedChange = (event: SyntheticEvent<HTMLSelectElement>) => {
-    console.log('changed to', event.currentTarget.value);
+    const { rangedWeapons, setRangedWeaponAction } = this.props;
+    const changedItemId = parseInt(event.currentTarget.value);
+
+    rangedWeapons.forEach(group =>
+      group.items.forEach(o => {
+        if (o.wowHeadId === changedItemId) {
+          setRangedWeaponAction(o);
+        }
+      })
+    );
   };
 
   render() {
@@ -78,4 +116,10 @@ const mapStateToProps = (state: StoreState) => {
   };
 };
 
-export default connect(mapStateToProps)(WeaponTier);
+const mapDispatchToProps = {
+  setMainHandWeaponAction,
+  setOffHandWeaponAction,
+  setRangedWeaponAction,
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(WeaponTier);

@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { Item } from '../types/items';
 import { ItemSlot } from './ItemSlot';
 import { StoreState } from '../types/store';
+import { setMiscItemAction } from '../state/characterReducer';
 import { getRings, getTrinkets } from '../state/selectors';
 import { CharacterState } from '../types/character';
 
@@ -10,20 +11,38 @@ interface Props {
   rings: Item[];
   trinkets: Item[];
   character: CharacterState;
+
+  setMiscItemAction: typeof setMiscItemAction;
 }
 
 class MiscTier extends PureComponent<Props> {
   handleRing1Change = (event: SyntheticEvent<HTMLSelectElement>) => {
-    console.log('changed to', event.currentTarget.value);
+    const { rings, setMiscItemAction } = this.props;
+    const changedItemId = parseInt(event.currentTarget.value);
+    const changedItem = rings.find(r => r.wowHeadId === changedItemId);
+
+    setMiscItemAction({ slot: 'ring1', item: changedItem || ({} as Item) });
   };
   handleRing2Change = (event: SyntheticEvent<HTMLSelectElement>) => {
-    console.log('changed to', event.currentTarget.value);
+    const { rings, setMiscItemAction } = this.props;
+    const changedItemId = parseInt(event.currentTarget.value);
+    const changedItem = rings.find(r => r.wowHeadId === changedItemId);
+
+    setMiscItemAction({ slot: 'ring2', item: changedItem || ({} as Item) });
   };
   handleTrinket1Change = (event: SyntheticEvent<HTMLSelectElement>) => {
-    console.log('changed to', event.currentTarget.value);
+    const { trinkets, setMiscItemAction } = this.props;
+    const changedItemId = parseInt(event.currentTarget.value);
+    const changedItem = trinkets.find(t => t.wowHeadId === changedItemId);
+
+    setMiscItemAction({ slot: 'trinket1', item: changedItem || ({} as Item) });
   };
   handleTrinket2Change = (event: SyntheticEvent<HTMLSelectElement>) => {
-    console.log('changed to', event.currentTarget.value);
+    const { trinkets, setMiscItemAction } = this.props;
+    const changedItemId = parseInt(event.currentTarget.value);
+    const changedItem = trinkets.find(t => t.wowHeadId === changedItemId);
+
+    setMiscItemAction({ slot: 'trinket2', item: changedItem || ({} as Item) });
   };
 
   render() {
@@ -79,4 +98,6 @@ const mapStateToProps = (state: StoreState) => {
   };
 };
 
-export default connect(mapStateToProps)(MiscTier);
+const mapDispatchToProps = { setMiscItemAction };
+
+export default connect(mapStateToProps, mapDispatchToProps)(MiscTier);
