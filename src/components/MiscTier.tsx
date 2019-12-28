@@ -58,7 +58,7 @@ class MiscTier extends PureComponent<Props> {
             slotName="Trinket 1"
             options={trinkets}
             onChangeHandler={this.handleTrinket1Change}
-            value={character.trinket1.wowHeadId}
+            value={character.items.trinket1.wowHeadId}
           />
         </div>
         <div className="trinket2">
@@ -66,7 +66,7 @@ class MiscTier extends PureComponent<Props> {
             slotName="Trinket 2"
             options={trinkets}
             onChangeHandler={this.handleTrinket2Change}
-            value={character.trinket2.wowHeadId}
+            value={character.items.trinket2.wowHeadId}
           />
         </div>
         <div className="ring1">
@@ -74,7 +74,7 @@ class MiscTier extends PureComponent<Props> {
             slotName="Ring 1"
             options={rings}
             onChangeHandler={this.handleRing1Change}
-            value={character.ring1.wowHeadId}
+            value={character.items.ring1.wowHeadId}
           />
         </div>
         <div className="ring2">
@@ -82,7 +82,7 @@ class MiscTier extends PureComponent<Props> {
             slotName="Ring 2"
             options={rings}
             onChangeHandler={this.handleRing2Change}
-            value={character.ring2.wowHeadId}
+            value={character.items.ring2.wowHeadId}
           />
         </div>
       </div>

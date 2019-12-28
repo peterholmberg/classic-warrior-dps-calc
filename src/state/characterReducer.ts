@@ -11,23 +11,25 @@ import { getRaceStats } from '../data/race';
 const initialCharacterState: CharacterState = {
   race: Race.Human,
   class: Class.Warrior,
-  head: {} as Item,
-  neck: {} as Item,
-  back: {} as Item,
-  shoulders: {} as Item,
-  chest: {} as Item,
-  wrists: {} as Item,
-  hands: {} as Item,
-  waist: {} as Item,
-  legs: {} as Item,
-  feet: {} as Item,
-  ring1: {} as Item,
-  ring2: {} as Item,
-  trinket1: {} as Item,
-  trinket2: {} as Item,
-  mainHand: {} as Weapon,
-  offHand: {} as Weapon,
-  ranged: {} as Weapon,
+  items: {
+    head: {} as Item,
+    neck: {} as Item,
+    back: {} as Item,
+    shoulders: {} as Item,
+    chest: {} as Item,
+    wrists: {} as Item,
+    hands: {} as Item,
+    waist: {} as Item,
+    legs: {} as Item,
+    feet: {} as Item,
+    ring1: {} as Item,
+    ring2: {} as Item,
+    trinket1: {} as Item,
+    trinket2: {} as Item,
+    mainHand: {} as Weapon,
+    offHand: {} as Weapon,
+    ranged: {} as Weapon,
+  },
   stats: {
     ...getRaceStats(Race.Human)?.stats,
     hit: 0,
@@ -63,13 +65,15 @@ export const characterSlice = createSlice<
       return { ...state, [action.payload.itemSlot]: action.payload };
     },
     setMainHandWeaponAction(state: CharacterState, action: any) {
-      return action.payload.itemSlot === ItemSlot.TwoHand
-        ? { ...state, mainHand: action.payload, offHand: {} as Weapon }
-        : {
-            ...state,
-            mainHand: action.payload,
-            stats: recalculateStats({ ...state, mainHand: action.payload }),
-          };
+      const newState =
+        action.payload.itemSlot === ItemSlot.TwoHand
+          ? { ...state, mainHand: action.payload, offHand: {} as Weapon }
+          : {
+              ...state,
+              mainHand: action.payload,
+            };
+
+      return { ...state, stats: recalculateStats(newState) };
     },
     setOffHandWeaponAction(state: CharacterState, action: any) {
       return { ...state, offHand: action.payload };
@@ -87,9 +91,52 @@ export const characterSlice = createSlice<
   },
 });
 
-const recalculateStats = (state: CharacterState): CharacterStats => {
+const recalculateStats = (state: CharacterState): CharacteStats => {
+  let strength = 0,
+    agility = 0,
+    stamina = 0,
+    intellect = 0,
+    spirit = 0,
+    attackPower = 0,
+    crit = 0,
+    hit = 0;
+
+  let mainHandDamage = [0, 0],
+    offHandDamage = [0, 0],
+    rangedDamage = [0, 0];
+
+  Object.values(state.items).forEach(i => {
+    strength += i.strength;
+    agility += i.agility;
+    stamina += i.stamina;
+    intellect += i.intellect;
+    spirit += i.spirit;
+  });
+
+  strength += state.stats.strength;
+  agility += state.stats.agility;
+  stamina += state.stats.stamina;
+  intellect += state.stats.intellect;
+  spirit += state.stats.spirit;
+  attackPower += state.stats.attackPower;
+  crit += state.stats.crit;
+  hit += state.stats.hit;
+  mainHandDamage = state.stats.mainHandDamage;
+  offHandDamage = state.stats.offHandDamage;
+  rangedDamage = state.stats.rangedDamage;
+
   return {
-    ...state.stats,
+    strength,
+    agility,
+    stamina,
+    intellect,
+    spirit,
+    attackPower,
+    crit,
+    hit,
+    mainHandDamage,
+    offHandDamage,
+    rangedDamage,
   };
 };
 

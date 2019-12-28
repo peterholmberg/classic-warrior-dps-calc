@@ -50,9 +50,7 @@ export interface CharacterStats extends BasicCharacterStats {
   rangedDamage: [number, number];
 }
 
-export interface CharacterState {
-  race: Race;
-  class: Class;
+interface EquippedItems {
   head: Item;
   neck: Item;
   back: Item;
@@ -70,5 +68,11 @@ export interface CharacterState {
   mainHand: Item;
   offHand: Item;
   ranged: Item;
+}
+
+export interface CharacterState {
+  race: Race;
+  class: Class;
+  items: EquippedItems;
   stats: CharacterStats;
 }
