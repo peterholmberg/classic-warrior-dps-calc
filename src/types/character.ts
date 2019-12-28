@@ -1,4 +1,4 @@
-import { Item } from './items';
+import { Item, WeaponType } from './items';
 
 export enum Race {
   Human = 'human',
@@ -22,21 +22,35 @@ export enum Class {
   Rogue = 'rogue',
 }
 
-export interface CharacterStats {
+export interface RaceInfo {
+  race: Race;
+  stats: BasicCharacterStats;
+  perks: RacePerk[];
+}
+
+export interface RacePerk {
+  value: number;
+  skill: WeaponType;
+}
+
+export interface BasicCharacterStats {
   strength: number;
   agility: number;
   stamina: number;
   intellect: number;
   spirit: number;
+}
+
+export interface CharacterStats extends BasicCharacterStats {
   crit: number;
   hit: number;
   attackPower: number;
   mainHandDamage: [number, number];
-  offHandDamage: [number, number];
+  offHandDamage?: [number, number];
   rangedDamage: [number, number];
 }
 
-export interface CharacterState  {
+export interface CharacterState {
   race: Race;
   class: Class;
   head: Item;

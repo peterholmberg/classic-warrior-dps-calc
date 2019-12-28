@@ -2,13 +2,13 @@ import React, { PureComponent, SyntheticEvent } from 'react';
 import { connect } from 'react-redux';
 import CharacterSetup from '../components/CharacterSetup';
 import { SimpleSelect } from '../components/SimpleSelect';
-import { getPerks } from '../data/racePerks';
-import { getRaces } from '../data/race';
+import { getRaces, getRaceStats } from '../data/race';
 import { StoreState } from '../types/store';
 import { Phase } from '../types/game';
+import { Race } from '../types/character';
 
 interface Props {
-  race: string;
+  race: Race;
   klass: string;
   phase: Phase;
 }
@@ -39,7 +39,7 @@ export class HomeContainer extends PureComponent<Props> {
 
   render() {
     const { phase, race } = this.props;
-    const perks = getPerks(race);
+    const characterStats = getRaceStats(race);
 
     return (
       <div className="page-content">
@@ -78,8 +78,8 @@ export class HomeContainer extends PureComponent<Props> {
                   </tr>
                 </thead>
                 <tbody>
-                  {perks &&
-                    Object.values(perks.perks).map(v => {
+                  {characterStats &&
+                    Object.values(characterStats.perks).map(v => {
                       return (
                         <tr key={v.skill}>
                           <td>{v.value}</td>

@@ -6,6 +6,7 @@ import {
 } from '../types/character';
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { Item, ItemSlot, Weapon } from '../types/items';
+import { getRaceStats } from '../data/race';
 
 const initialCharacterState: CharacterState = {
   race: Race.Human,
@@ -27,7 +28,14 @@ const initialCharacterState: CharacterState = {
   mainHand: {} as Weapon,
   offHand: {} as Weapon,
   ranged: {} as Weapon,
-  stats: {} as CharacterStats,
+  stats: {
+    ...getRaceStats(Race.Human)?.stats,
+    hit: 0,
+    crit: 0,
+    attackPower: 100,
+    mainHandDamage: [100, 200],
+    rangedDamage: [50, 100],
+  },
 };
 
 interface MiscItem {
@@ -41,6 +49,7 @@ interface CharacterReducer<S> extends Record<string, any> {
   setOffHandWeaponAction: (state: S, action: PayloadAction<Weapon>) => S;
   setRangedWeaponAction: (state: S, action: PayloadAction<Weapon>) => S;
   setMiscItemAction: (state: S, action: PayloadAction<MiscItem>) => S;
+  setRace: (state: S, action: PayloadAction<string>) => S;
 }
 
 export const characterSlice = createSlice<
@@ -71,17 +80,17 @@ export const characterSlice = createSlice<
     setMiscItemAction(state: CharacterState, action: any) {
       return { ...state, [action.payload.slot]: action.payload.item };
     },
+    setRace(state: CharacterState, action: any) {
+      const newState = { ...state, race: action.payload };
+      return { ...newState, stats: recalculateStats(newState) };
+    },
   },
 });
 
 const recalculateStats = (state: CharacterState): CharacterStats => {
-  Object.values(state).map(prop => {
-    console.log(prop);
-  });
-
   return {
-    mainHandDamage: []
-  }
+    ...state.stats,
+  };
 };
 
 export const {
