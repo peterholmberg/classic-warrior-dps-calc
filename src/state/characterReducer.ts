@@ -1,12 +1,8 @@
-import {
-  CharacterState,
-  CharacterStats,
-  Class,
-  Race,
-} from '../types/character';
+import { Attributes, CharacterState, Class, Race } from '../types/character';
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { Item, ItemSlot, Weapon } from '../types/items';
 import { getRaceStats } from '../data/race';
+import { recalculateStats } from '../utils/calculators';
 
 const initialCharacterState: CharacterState = {
   race: Race.Human,
@@ -35,7 +31,11 @@ const initialCharacterState: CharacterState = {
     hit: 0,
     crit: 0,
     attackPower: 100,
+  },
+  bonusStats: {} as Attributes,
+  damage: {
     mainHandDamage: [100, 200],
+    meleeDps: [50, 0],
     rangedDamage: [50, 100],
   },
 };
@@ -90,55 +90,6 @@ export const characterSlice = createSlice<
     },
   },
 });
-
-const recalculateStats = (state: CharacterState): CharacterStats => {
-  let strength = 0,
-    agility = 0,
-    stamina = 0,
-    intellect = 0,
-    spirit = 0,
-    attackPower = 0,
-    crit = 0,
-    hit = 0;
-
-  let mainHandDamage = [0, 0],
-    offHandDamage = [0, 0],
-    rangedDamage = [0, 0];
-
-  Object.values(state.items).forEach(i => {
-    strength += i.strength;
-    agility += i.agility;
-    stamina += i.stamina;
-    intellect += i.intellect;
-    spirit += i.spirit;
-  });
-
-  strength += state.stats.strength;
-  agility += state.stats.agility;
-  stamina += state.stats.stamina;
-  intellect += state.stats.intellect;
-  spirit += state.stats.spirit;
-  attackPower += state.stats.attackPower;
-  crit += state.stats.crit;
-  hit += state.stats.hit;
-  mainHandDamage = state.stats.mainHandDamage;
-  offHandDamage = state.stats.offHandDamage;
-  rangedDamage = state.stats.rangedDamage;
-
-  return {
-    strength,
-    agility,
-    stamina,
-    intellect,
-    spirit,
-    attackPower,
-    crit,
-    hit,
-    mainHandDamage,
-    offHandDamage,
-    rangedDamage,
-  };
-};
 
 export const {
   setItemAction,
