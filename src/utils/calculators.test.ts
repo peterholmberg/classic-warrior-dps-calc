@@ -1,4 +1,4 @@
-import { getAttackPower, getBonusStatsFromItems } from './calculators';
+import {getAttackPower, getBonusStatsFromItems, getCritChance} from './calculators';
 import { CharacterState, Class, Race } from '../types/character';
 import { Item, Weapon } from '../types/items';
 import { getRaceStats } from '../data/race';
@@ -28,9 +28,6 @@ const getInitialCharacter = (): CharacterState => ({
   },
   stats: {
     ...getRaceStats(Race.Human)?.stats,
-    hit: 0,
-    crit: 1.84,
-    attackPower: 400,
   },
   bonusStats: {
     strength: 0,
@@ -52,7 +49,7 @@ const getInitialCharacter = (): CharacterState => ({
 
 describe('Attack power', () => {
   it('it should be 400 for level 60 warrior', () => {
-    expect(getAttackPower(getInitialCharacter())).toEqual(400);
+    expect(getAttackPower(getInitialCharacter().stats)).toEqual(400);
   });
 
   it('should add bonus stats from items', () => {
@@ -60,9 +57,31 @@ describe('Attack power', () => {
 
     // Add Conquerors Crown (29 str)
     character.items.head = heads()[1];
-    character.bonusStats.strength = 29;
 
-    expect(getAttackPower(character)).toEqual(458);
+    expect(
+      getAttackPower(character.stats, {
+        strength: 29,
+        stamina: 0,
+        agility: 0,
+        defense: 0,
+        intellect: 0,
+        spirit: 0,
+        crit: 0,
+        hit: 0,
+        attackPower: 0,
+      })
+    ).toEqual(458);
+  });
+});
+
+describe('Crit chance', () => {
+  // As Cruelty is hard coded in util, add +5 to all expects.
+  it('should be 1% with 20 agility', () => {
+    expect(getCritChance(20, 0)).toEqual(6);
+  });
+
+  it('should be 3% with 20 bonus agi and 1 % bonus crit', () => {
+    expect(getCritChance(20, 20, 1)).toEqual(8);
   });
 });
 

@@ -1,45 +1,30 @@
 import { CharacterState, Attributes, EquippedItems } from '../types/character';
-
-/*
-  Character level / 3 - 20
-  https://vanilla-wow.fandom.com/wiki/Attack_power
-*/
-const BASE_ATTACK_POWER = 160;
+import { getBaseStats } from '../data/character/baseStats';
 
 export const recalculateStats = (state: CharacterState): Attributes => {
   //ToDO: TEST
-  let strength = 0,
-    agility = 0,
-    stamina = 0,
-    intellect = 0,
-    spirit = 0,
-    attackPower = 0,
-    crit = 0,
-    hit = 0;
+  let strength: number,
+    agility: number,
+    stamina: number,
+    intellect: number,
+    spirit: number,
+    attackPower: number,
+    crit: number,
+    hit: number,
+    defense: number;
 
-  let mainHandDamage = [0, 0],
-    offHandDamage = [0, 0],
-    rangedDamage = [0, 0];
+  const bonusStats = getBonusStatsFromItems(state.items);
+  const baseStats = getBaseStats(state.race);
 
-  Object.values(state.items).forEach(i => {
-    strength += i.strength;
-    agility += i.agility;
-    stamina += i.stamina;
-    intellect += i.intellect;
-    spirit += i.spirit;
-  });
-
-  strength += state.stats.strength;
-  agility += state.stats.agility;
-  stamina += state.stats.stamina;
-  intellect += state.stats.intellect;
-  spirit += state.stats.spirit;
-  attackPower += state.stats.attackPower;
-  crit += state.stats.crit;
-  hit += state.stats.hit;
-  mainHandDamage = state.stats.mainHandDamage;
-  offHandDamage = state.stats.offHandDamage;
-  rangedDamage = state.stats.rangedDamage;
+  strength = baseStats.strength + bonusStats.strength;
+  agility = baseStats.agility + bonusStats.agility;
+  stamina = baseStats.stamina + bonusStats.stamina;
+  intellect = baseStats.intellect + bonusStats.intellect;
+  spirit = baseStats.spirit + bonusStats.spirit;
+  crit = getCritChance(agility, bonusStats.agility, bonusStats.crit);
+  hit = bonusStats.hit;
+  attackPower = getAttackPower(baseStats, bonusStats);
+  defense = baseStats.defense + bonusStats.defense;
 
   return {
     strength,
@@ -50,9 +35,7 @@ export const recalculateStats = (state: CharacterState): Attributes => {
     attackPower,
     crit,
     hit,
-    mainHandDamage,
-    offHandDamage,
-    rangedDamage,
+    defense,
   };
 };
 
@@ -92,10 +75,24 @@ export const getBonusStatsFromItems = (items: EquippedItems): Attributes => {
   };
 };
 
-export const getAttackPower = (character: CharacterState): number => {
+export const getAttackPower = (
+  stats: Attributes,
+  bonusStats = {} as Attributes
+): number => {
   return (
-    (character.stats.strength + character.bonusStats.strength) * 2 +
-    character.bonusStats.attackPower +
-    BASE_ATTACK_POWER
+    (stats.strength + (bonusStats.strength || 0)) * 2 +
+    (bonusStats.attackPower || 0) +
+    stats.attackPower
   );
+};
+
+export const getCritChance = (
+  agility: number,
+  bonusAgility = 0,
+  bonusCrit = 0
+): number => {
+  // 5% crit from Cruelty (warrior, should not be a constant here)
+  const critFromTalents = 5;
+
+  return (agility + bonusAgility) / 20 + bonusCrit + critFromTalents;
 };

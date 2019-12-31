@@ -2,7 +2,7 @@ import { Attributes, CharacterState, Class, Race } from '../types/character';
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { Item, ItemSlot, Weapon } from '../types/items';
 import { getRaceStats } from '../data/race';
-import { recalculateStats } from '../utils/calculators';
+import { getBonusStatsFromItems, recalculateStats } from '../utils/calculators';
 
 const initialCharacterState: CharacterState = {
   race: Race.Human,
@@ -28,15 +28,12 @@ const initialCharacterState: CharacterState = {
   },
   stats: {
     ...getRaceStats(Race.Human)?.stats,
-    hit: 0,
-    crit: 0,
-    attackPower: 100,
   },
   bonusStats: {} as Attributes,
   damage: {
-    mainHandDamage: [100, 200],
-    meleeDps: [50, 0],
-    rangedDamage: [50, 100],
+    mainHandDamage: [56, 57],
+    meleeDps: [27.75, 0],
+    rangedDamage: [0, 0],
   },
 };
 
@@ -62,27 +59,63 @@ export const characterSlice = createSlice<
   initialState: initialCharacterState,
   reducers: {
     setItemAction(state: any, action: any) {
-      return { ...state, [action.payload.itemSlot]: action.payload };
+      const newState = {
+        ...state,
+        items: { ...state.items, [action.payload.itemSlot]: action.payload },
+      };
+      const bonusStats = getBonusStatsFromItems(newState.items);
+
+      return {
+        ...newState,
+        stats: recalculateStats(newState),
+        bonusStats: bonusStats,
+      };
     },
     setMainHandWeaponAction(state: CharacterState, action: any) {
       const newState =
         action.payload.itemSlot === ItemSlot.TwoHand
-          ? { ...state, mainHand: action.payload, offHand: {} as Weapon }
+          ? {
+              ...state,
+              items: {
+                ...state.items,
+                mainHand: action.payload,
+                offHand: {} as Weapon,
+              },
+            }
           : {
               ...state,
-              mainHand: action.payload,
+              items: { ...state.items, mainHand: action.payload },
             };
 
-      return { ...state, stats: recalculateStats(newState) };
+      const bonusStats = getBonusStatsFromItems(newState.items);
+
+      return { ...newState, bonusStats, stats: recalculateStats(newState) };
     },
     setOffHandWeaponAction(state: CharacterState, action: any) {
-      return { ...state, offHand: action.payload };
+      const newState = {
+        ...state,
+        items: { ...state.items, offHand: action.payload },
+      };
+      const bonusStats = getBonusStatsFromItems(state.items);
+
+      return { ...newState, bonusStats, stats: recalculateStats(newState) };
     },
     setRangedWeaponAction(state: CharacterState, action: any) {
-      return { ...state, ranged: action.payload };
+      const newState = {
+        ...state,
+        items: { ...state.items, ranged: action.payload },
+      };
+      const bonusStats = getBonusStatsFromItems(newState.items);
+      return { ...newState, bonusStats, stats: recalculateStats(newState) };
     },
     setMiscItemAction(state: CharacterState, action: any) {
-      return { ...state, [action.payload.slot]: action.payload.item };
+      const newState = {
+        ...state,
+        items: { ...state.items, [action.payload.slot]: action.payload.item },
+      };
+      const bonusStats = getBonusStatsFromItems(newState.items);
+
+      return { ...newState, bonusStats, stats: recalculateStats(newState) };
     },
     setRace(state: CharacterState, action: any) {
       const newState = { ...state, race: action.payload };

@@ -24,7 +24,7 @@ export enum Class {
 
 export interface RaceInfo {
   race: Race;
-  stats: BasicAttributes;
+  stats: Attributes;
   perks: RacePerk[];
 }
 
