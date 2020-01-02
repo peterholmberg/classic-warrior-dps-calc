@@ -124,7 +124,7 @@ export class CharacterSetup extends PureComponent<Props> {
               <ItemSlot
                 slotName="Head"
                 options={headItems}
-                value={character.head.wowHeadId}
+                value={character.items.head.wowHeadId}
                 onChangeHandler={this.handleHeadChange}
               />
             </div>
@@ -132,7 +132,7 @@ export class CharacterSetup extends PureComponent<Props> {
               <ItemSlot
                 slotName="Neck"
                 options={neckItems}
-                value={character.neck.wowHeadId}
+                value={character.items.neck.wowHeadId}
                 onChangeHandler={this.handleNeckChange}
               />
             </div>
@@ -140,7 +140,7 @@ export class CharacterSetup extends PureComponent<Props> {
               <ItemSlot
                 slotName="Back"
                 options={backItems}
-                value={character.back.wowHeadId}
+                value={character.items.back.wowHeadId}
                 onChangeHandler={this.handleBackChange}
               />
             </div>
@@ -148,7 +148,7 @@ export class CharacterSetup extends PureComponent<Props> {
               <ItemSlot
                 slotName="Shoulder"
                 options={shoulderItems}
-                value={character.shoulders.wowHeadId}
+                value={character.items.shoulders.wowHeadId}
                 onChangeHandler={this.handleShoulderChange}
               />
             </div>
@@ -156,7 +156,7 @@ export class CharacterSetup extends PureComponent<Props> {
               <ItemSlot
                 slotName="Chest"
                 options={chestItems}
-                value={character.chest.wowHeadId}
+                value={character.items.chest.wowHeadId}
                 onChangeHandler={this.handleChestChange}
               />
             </div>
@@ -167,7 +167,7 @@ export class CharacterSetup extends PureComponent<Props> {
               <ItemSlot
                 slotName="Wrists"
                 options={wristItems}
-                value={character.wrists.wowHeadId}
+                value={character.items.wrists.wowHeadId}
                 onChangeHandler={this.handleWristChange}
               />
             </div>
@@ -176,7 +176,7 @@ export class CharacterSetup extends PureComponent<Props> {
                 slotName="Hands"
                 options={handItems}
                 onChangeHandler={this.handleHandsChange}
-                value={character.hands.wowHeadId}
+                value={character.items.hands.wowHeadId}
               />
             </div>
             <div className="waist">
@@ -184,7 +184,7 @@ export class CharacterSetup extends PureComponent<Props> {
                 slotName="Waist"
                 options={waistItems}
                 onChangeHandler={this.handleWaistChange}
-                value={character.waist.wowHeadId}
+                value={character.items.waist.wowHeadId}
               />
             </div>
             <div className="legs">
@@ -192,7 +192,7 @@ export class CharacterSetup extends PureComponent<Props> {
                 slotName="Legs"
                 options={legItems}
                 onChangeHandler={this.handleLegsChange}
-                value={character.legs.wowHeadId}
+                value={character.items.legs.wowHeadId}
               />
             </div>
             <div className="feet">
@@ -200,7 +200,7 @@ export class CharacterSetup extends PureComponent<Props> {
                 slotName="Feet"
                 options={feetItems}
                 onChangeHandler={this.handleFeetChange}
-                value={character.feet.wowHeadId}
+                value={character.items.feet.wowHeadId}
               />{' '}
             </div>
           </div>

@@ -83,7 +83,7 @@ class WeaponTier extends PureComponent<Props> {
             slotName="Main hand"
             options={mainHandWeapons}
             onChangeHandler={this.handleMainHandChange}
-            value={character.mainHand.wowHeadId}
+            value={character.items.mainHand.wowHeadId}
           />
         </div>
         <div className="offhand">
@@ -91,7 +91,7 @@ class WeaponTier extends PureComponent<Props> {
             slotName="Off hand"
             options={offHandWeapons}
             onChangeHandler={this.handleOffHandChange}
-            value={character.offHand.wowHeadId}
+            value={character.items.offHand.wowHeadId}
           />
         </div>
         <div className="ranged">
@@ -99,7 +99,7 @@ class WeaponTier extends PureComponent<Props> {
             slotName="Ranged"
             options={rangedWeapons}
             onChangeHandler={this.handleRangedChange}
-            value={character.ranged.wowHeadId}
+            value={character.items.ranged.wowHeadId}
           />
         </div>
       </div>

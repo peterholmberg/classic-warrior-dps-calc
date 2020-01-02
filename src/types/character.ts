@@ -24,7 +24,7 @@ export enum Class {
 
 export interface RaceInfo {
   race: Race;
-  stats: BasicCharacterStats;
+  stats: Attributes;
   perks: RacePerk[];
 }
 
@@ -33,26 +33,30 @@ export interface RacePerk {
   skill: WeaponType;
 }
 
-export interface BasicCharacterStats {
+export interface BasicAttributes {
   strength: number;
   agility: number;
   stamina: number;
   intellect: number;
   spirit: number;
+  defense: number;
 }
 
-export interface CharacterStats extends BasicCharacterStats {
+export interface Attributes extends BasicAttributes {
   crit: number;
   hit: number;
   attackPower: number;
-  mainHandDamage: [number, number];
-  offHandDamage?: [number, number];
-  rangedDamage: [number, number];
 }
 
-export interface CharacterState {
-  race: Race;
-  class: Class;
+interface Damage {
+  mainHandDamage: [number, number];
+  meleeDps: [number, number];
+  offHandDamage?: [number, number];
+  rangedDamage: [number, number];
+  rangedDamageDps?: number;
+}
+
+export interface EquippedItems {
   head: Item;
   neck: Item;
   back: Item;
@@ -70,5 +74,13 @@ export interface CharacterState {
   mainHand: Item;
   offHand: Item;
   ranged: Item;
-  stats: CharacterStats;
+}
+
+export interface CharacterState {
+  race: Race;
+  class: Class;
+  items: EquippedItems;
+  stats: Attributes;
+  bonusStats: Attributes;
+  damage: Damage;
 }

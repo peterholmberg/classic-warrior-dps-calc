@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { css } from 'emotion';
-import { CharacterStats } from '../types/character';
+import { Attributes } from '../types/character';
 
 const getStatsStyle = () => {
   return {
@@ -15,7 +15,7 @@ const getStatsStyle = () => {
 };
 
 interface Props {
-  stats: CharacterStats;
+  stats: Attributes;
 }
 
 export const StatsTable: FC<Props> = ({ stats }) => {
@@ -43,12 +43,6 @@ export const StatsTable: FC<Props> = ({ stats }) => {
           <tr>
             <td>Spirit</td>
             <td className={style.valueCell}>{stats.spirit}</td>
-          </tr>
-          <tr>
-            <td>Damage</td>
-            <td
-              className={style.valueCell}
-            >{`${stats.mainHandDamage[0]} - ${stats.mainHandDamage[1]}`}</td>
           </tr>
           <tr>
             <td>Attack power</td>
