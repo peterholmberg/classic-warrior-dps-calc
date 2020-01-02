@@ -2,7 +2,6 @@ import { CharacterState, Attributes, EquippedItems } from '../types/character';
 import { getBaseStats } from '../data/character/baseStats';
 
 export const recalculateStats = (state: CharacterState): Attributes => {
-  //ToDO: TEST
   let strength: number,
     agility: number,
     stamina: number,
